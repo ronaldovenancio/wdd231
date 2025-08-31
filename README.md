@@ -1,1 +1,1 @@
-This is WDD231 Course of BYU - Idaho
+This is the WDD231 Course of BYU - Idaho
