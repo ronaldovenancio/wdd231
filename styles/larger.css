@@ -4,6 +4,38 @@
         margin: 0 auto;
     }
 
+    .about-student {
+        flex-direction: row;
+    }
+    
+    .about-me {
+        flex: 2;
+    }
+    
+    .student-photo {
+        flex: 1;
+    }
+
+    .student-photo img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    /* TERCEIRA SEÇÃO (OCUPA A LARGURA TOTAL) */
+    .courses {
+        background-color: #f9f9f9;
+        padding: 1rem;
+       /* border: 1px solid #ddd; */
+        border: none;
+    }
+    /* TERCEIRA SEÇÃO (OCUPA A LARGURA TOTAL) */
+    .courses {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border: 1px solid #ddd;
+    }
+
 
     header {
         grid-template-columns: 24px auto;
