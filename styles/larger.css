@@ -17,12 +17,13 @@
         display: block;
         border-bottom: solid 1px #eee;
         background-color: rgb(70 83 107 / 30%);
+        margin-top: 5px;
     }
 
     .navigation ul {
         display: flex;
     }
-    
+
     .navigation ul li {
         flex: 1 1 100%;
     }
