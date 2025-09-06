@@ -8,6 +8,56 @@ let lastModified = document.lastModified;
 outputDate.textContent = date;
 outputModified.textContent = lastModified;
 
+
+// Selecting DOM elements
+const courseList = document.getElementById("course-list");
+
+const allBtn = document.getElementById("all-btn");
+const wddBtn = document.getElementById("wdd-btn");
+const cseBtn = document.getElementById("cse-btn");
+
+// Render courses
+function renderCourses(coursesToRender) {
+    courseList.innerHTML = ""; // Clear current display
+
+    coursesToRender.forEach(course => {
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course");
+
+        // Add class based on completion
+        if (course.completed) {
+            courseDiv.classList.add("completed");
+        } else {
+            courseDiv.classList.add("not-completed");
+        }
+
+        courseDiv.innerHTML = `
+      <h3>${course.subject} ${course.number}: ${course.title}</h3>
+      <p><strong>Credits:</strong> ${course.credits}</p>
+      <p><strong>Description:</strong> ${course.description}</p>
+      <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+        courseList.appendChild(courseDiv);
+    });
+}
+
+// Event listeners
+allBtn.addEventListener("click", () => renderCourses(courses));
+wddBtn.addEventListener("click", () => {
+    const wddCourses = courses.filter(c => c.subject === "WDD");
+    renderCourses(wddCourses);
+});
+cseBtn.addEventListener("click", () => {
+    const cseCourses = courses.filter(c => c.subject === "CSE");
+    renderCourses(cseCourses);
+});
+
+// Initial load
+renderCourses(courses);
+
+
+
 // Store the selected elements that we are going to use.
 const navbuttom = document.querySelector('#ham-btn');
 const navlinks = document.querySelector('#nav-bar');

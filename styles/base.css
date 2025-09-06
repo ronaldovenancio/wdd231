@@ -84,6 +84,12 @@ header span {
     margin: 0 auto;
 }
 
+.course-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
 /* ----------- NAVIGATION -------------- */
 .navigation {
     display: none;
