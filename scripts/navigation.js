@@ -1,78 +1,3 @@
-/* Current Date & Last Modified Code */
-const outputDate = document.querySelector("#currentYear");
-const outputModified = document.querySelector("#lastModified");
-
-const date = new Date().getFullYear();
-let lastModified = document.lastModified;
-
-outputDate.textContent = date;
-outputModified.textContent = lastModified;
-
-
-// Selecting DOM elements
-const courseList = document.getElementById("course-list");
-
-const allBtn = document.getElementById("all-btn");
-const wddBtn = document.getElementById("wdd-btn");
-const cseBtn = document.getElementById("cse-btn");
-
-// Render courses
-function renderCourses(coursesToRender) {
-    courseList.innerHTML = ""; // Clear current display
-
-    coursesToRender.forEach(course => {
-        const courseDiv = document.createElement("div");
-        courseDiv.classList.add("course");
-
-        // Add class based on completion
-        if (course.completed) {
-            courseDiv.classList.add("completed");
-        } else {
-            courseDiv.classList.add("not-completed");
-        }
-
-        courseDiv.innerHTML = `
-      <h3>${course.subject} ${course.number}: ${course.title}</h3>
-      <p><strong>Credits:</strong> ${course.credits}</p>
-      <p><strong>Description:</strong> ${course.description}</p>
-      <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
-    `;
-
-        courseList.appendChild(courseDiv);
-    });
-}
-
-// Event listeners
-allBtn.addEventListener("click", () => renderCourses(courses));
-wddBtn.addEventListener("click", () => {
-    const wddCourses = courses.filter(c => c.subject === "WDD");
-    renderCourses(wddCourses);
-});
-cseBtn.addEventListener("click", () => {
-    const cseCourses = courses.filter(c => c.subject === "CSE");
-    renderCourses(cseCourses);
-});
-
-// Initial load
-renderCourses(courses);
-
-
-
-// Store the selected elements that we are going to use.
-const navbuttom = document.querySelector('#ham-btn');
-const navlinks = document.querySelector('#nav-bar');
-
-// Toggle the show class off and on
-navbuttom.addEventListener('click', () => {
-    navbuttom.classList.toggle('show');
-    navlinks.classList.toggle('show');
-});
-
-const navBar = document.querySelector('#nav-bar');
-
-
-
-
 // List of courses in the first certificate of BYU
 // This array contains the course information for the required courses 
 // that are in the first certificate called Web and 
@@ -157,3 +82,136 @@ const courses = [
         completed: false
     }
 ]
+
+/* Current Date & Last Modified Code */
+const outputDate = document.querySelector("#currentYear");
+const outputModified = document.querySelector("#lastModified");
+
+const date = new Date().getFullYear();
+let lastModified = document.lastModified;
+
+outputDate.textContent = date;
+outputModified.textContent = lastModified;
+
+
+
+// Selecting DOM elements
+const courseList = document.getElementById("course-list");
+
+const allBtn = document.getElementById("all-btn");
+const wddBtn = document.getElementById("wdd-btn");
+const cseBtn = document.getElementById("cse-btn");
+
+/*
+// Render courses
+function renderCourses(coursesToRender) {
+    courseList.innerHTML = ""; // Clear current display
+
+    coursesToRender.forEach(course => {
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course");
+
+        // Add class based on completion
+        if (course.completed) {
+            courseDiv.classList.add("completed");
+        } else {
+            courseDiv.classList.add("not-completed");
+        }
+
+        courseDiv.innerHTML = `
+      <h3>${course.subject} ${course.number}: ${course.title}</h3>
+      <p><strong>Credits:</strong> ${course.credits}</p>
+      <p><strong>Description:</strong> ${course.description}</p>
+      <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `;
+
+        courseList.appendChild(courseDiv);
+    });
+}
+    */
+
+function renderCourses(coursesToRender) {
+    courseList.innerHTML = ""; // Limpa o container
+
+    coursesToRender.forEach(course => {
+        const courseDiv = document.createElement("div");
+        courseDiv.classList.add("course", course.completed ? "completed" : "not-completed");
+
+        // Ícone de check se o curso estiver completo
+        const checkIcon = course.completed ? '✅ ' : '';
+
+        // Mostrar apenas subject e number, com ícone se completo
+        courseDiv.innerHTML = `<h3>${checkIcon}${course.subject} ${course.number}</h3>`;
+
+        courseList.appendChild(courseDiv);
+    });
+    updateCredits(coursesToRender); // atualiza créditos dinamicamente
+}
+
+const totalCreditsSpan = document.getElementById("total-credits");
+
+function updateCredits(coursesToRender) {
+    const totalCredits = coursesToRender.reduce((sum, course) => sum + course.credits, 0);
+    totalCreditsSpan.textContent = totalCredits;
+}
+
+
+function setActiveButton(button) {
+    document.querySelectorAll(".filters button").forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+}
+
+allBtn.addEventListener("click", () => {
+    renderCourses(courses);
+    setActiveButton(allBtn);
+});
+
+wddBtn.addEventListener("click", () => {
+    const wddCourses = courses.filter(c => c.subject === "WDD");
+    renderCourses(wddCourses);
+    setActiveButton(wddBtn);
+});
+
+cseBtn.addEventListener("click", () => {
+    const cseCourses = courses.filter(c => c.subject === "CSE");
+    renderCourses(cseCourses);
+    setActiveButton(cseBtn);
+});
+
+
+// Event listeners
+allBtn.addEventListener("click", () => renderCourses(courses));
+wddBtn.addEventListener("click", () => {
+    const wddCourses = courses.filter(c => c.subject === "WDD");
+    renderCourses(wddCourses);
+});
+cseBtn.addEventListener("click", () => {
+    const cseCourses = courses.filter(c => c.subject === "CSE");
+    renderCourses(cseCourses);
+});
+
+// Initial load
+renderCourses(courses);
+
+function updateCredits(coursesToRender) {
+    const totalCredits = coursesToRender.reduce((sum, c) => sum + c.credits, 0);
+    document.querySelector(".credit-note").textContent =
+        `The total credits for courses listed above is ${totalCredits}`;
+}
+
+
+// Store the selected elements that we are going to use.
+const navbuttom = document.querySelector('#ham-btn');
+const navlinks = document.querySelector('#nav-bar');
+
+// Toggle the show class off and on
+navbuttom.addEventListener('click', () => {
+    navbuttom.classList.toggle('show');
+    navlinks.classList.toggle('show');
+});
+
+
+
+
+
+

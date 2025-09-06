@@ -12,10 +12,12 @@ deep blue #3D405B
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
-    background-color: rgb(70 83 107 / 40%);
+   /* background-color: rgb(70 83 107 / 40%); */
+    background-color: #ddd;
     padding: 5px 0 5px 10px;
     align-items: end;
     border-bottom: solid 1px #ddd;
+    border:none;
     column-gap: 8px;
 }
 
@@ -85,10 +87,86 @@ header span {
 }
 
 .course-list {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
+
+.course {
+    flex: 1 1 calc(33.333% - 0.5rem); /* máximo 3 por linha */
+    max-width: 160px;
+    min-width: 120px;
+    padding: 0.3rem 0.5rem;    /* menos padding = menor altura */
+    border: 1px solid #ccc;
+    border:none;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.85rem;        /* fonte menor = menor altura */
+    line-height: 1;            /* compacta a altura da linha */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.course.completed {
+    background-color: #e1ede6; /* verde clarinho */
+    border-left: 4px solid green;
+    color: #155724;
+    border:none;
+}
+
+.course.not-completed {
+    background-color: #f8d7da; /* vermelho clarinho */
+    border-left: 4px solid red;
+    color: #721c24;
+    border:none;
+}
+
+.course.completed:hover,
+.course.not-completed:hover {
+    background-color: #E07A5F;
+    color: white;
+    transform: scale(1.03);
+}
+
+.filters {
+    display: flex;           /* coloca em linha */
+    gap: 1rem;               /* espaço entre os botões */
+    justify-content: center; /* centraliza na tela */
+    margin: 1rem 0;          /* espaço vertical */
+}
+
+.filters button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border:none;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #E07A5F;
+    color: white;
+}
+
+.filters button.active {
+    background-color: #3D405B;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 
 /* ----------- NAVIGATION -------------- */
 .navigation {
@@ -110,8 +188,10 @@ header span {
     text-align: center;
     padding: .8rem 10px;
     color: #3D405B;
+    background-color: #d7d7d7;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
+    border:none;
 }
 
 .navigation li.current {
@@ -150,6 +230,7 @@ footer {
     height: 44px;
     border: #ccc solid 1px; 
     border-radius: 22px;
+    border:none;
 }
 
 .social img {
