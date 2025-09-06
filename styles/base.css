@@ -79,6 +79,11 @@ header span {
     padding: 1rem;
 }
 
+.student-photo img {
+    display: block;
+    margin: 0 auto;
+}
+
 /* ----------- NAVIGATION -------------- */
 .navigation {
     display: none;
