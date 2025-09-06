@@ -11,6 +11,7 @@ deep blue #3D405B
 /* ------- MAIN H1 --------- */
 main h1 {
   margin-top: 0.3rem;   /* diminui o espaço acima do h1 */
+  margin-bottom: 0.3rem;
 }
 
 main {
