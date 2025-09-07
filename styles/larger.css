@@ -1,8 +1,19 @@
 @media only screen and (min-width: 38rem) {
     header, main, nav, footer {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
+
+    /* ------- MAIN H1 --------- */
+    main h1 {
+    margin-top: 0.3rem;   /* diminui o espaço acima do h1 */
+    margin-bottom: 0.3rem;
+    }
+
+    main {
+    padding-top: 0;       /* garante que o main não está empurrando o h1 para baixo */
+    }
+
 
     .about-student {
         flex-direction: row;
@@ -29,13 +40,12 @@
        /* border: 1px solid #ddd; */
         border: none;
     }
-    /* TERCEIRA SEÇÃO (OCUPA A LARGURA TOTAL) */
-    .courses {
-        background-color: #f9f9f9;
-        padding: 1rem;
-        border: 1px solid #ddd;
-    }
 
+    .course {
+        flex: 1 1 calc(50% - 0.5rem); /* 2 por linha em telas médias */
+        max-width: 140px;
+    }
+    
 
     header {
         grid-template-columns: 24px auto;
@@ -48,8 +58,10 @@
     .navigation {
         display: block;
         border-bottom: solid 1px #eee;
-        background-color: rgb(70 83 107 / 30%);
+       /* background-color: rgb(70 83 107 / 30%); */
+        background-color: #eee;
         margin-top: 5px;
+        border:none;
     }
 
     .navigation ul {
@@ -64,3 +76,4 @@
         border: none;
     }
 }
+

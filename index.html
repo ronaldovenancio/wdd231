@@ -7,7 +7,7 @@
     <title>WDD 231: Web Frontend Development - Ronaldo Venancio</title>
     <meta name="description"
         content="This page is part of the WDD 231 - Web Frontend Development I course and demonstrates how to use media queries to create responsive layouts using HTML and CSS.">
-    <meta name="author" content="Ronaldo Venancio">
+    <meta name="author" content="Ronaldo Venancio da Silva">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -43,20 +43,20 @@
     <main>
         <h1>Home</h1>
 
-        <section class="about-student">
-            <div class="about-me">
+        <div class="about-student">
+            <section class="about-me">
                 <h2>About Me</h2>
                 <p>Hello, everyone.</p>
                 <p>I am a math teacher in Military School in Recife-PE and I have a son, Raphael, 
                     he is 24 years old and he is a Business Administration
                     student in UPE.</p>
                 <p>I like to study new subjects, mainly, in the computational and math field.</p>
-            </div>
-            <div class="student-photo">
+                </section>
+            <section class="student-photo">
                 <h2>Student Photo</h2>
-                <img src="images/ronaldovenancio.webp" alt="Ronaldo Venancio Photo" width="200" height="200" />
-            </div>
-        </section>
+                <img src="images/ronaldovenancio.webp" alt="Ronaldo Venancio" width="200" height="200" />
+            </section>
+        </div>
         
         <section class="courses">
             <h2>Web Certificate Courses</h2>
@@ -66,20 +66,18 @@
                 <button id="wdd-btn">WDD Courses</button>
                 <button id="cse-btn">CSE Courses</button>
             </div>
+
+            <!-- Total credits note -->
+            <p class="credit-note">The total credits for courses listed above is <span id="total-credits"></span></p>
         
             <div id="course-list" class="course-list"></div>
-            <!-- Total credits note -->
-            <p class="credit-note">The total credits for courses listed above is 6</p>
+           
         </section>
-
-
-
-
 
     </main>
     <footer>
         <div class="social">
-            <a href="https://github.com/ronaldovenancio" target="_blank"><img src="images/github.svg" alt="github"
+            <a href="https://github.com/ronaldovenancio" target="_blank"><img src="images/github.svg" alt="my github"
                     width="16" height="16"></a>
             <a href="https://linkedin.com/in/ronaldo-venancio-b2772280/" target="_blank"><img src="images/linkedin.svg"
                     alt="linked in" width="16" height="16"></a>
