@@ -212,6 +212,3 @@ navbuttom.addEventListener('click', () => {
 
 
 
-
-
-

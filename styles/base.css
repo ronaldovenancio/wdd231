@@ -101,25 +101,40 @@ header span {
 .course-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
     justify-content: center;
     margin-top: 1rem;
 }
 
+/*
 .course {
-    flex: 1 1 calc(33.333% - 0.5rem); /* máximo 3 por linha */
+    flex: 1 1 calc(33.333% - 0.5rem); 
     max-width: 160px;
     min-width: 120px;
-    padding: 0.3rem 0.5rem;    /* menos padding = menor altura */
+    padding: 0.3rem 0.5rem;    
     border: 1px solid #ccc;
     border:none;
     border-radius: 6px;
     background-color: #f9f9f9;
     text-align: center;
     font-weight: 600;
-    font-size: 0.85rem;        /* fonte menor = menor altura */
-    line-height: 1;            /* compacta a altura da linha */
+    font-size: 0.85rem;        
+    line-height: 1;            
     transition: transform 0.2s ease, background-color 0.3s ease;
+}
+*/
+
+.course {
+    flex: 1 1 100%;
+    /* ocupa toda a largura */
+    width: 90%;
+    max-width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    /* garante que não fique limitado */
 }
 
 .course.completed {
@@ -172,14 +187,6 @@ header span {
 }
 
 
-
-
-
-
-
-
-
-
 /* ----------- NAVIGATION -------------- */
 .navigation {
     display: none;
@@ -207,8 +214,14 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: #eee; 
    /* background-color: rgb(70 83 107 / 15%); */
+}
+
+.navigation li.current a {
+    background-color: var(--terra-cotta);
+    color: #3D405B;
+    font-weight: bold;
 }
 
 .navigation a:hover {

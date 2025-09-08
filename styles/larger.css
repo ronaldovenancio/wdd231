@@ -41,10 +41,18 @@
         border: none;
     }
 
+    .course-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
     .course {
-        flex: 1 1 calc(50% - 0.5rem); /* 2 por linha em telas médias */
+        flex: 1 1 calc(50% - 0.5rem); 
         max-width: 140px;
     }
+    
     
 
     header {
