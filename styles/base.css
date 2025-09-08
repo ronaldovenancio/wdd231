@@ -228,6 +228,10 @@ header span {
     background-color: #E07A5F;
 }
 
+.navigation li.current a:hover {
+    background-color: #5f93e0;
+}
+
 
 h1 {
     margin-left: 10px;
