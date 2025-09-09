@@ -48,6 +48,7 @@ h2 {
     width: 0.75rem;
     height: 0.75rem;
     border: 1px solid #bbb;
+    border:none;
 }
 
 .key>p {
@@ -72,6 +73,7 @@ section {
     padding: 0.5rem;
     background-color: #eee;
     border: 1px solid rgb(0 0 0 / 10%);
+    border:none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,6 +91,7 @@ img {
     box-shadow: 0 0 30px #777;
     height: 200px;
     border: 1px solid #111;
+    border:none;
 }
 
 li>img {
@@ -101,6 +104,7 @@ li>img {
     top: 1.5rem;
     right: 2rem;
     border: 1px solid #ccc;
+    border:none;
     background-color: lightyellow;
     padding: 0.25rem;
     display: grid;
@@ -123,6 +127,7 @@ li>img {
 #cards section {
     background: #fff;
     border: 1px solid #ddd;
+    border:none;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 1rem;
