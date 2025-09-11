@@ -1,0 +1,331 @@
+:root {
+    --space-xs: 0.5rem;
+    /* 8px */
+    --space-sm: 1rem;
+    /* 16px */
+    --space-md: 2rem;
+    /* 32px */
+    --space-lg: 3rem;
+    /* 48px */
+    --font-title: 32px;
+        --font-subtitle: 24px;
+        --font-body: 20px;
+    
+        --font-title-list: 24px;
+        --font-subtitle-list: 18px;
+        --font-body-list: 16px;
+}
+
+/* Small screens (menos de 520px) */
+@media screen and (max-width: 37.99rem) {
+    .view-list .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* uma coluna única */
+        gap: var(--space-xs);
+        width: 90%;
+        /* reduz largura e deixa margem automática */
+        margin: var(--space-sm) auto;
+        /* centraliza horizontalmente */
+       /* text-align: center;
+        /* opcional: centraliza o conteúdo */
+    }
+
+    .view-list .card>* {
+        text-align: center;
+        /* centraliza todos os elementos internos */
+    }
+}
+
+/* Large Display Properties (~ 520px+ wide) */
+@media screen and (min-width: 38rem) {
+        
+    #profile {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #header-links {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding: 6px 6px;
+    }
+
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 100%;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-rows: 1fr auto;
+    }
+
+    footer, .home-grid, .discover-box, #memberships, .view-list {
+        gap: var(--space-sm);
+    }
+
+    .info-company {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .info-contact {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-top: 70px;
+        text-align: left;
+        padding-top: var(--space-lg);
+    }
+
+    .info-stats {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    /* Home Page Content */
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .call-to-action {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .events {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .weather {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .spotlight {
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+
+    .join {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #join-button {
+        margin: 20px auto;
+        margin: var(--space-md) auto;
+    }
+
+    /* Discover Page Content */
+
+    .discover-box {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: var(--space-lg);
+    }
+
+
+    /* Join Page Content */
+
+    #memberships {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #mem-selection {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #mem-description {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #mem-description p {
+        margin: 48px auto 0px auto;
+    }
+
+    textarea {
+        max-width: 90%;
+    }
+
+    /* Directory Page Content */
+
+.view-cards{
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+
+
+
+    .view-cards .card {
+        margin: 10px auto;
+    }
+        
+
+    .view-cards .card {
+     /*   display: block; 
+        flex-wrap: wrap; */
+        /* permite quebra se necessário */
+        gap: 0.125rem 0.25rem;
+        /* espaço vertical e horizontal reduzido */
+        align-items: center;
+        /* alinha verticalmente */
+        padding: 0.125rem 0.25rem;
+        /* padding interno mínimo */
+        margin: 10px auto;
+    }
+
+
+
+    .view-cards .card-title {
+        display: flex;
+        width: 100%;
+        /* ocupa toda a linha do card */
+        justify-content: center;
+        text-align: center;
+        /* centraliza horizontalmente o texto */
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        /* espaçamento abaixo do título */
+    }
+
+
+    .view-cards .card .card-address,
+    .view-cards .card .card-phone,
+    .view-cards .card .card-url {
+        margin: 0;
+        padding: 0 0.125rem;
+        /* padding horizontal mínimo */
+        font-size: 0.875rem;
+        /* opcional: reduz um pouco a fonte se quiser compactar mais */
+    }
+
+    .view-cards .card-logo {
+        margin-right: 0.25rem;
+        margin: 0 auto 0.5rem auto;
+            /* centraliza e adiciona 0.5rem abaixo da imagem */
+        /* diminui o espaço entre logo e os outros campos */
+    }
+        
+
+
+    .view-list .card {
+        display: grid;
+        min-height: 80px;
+        border-bottom: 1px solid #ddd; /* separa as linhas */
+        padding: var(--space-xs) 0;
+        grid-template-columns: minmax(150px, 250px) minmax(150px, 250px) minmax(350px, 2fr) 1fr minmax(350px, 2fr);
+        grid-auto-rows: 1fr;  /* força altura igual */
+        width: 100%;
+        margin: 0px;
+        border-bottom: 1px solid #ddd;
+        align-items: stretch;    /* estica as células para mesma altura */     
+    }  
+    
+    
+
+    /* Garante que todos os elementos internos herdem a cor de fundo */
+        .view-list .card>* {
+        background-color: inherit;
+        box-sizing: border-box;
+        margin: 0;
+        padding: var(--space-xs);
+           
+           
+    }
+
+       
+/*
+    .view-list .card:nth-child(even) .card-title {
+        background-color: var(--black);
+    } 
+*/
+    /* cores alternadas para linhas */
+    .view-list .card:nth-child(odd),
+    .view-list .card:nth-child(odd)>* {
+        background-color: #ffffff;  /* branco */
+    }
+    
+    .view-list .card:nth-child(even),
+    .view-list .card:nth-child(even)>* {
+        background-color: #f5f5f5;  /* cinza clarinho */
+    }
+
+
+    .view-list .card-titles {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: var(--font-body-list);
+        color: #333;
+    }
+
+    .view-list .card-address {
+        grid-column: 3/4;
+        grid-row: 1/2; 
+        min-width: 350px;
+            /* largura mínima válida */
+        padding: var(--space-xs);
+            /* usa variável de espaçamento */    
+        font-size: var(--font-body-list);
+        color: #333;
+        background-color: inherit;
+    }
+
+
+    .view-list .card-phone {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        text-align: center;
+        white-space: nowrap;  /* evita quebra do número */
+        background-color: inherit;
+    }
+
+    .view-list .card-url {
+        grid-column: 5/6;
+        grid-row: 1/2;
+        word-break: break-word;
+        color: blue;
+        background-color: inherit;
+    }
+
+    .view-list .card-logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: block;
+        max-width: 80px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+       
+}

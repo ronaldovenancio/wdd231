@@ -1,0 +1,65 @@
+[
+    {
+        "name": "TechNova Solutions",
+        "address": "123 Innovation Ave, São Paulo, SP",
+        "phone": "+55 11 4002-8922",
+        "website": "https://www.technova.com.br",
+        "image": "technova.png",
+        "membership_level": 3,
+        "description": "Specializing in cloud services, AI, and enterprise IT solutions."
+    },
+    {
+        "name": "EcoBuild Construtora",
+        "address": "456 Green Street, Rio de Janeiro, RJ",
+        "phone": "+55 21 3456-7890",
+        "website": "https://www.ecobuild.com.br",
+        "image": "ecobuild.png",
+        "membership_level": 2,
+        "description": "Leaders in sustainable construction and eco-friendly housing projects."
+    },
+    {
+        "name": "Sabor Brasil Restaurante",
+        "address": "789 Avenida Central, Fortaleza, CE",
+        "phone": "+55 85 3344-2211",
+        "website": "https://www.saborbrasil.com.br",
+        "image": "saborbrasil.png",
+        "membership_level": 1,
+        "description": "Traditional Brazilian cuisine with a modern twist."
+    },
+    {
+        "name": "EduTech Academy",
+        "address": "101 Learning Blvd, Belo Horizonte, MG",
+        "phone": "+55 31 9988-7766",
+        "website": "https://www.edutechacademy.com",
+        "image": "edutech.png",
+        "membership_level": 3,
+        "description": "Offering online and in-person courses in technology and business."
+    },
+    {
+        "name": "AgroFuturo",
+        "address": "202 Farm Road, Cuiabá, MT",
+        "phone": "+55 65 2233-4455",
+        "website": "https://www.agrofuturo.com",
+        "image": "agrofuturo.png",
+        "membership_level": 2,
+        "description": "Innovating agribusiness with smart farming technologies."
+    },
+    {
+        "name": "MediCare Plus",
+        "address": "303 Health Park, Curitiba, PR",
+        "phone": "+55 41 1234-5678",
+        "website": "https://www.medicareplus.com.br",
+        "image": "medicare.png",
+        "membership_level": 1,
+        "description": "Healthcare solutions and medical insurance provider."
+    },
+    {
+        "name": "BlueWave Turismo",
+        "address": "404 Ocean Drive, Recife, PE",
+        "phone": "+55 81 9988-1122",
+        "website": "https://www.bluewavetour.com.br",
+        "image": "bluewave.png",
+        "membership_level": 3,
+        "description": "Tourism agency specializing in beach destinations and eco tours."
+    }
+]
