@@ -35,6 +35,46 @@
         text-align: center;
         /* centraliza todos os elementos internos */
     }
+
+    .header-title {
+        font-size: 1.4rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column; /* empilha os itens verticalmente */
+        align-items: flex-start; /* alinha à esquerda */
+        padding: 0;
+    }
+
+    .navigation .nav-li {
+        width: 100%; /* cada botão ocupa toda a largura */
+        margin: 0.25rem 0; /* espaço entre os botões */
+    }
+
+    .navigation .nav-li a {
+        display: block; /* faz o link preencher o li */
+        width: 100%;
+        padding: 0.75rem 1rem; /* aumenta área clicável */
+        text-align: left; /* opcional: mantém o texto à esquerda */
+      /*  background-color: #f0f0f0; /* opcional: cor de destaque */
+        border-radius: 5px; /* opcional: bordas arredondadas */
+    }
+
+
+    #nav-icon {
+        color: white; /* Cor desejada */
+        font-size: 28px; /* Opcional: aumenta o tamanho do ícone */
+    }
+
+    /* Se você quiser mudar o fundo do botão também */
+    #nav-button {
+        background-color: transparent; /* Cor de fundo do botão */
+        border: none; /* Remove borda se houver */
+        padding: 8px;
+        border-radius: 5px; /* opcional */
+    }
+
 }
 
 /* Large Display Properties (~ 520px+ wide) */

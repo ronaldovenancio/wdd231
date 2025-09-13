@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Directory Page</title>
+    <title>Recife Chamber of Commerce Directory</title>
     <meta name="description"
         content="Explore the Recife Chamber of Commerce Directory to find member businesses, services, and contact information. Connect with local enterprises efficiently and discover new opportunities.">
     <meta property="og:description"
         content="Explore the Recife Chamber of Commerce Directory to find member businesses, services, and contact information. Connect with local enterprises efficiently and discover new opportunities.">
     <meta name="og:type" content="website">
     <meta property="og:title" content="WDD231 - Web Frontend Development - Recife Chamber of Commeerce - Directory">
-     <meta property="og:image" content="https://images.app.goo.gl/xepRjvRTSMs75R1KA">
+    <meta property="og:image" content="https://images.app.goo.gl/xepRjvRTSMs75R1KA">
     <meta property="og:url" content="https://ronaldovenancio.github.io/wdd231/chamber">
     <meta name="author" content="Ronaldo Venancio da Silva">
     <link rel="icon" href="/wdd231/favicon.ico">
-    
-    
+
+
     <!-- Fonts (optional) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
         rel="stylesheet">
 
 
-   
+
     <!-- JavaScript -->
     <script src="scripts/get-dates.js" defer></script>
     <script src="scripts/responsive-menu.js" defer></script>
@@ -40,38 +40,43 @@
 </head>
 
 <body>
-    <header>
-        <div class="page-content">
+    <!-- Enables Font Awesome Icons -->
+    <!-- Begining of content -->
+    <div class="page-content">
+        <!--   <span id="banner"></span> -->
+        <header>
+            <span>Recife Chamber of Commerce Site Title</span>
+            <!--  <button id="ham-btn" class="hamburger"></button> -->
             <img id="header-logo" src="../chamber/images/chamber-logo.webp" alt="Recife Chamber of Commerce Logo"
-                loading="lazy" width="100" height="100">
-            <span class="header-title">Recife Chamber of Commerce</span>
-        </div>
-    
+                width="100" height="100">
+            <!--   <h1 id="header-company">Recife Chamber of Commerce Page's Title</h1> -->
+
+            <!--  <span id="current-date"></span> -->
+            <div id="header-links">
+                <a href="https://www.facebook.com/" target="_blank"><img id="link-facebook"
+                        src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="64" height="64"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img id="link-linkedin"
+                        src="../chamber/images/linkedin-w-100x100.webp" alt="LinkedIn Logo" width="64" height="64"></a>
+            </div>
+        </header>
+
         <nav>
             <ul class="navigation">
                 <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li>
+                <!-- Hamburger Menu -->
                 <li class="nav-li"><a href="index.html">Home</a></li>
                 <li class="nav-li"><a href="discover.html">Discover</a></li>
                 <li class="nav-li"><a id="nav-current" href="directory.html">Directory</a></li>
+                <!-- Current Page or Atual Page -->
                 <li class="nav-li"><a href="join.html">Join</a></li>
             </ul>
-    
-            <!-- Social media agora dentro do nav -->
-            <div id="header-links">
-                <a href="https://www.facebook.com/" target="_blank"><img id="link-facebook"
-                        src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="32" height="32"></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img id="link-linkedin"
-                        src="../chamber/images/linkedin-w-100x100.webp" alt="LinkedIn Logo" width="32" height="32"></a>
-            </div>
         </nav>
-    </header>
 
-        
         <main>
-            <h1>Chamber Directory</h1>
+            <h1>Recife Chamber of Commerce Directory</h1>
 
             <div class="directory-box">
-             <!--   <h2 class="box-title">Business Directory</h2> -->
+                <!--   <h2 class="box-title">Business Directory</h2> -->
                 <div id="view-buttons" class="box-content">
                     <button id="button-cards"><i class="fas fa-th-large"></i><b>Card</b></button>
                     <button id="button-list"><i class="fas fa-list"></i><b>List</b></button>
@@ -82,30 +87,32 @@
             </div>
         </main>
 
-    <footer>
-        <div class="info-company">
-            <img id="footer-logo" src="../chamber/images/chamber-logo.webp" alt="Recife City Chamber Logo" width="180" height="180">
-            <h3 id="footer-company">Recife Chamber of Commerce</h3>
-        </div>
-        <div class="info-contact">
-            <p id="company-address"><strong>123 Mark Zero Street, Recife - Pernambuco, 12345</strong></p>
-            <p id="company-email"><strong>contactus@recifecitychamber.pe</strong></p>
-            <p id="company-phone"><strong>(081)-9876-5432</strong></p>
-            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i>
-                </span> <a href="https://maps.app.goo.gl/MJjt9VY4aYwTdUcy9">Location Map</a></p>
-        </div>
-        
-        <div class="info-stats">
-            <!-- 
+        <footer>
+            <div class="info-company">
+                <img id="footer-logo" src="../chamber/images/chamber-logo.webp" alt="Recife City Chamber Logo"
+                    width="180" height="180">
+                <h3 id="footer-company">Recife Chamber of Commerce</h3>
+            </div>
+            <div class="info-contact">
+                <p id="company-address"><strong>123 Mark Zero Street, Recife - Pernambuco, 12345</strong></p>
+                <p id="company-email"><strong>contactus@recifecitychamber.pe</strong></p>
+                <p id="company-phone"><strong>(081)-9876-5432</strong></p>
+                <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i>
+                    </span> <a href="https://maps.app.goo.gl/MJjt9VY4aYwTdUcy9">Location Map</a></p>
+            </div>
+
+            <div class="info-stats">
+                <!-- 
             <p id="visits">Total visits: <span id="visit-count"></span> | Days since last visit: <span id="visit-since"></span>
             </p>
             -->
-            <p id="credits"></p>
-            <p id="copy">&copy; <span id="currentYear"></span> Recife City Chamber .:|:. Ronaldo Venancio da Silva
-                - WDD231 .:|:. Last Modification: <span id="lastModified" class="highlight"></span></p>
-        </div>   
-    </footer>
-    
+                <p id="credits"></p>
+                <p id="copy">&copy; <span id="currentYear"></span> Recife City Chamber .:|:. Ronaldo Venancio da Silva
+                    - WDD231 .:|:. Last Modification: <span id="lastModified" class="highlight"></span></p>
+            </div>
+
+        </footer>
+    </div> <!-- End of content -->
 </body>
 
 </html>

@@ -21,32 +21,32 @@
     --bad: #cb2121;
 
     --background: #f7f9fc;
-        /* cor clara de fundo */
-        --accent3-color: #ff6600;
-        /* exemplo para CTA e botões */
-        --text-color-main: #222222;
-        --text-color-secondary: #ffffff;
-        --status-red: #ff3333;
-    
+    /* cor clara de fundo */
+    --accent3-color: #ff6600;
+    /* exemplo para CTA e botões */
+    --text-color-main: #222222;
+    --text-color-secondary: #ffffff;
+    --status-red: #ff3333;
+
     --space-xs: 0.5rem;
-        /* 8px */
-        --space-sm: 1rem;
-        /* 16px */
-        --space-md: 2rem;
-        /* 32px */
-        --space-lg: 3rem;
-        /* 48px */
-        --font-title: 32px;
-        --font-subtitle: 24px;
-        --font-body: 20px;
-    
-        --font-title-list: 24px;
-        --font-subtitle-list: 18px;
-        --font-body-list: 16px;
+    /* 8px */
+    --space-sm: 1rem;
+    /* 16px */
+    --space-md: 2rem;
+    /* 32px */
+    --space-lg: 3rem;
+    /* 48px */
+    --font-title: 32px;
+    --font-subtitle: 24px;
+    --font-body: 20px;
+
+    --font-title-list: 24px;
+    --font-subtitle-list: 18px;
+    --font-body-list: 16px;
 
 
     --highlight: #ffae00;
-        /* substitui orange */
+    /* substitui orange */
 
     /* Fonts */
     --heading: 'Playfair Display', georgia, serif;
@@ -164,33 +164,6 @@ header {
     padding: 0.5rem 1rem;
 }
 
-.header-title {
-    font-size: 2rem;
-    /* aumenta o tamanho da fonte */
-    font-weight: 700;
-    color:white;
-    /* deixa em negrito */
-    /*color: #004080;
-    /* cor destacada, você pode mudar */
-   /* text-transform: uppercase;
-    /* opcional, deixa em maiúsculas */
-    letter-spacing: 1px;
-    /* espaçamento entre letras */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    /* leve sombra */
-    display: inline-block;
-    /* facilita ajustes de margin/padding */
-    margin-left: 1rem;
-    /* espaço do logo, se necessário */
-}
-
-/* Logo + nome */
-.page-content {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 #header-logo {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -210,22 +183,6 @@ header {
     padding: 6px 0px;
 }
 
-/* Ícones sociais */
-#header-links {
-    display: flex;
-    gap: 0.5rem;
-}
-
-#header-links {
-    background-color: transparent;
-    /* remove qualquer cor de fundo */
-}
-
-#header-links a {
-    background-color: transparent;
-    /* caso os links tenham fundo */
-}
-
 
 #link-facebook,
 #link-linkedin {
@@ -237,14 +194,9 @@ header {
 }
 
 #header-links img {
-   /* border: 4px solid var(--primary);
+    /* border: 4px solid var(--primary);
     border:none; */
     border-radius: 40px;
-}
-
-#header-links img {
-    width: 24px;
-    height: 24px;
 }
 
 #header-links img:hover {
@@ -257,15 +209,6 @@ header {
 
 /* Navigation */
 
-/* Agrupa menu + social */
-nav {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    /* espaço entre lista de navegação e ícones sociais */
-}
-
-
 .navigation {
     text-align: center;
     padding: 0px;
@@ -273,54 +216,13 @@ nav {
     list-style: none;
 }
 
-.navigation {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #222;
-}
-
 nav li {
     display: none;
     width: 100%;
 }
 
-nav .nav-li a {
-    display: inline-block;
-    /* permite aplicar largura */
-    min-width: 100px;
-    /* ajusta para a largura que quiser */
-    text-align: center;
-    /* centraliza o texto dentro do botão */
-    padding: 0.5rem 1rem;
-    /* aumenta área clicável */
-}
-
 nav li:first-child {
     display: block;
-}
-
-#nav-icon {
-    color: white;
-    /* Cor desejada */
-}
-
-#nav-button {
-    background-color: transparent;
-    /* Cor do fundo do botão */
-    border: none;
-    /* Remove borda se houver */
-    padding: 8px;
-    /* Ajusta o tamanho do botão */
-    border-radius: 5px;
-    /* Opcional: borda arredondada */
 }
 
 #nav-button.active {
@@ -350,18 +252,9 @@ nav a:visited {
     color: var(--white);
 }
 
-nav a {
-    background-color: transparent;
-    /* remove qualquer fundo */
-    color: inherit;
-    /* mantém a cor do texto do link */
-    text-decoration: none;
-    /* opcional: remove sublinhado */
-}
-
 nav a:hover {
     background-color: var(--primary);
-   /* background-color: red; */
+    /* background-color: red; */
     color: var(--white);
     box-shadow: 0px 2px 7px 2px var(--shadow);
 }
@@ -1095,7 +988,7 @@ textarea:focus {
 
 .directory-box {
     border: 1px solid var(--background);
-    border:none;
+    border: none;
     width: auto;
     height: auto;
     margin-bottom: 60px;
@@ -1152,8 +1045,10 @@ textarea:focus {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr 1fr 1fr;
-    width: 100%;  /* ao invés de fixo 350px */
-    max-width: 350px;  /* mantém limite sem quebrar responsividade */
+    width: 100%;
+    /* ao invés de fixo 350px */
+    max-width: 350px;
+    /* mantém limite sem quebrar responsividade */
     margin: 10px auto;
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
