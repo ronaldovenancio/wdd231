@@ -1,0 +1,235 @@
+/* ============================== */
+/*      Google Fonts Import       */
+/* ============================== */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@400;700;800&display=swap');
+
+/* ============================== */
+/*            Variables           */
+/* ============================== */
+:root {
+    /* Colors */
+    --primary: #a0001e;
+    --secondary: #180e0d;
+    --accent1: #9d6451;
+    --accent2: #e2beab;
+    --accent3-color: #ff6600;
+    --white: #ffffff;
+    --black: #000000;
+    --shadow: #0303038e;
+    --shading: #03030330;
+    --background: #f7f9fc;
+
+    /* Status Colors */
+    --good: #089f3f;
+    --poor: #bdb630;
+    --bad: #cb2121;
+    --status-red: #ff3333;
+    
+    /* Typography */
+    --heading: 'Playfair Display', georgia, serif;
+    --paragraph: 'DM Sans', tahoma, sans-serif;
+    
+    /* Font sizes */
+    --font-title: 32px;
+    --font-subtitle: 24px;
+    --font-body: 20px;
+    --font-title-list: 24px;
+    --font-subtitle-list: 18px;
+    --font-body-list: 16px;
+
+    /* Spacing */
+    --space-xs: 0.5rem;   /* 8px */
+    --space-sm: 1rem;     /* 16px */
+    --space-md: 2rem;     /* 32px */
+    --space-lg: 3rem;     /* 48px */
+}
+
+/* ============================== */
+/*          Global Styles         */
+/* ============================== */
+body {
+    margin: 0 auto;
+    background-color: var(--black);
+    font-family: var(--paragraph);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading);
+    font-weight: 800;
+    margin: 0;
+}
+
+h1 { font-size: 40px; }
+h2, h3 { font-size: 32px; }
+
+h4, h5, h6, button, label {
+    font-family: var(--paragraph);
+    font-weight: 500;
+    margin: 0 0 4px 0;
+}
+
+li, p, figcaption, a, span {
+    font-family: var(--paragraph);
+    font-weight: 400;
+    margin: 0;
+}
+
+p { margin: 0 0 4px 0; }
+
+button, input[type="submit"] {
+    border: none;
+    padding: 14px 32px;
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0px 2px 5px 0px var(--shadow);
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: var(--secondary);
+}
+
+button:active, input[type="submit"]:active {
+    background-color: var(--black);
+    color: var(--accent2);
+    box-shadow: none;
+}
+
+/* ============================== */
+/*            Header              */
+/* ============================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+#header-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#header-links img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#header-links img:hover { border: 4px solid var(--white); }
+#header-links img:active { border: 4px solid var(--accent2); }
+
+/* ============================== */
+/*           Navigation           */
+/* ============================== */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navigation {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #222;
+}
+
+nav a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0px 2px 7px 2px var(--shadow);
+}
+
+.active {
+    background-color: var(--black);
+    color: var(--accent1);
+}
+
+/* ============================== */
+/*             Footer             */
+/* ============================== */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info div { flex: 1; min-width: 150px; }
+
+.info-left p, .info-right p {
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.social a:hover { background-color: #eec22d; }
+
+.social img { width: 16px; height: 16px; }
+
+/* ============================== */
+/*          Responsividade        */
+/* ============================== */
+@media (max-width: 600px) {
+    footer {
+        font-size: 14px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-left p, .info-right p { font-size: 14px; }
+}
