@@ -14,11 +14,6 @@
         --font-title-list: 24px;
         --font-subtitle-list: 18px;
         --font-body-list: 16px;
-    /* Colors */
-    --primary: #a0001e;
-    --secondary: #180e0d;
-    --accent1: #9d6451;
-    --accent2: #e2beab;
 }
 
 /* Small screens (menos de 520px) */
@@ -376,7 +371,7 @@ display: grid;
     .view-list .card-url {
         grid-column: 4/5;
         grid-row: 1/2;
-     /*   word-break: break-word; */
+        word-break: break-word;
         color: blue;
         background-color: inherit;
     }

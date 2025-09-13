@@ -1,3 +1,7 @@
+/* Fonts from Google Fonts @ https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@400;700;800&display=swap');
+
+
 :root {
     /* Colors */
     --primary: #a0001e;
@@ -78,7 +82,7 @@ label {
 h1,
 h2,
 h3 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--heading);
     font-weight: 800;
     margin: 0px;
 }
@@ -87,7 +91,7 @@ h4,
 h5,
 h6,
 button {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--paragraph);
     font-weight: 500;
     margin: 0px 0px 4px 0px;
 }
@@ -96,13 +100,13 @@ a,
 li,
 span,
 label {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--paragraph);
     font-weight: 400;
     margin: 0px;
 }
 
 p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--paragraph);
     font-weight: 400;
     margin: 0px 0px 4px 0px;
 }
@@ -380,7 +384,7 @@ picture {
 
 figcaption {
     padding: 6px 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--paragraph);
     font-weight: 400;
     background-color: var(--black);
     color: var(--white);
@@ -882,7 +886,7 @@ fieldset {
 
 legend {
     padding: 0px 4px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--paragraph);
     font-size: 18px;
 }
 
@@ -890,7 +894,7 @@ form label .label-title,
 form h2 {
     display: block;
     margin-top: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--paragraph);
     font-weight: 800;
     font-size: 24px;
 }
@@ -953,7 +957,7 @@ textarea {
     max-width: 600px;
     margin: 0px auto;
     border-radius: 30px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--paragraph);
     font-weight: 500;
     font-size: 24px;
 }
