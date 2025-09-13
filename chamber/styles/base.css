@@ -1265,3 +1265,129 @@ textarea:focus {
     background-color: inherit;
     color:#000000
 }
+
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info div {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-info p {
+    margin: 0.1rem 0;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.info-left p, .info-right p {
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+/* ------------------ SOCIAL ------------------ */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.social img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background-color: #eec22d;
+}
+
+/* ------------------ LAST MODIFIED ------------------ */
+#lastModified {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.highlight {
+  display: inline; /* ou inline-block */
+  white-space: nowrap; /* opcional, evita quebra */
+  text-align: left;
+}
+
+#lastModified {
+  display: inline; /* garante que o span não quebre linha */
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 14px; /* menor em telas pequenas */
+  }
+
+  footer .footer-info {
+    flex-direction: column; /* garante que fique empilhado no mobile */
+    text-align: center;
+  }
+
+footer .footer-info p {
+    margin: 0.25rem 0; /* menos espaçamento */
+  }
+
+  .highlight {
+        display: block; /* ou inline-block */
+        white-space: nowrap; /* opcional, evita quebra */
+        text-align: left;
+    }
+
+#lastModified {
+    display: inline; /* garante que o span não quebre linha */
+}
+
+.info-left p, .info-right p {
+        font-size: 14px;
+    }
+
+.highlight, #lastModified {
+        display: block;
+        text-align: left;
+        margin-top: 0.2rem;
+    }
+
+}

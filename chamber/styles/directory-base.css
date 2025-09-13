@@ -21,32 +21,32 @@
     --bad: #cb2121;
 
     --background: #f7f9fc;
-    /* cor clara de fundo */
-    --accent3-color: #ff6600;
-    /* exemplo para CTA e botões */
-    --text-color-main: #222222;
-    --text-color-secondary: #ffffff;
-    --status-red: #ff3333;
-
+        /* cor clara de fundo */
+        --accent3-color: #ff6600;
+        /* exemplo para CTA e botões */
+        --text-color-main: #222222;
+        --text-color-secondary: #ffffff;
+        --status-red: #ff3333;
+    
     --space-xs: 0.5rem;
-    /* 8px */
-    --space-sm: 1rem;
-    /* 16px */
-    --space-md: 2rem;
-    /* 32px */
-    --space-lg: 3rem;
-    /* 48px */
-    --font-title: 32px;
-    --font-subtitle: 24px;
-    --font-body: 20px;
-
-    --font-title-list: 24px;
-    --font-subtitle-list: 18px;
-    --font-body-list: 16px;
+        /* 8px */
+        --space-sm: 1rem;
+        /* 16px */
+        --space-md: 2rem;
+        /* 32px */
+        --space-lg: 3rem;
+        /* 48px */
+        --font-title: 32px;
+        --font-subtitle: 24px;
+        --font-body: 20px;
+    
+        --font-title-list: 24px;
+        --font-subtitle-list: 18px;
+        --font-body-list: 16px;
 
 
     --highlight: #ffae00;
-    /* substitui orange */
+        /* substitui orange */
 
     /* Fonts */
     --heading: 'Playfair Display', georgia, serif;
@@ -164,6 +164,33 @@ header {
     padding: 0.5rem 1rem;
 }
 
+.header-title {
+    font-size: 2rem;
+    /* aumenta o tamanho da fonte */
+    font-weight: 700;
+    color:white;
+    /* deixa em negrito */
+    /*color: #004080;
+    /* cor destacada, você pode mudar */
+   /* text-transform: uppercase;
+    /* opcional, deixa em maiúsculas */
+    letter-spacing: 1px;
+    /* espaçamento entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* leve sombra */
+    display: inline-block;
+    /* facilita ajustes de margin/padding */
+    margin-left: 1rem;
+    /* espaço do logo, se necessário */
+}
+
+/* Logo + nome */
+.page-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 #header-logo {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -183,6 +210,22 @@ header {
     padding: 6px 0px;
 }
 
+/* Ícones sociais */
+#header-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#header-links {
+    background-color: transparent;
+    /* remove qualquer cor de fundo */
+}
+
+#header-links a {
+    background-color: transparent;
+    /* caso os links tenham fundo */
+}
+
 
 #link-facebook,
 #link-linkedin {
@@ -194,9 +237,14 @@ header {
 }
 
 #header-links img {
-    /* border: 4px solid var(--primary);
+   /* border: 4px solid var(--primary);
     border:none; */
     border-radius: 40px;
+}
+
+#header-links img {
+    width: 24px;
+    height: 24px;
 }
 
 #header-links img:hover {
@@ -209,6 +257,15 @@ header {
 
 /* Navigation */
 
+/* Agrupa menu + social */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    /* espaço entre lista de navegação e ícones sociais */
+}
+
+
 .navigation {
     text-align: center;
     padding: 0px;
@@ -216,13 +273,54 @@ header {
     list-style: none;
 }
 
+.navigation {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #222;
+}
+
 nav li {
     display: none;
     width: 100%;
 }
 
+nav .nav-li a {
+    display: inline-block;
+    /* permite aplicar largura */
+    min-width: 100px;
+    /* ajusta para a largura que quiser */
+    text-align: center;
+    /* centraliza o texto dentro do botão */
+    padding: 0.5rem 1rem;
+    /* aumenta área clicável */
+}
+
 nav li:first-child {
     display: block;
+}
+
+#nav-icon {
+    color: white;
+    /* Cor desejada */
+}
+
+#nav-button {
+    background-color: transparent;
+    /* Cor do fundo do botão */
+    border: none;
+    /* Remove borda se houver */
+    padding: 8px;
+    /* Ajusta o tamanho do botão */
+    border-radius: 5px;
+    /* Opcional: borda arredondada */
 }
 
 #nav-button.active {
@@ -252,9 +350,18 @@ nav a:visited {
     color: var(--white);
 }
 
+nav a {
+    background-color: transparent;
+    /* remove qualquer fundo */
+    color: inherit;
+    /* mantém a cor do texto do link */
+    text-decoration: none;
+    /* opcional: remove sublinhado */
+}
+
 nav a:hover {
     background-color: var(--primary);
-    /* background-color: red; */
+   /* background-color: red; */
     color: var(--white);
     box-shadow: 0px 2px 7px 2px var(--shadow);
 }
@@ -988,7 +1095,7 @@ textarea:focus {
 
 .directory-box {
     border: 1px solid var(--background);
-    border: none;
+    border:none;
     width: auto;
     height: auto;
     margin-bottom: 60px;
@@ -1045,10 +1152,8 @@ textarea:focus {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr 1fr 1fr;
-    width: 100%;
-    /* ao invés de fixo 350px */
-    max-width: 350px;
-    /* mantém limite sem quebrar responsividade */
+    width: 100%;  /* ao invés de fixo 350px */
+    max-width: 350px;  /* mantém limite sem quebrar responsividade */
     margin: 10px auto;
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
@@ -1107,6 +1212,13 @@ textarea:focus {
     margin: 0px;
 }
 
+.view-list .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-xs);
+    align-items: center;
+}
+
 .view-list .card:nth-child(even) {
     background-color: var(--shading);
 }
@@ -1141,4 +1253,141 @@ textarea:focus {
 
 .view-list .card-logo {
     display: none;
+}
+
+/* Ajusta títulos, endereço, telefone e URL */
+.view-list .card-titles,
+.view-list .card-address,
+.view-list .card-phone,
+.view-list .card-url {
+    padding: var(--space-xs);
+    font-size: var(--font-body-list);
+    background-color: inherit;
+    color:#000000
+}
+
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info div {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-info p {
+    margin: 0.1rem 0;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.info-left p, .info-right p {
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+/* ------------------ SOCIAL ------------------ */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.social img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background-color: #eec22d;
+}
+
+/* ------------------ LAST MODIFIED ------------------ */
+#lastModified {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 12px;
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.highlight {
+  display: inline; /* ou inline-block */
+  white-space: nowrap; /* opcional, evita quebra */
+  text-align: left;
+}
+
+#lastModified {
+  display: inline; /* garante que o span não quebre linha */
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 14px; /* menor em telas pequenas */
+  }
+
+  footer .footer-info {
+    flex-direction: column; /* garante que fique empilhado no mobile */
+    text-align: center;
+  }
+
+footer .footer-info p {
+    margin: 0.25rem 0; /* menos espaçamento */
+  }
+
+  .highlight {
+        display: block; /* ou inline-block */
+        white-space: nowrap; /* opcional, evita quebra */
+        text-align: left;
+    }
+
+#lastModified {
+    display: inline; /* garante que o span não quebre linha */
+}
+
+.info-left p, .info-right p {
+        font-size: 14px;
+    }
+
+.highlight, #lastModified {
+        display: block;
+        text-align: left;
+        margin-top: 0.2rem;
+    }
+
 }

@@ -14,7 +14,7 @@
      <meta property="og:image" content="https://images.app.goo.gl/xepRjvRTSMs75R1KA">
     <meta property="og:url" content="https://ronaldovenancio.github.io/wdd231/chamber">
     <meta name="author" content="Ronaldo Venancio da Silva">
-    <link rel="icon" href="/wdd231/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     
     
     <!-- Fonts (optional) -->
@@ -33,8 +33,8 @@
 
     <!-- Styles Sheets Here -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="/chamber/styles/directory-base.css">
+    <link rel="stylesheet" href="/chamber/styles/directory-larger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
 </head>
@@ -57,12 +57,14 @@
             </ul>
     
             <!-- Social media agora dentro do nav -->
+            <!--
             <div id="header-links">
                 <a href="https://www.facebook.com/" target="_blank"><img id="link-facebook"
                         src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="32" height="32"></a>
                 <a href="https://www.linkedin.com/" target="_blank"><img id="link-linkedin"
                         src="../chamber/images/linkedin-w-100x100.webp" alt="LinkedIn Logo" width="32" height="32"></a>
             </div>
+            -->
         </nav>
     </header>
 
@@ -83,10 +85,21 @@
         </main>
 
     <footer>
+    <!--
         <div class="info-company">
             <img id="footer-logo" src="../chamber/images/chamber-logo.webp" alt="Recife City Chamber Logo" width="180" height="180">
             <h3 id="footer-company">Recife Chamber of Commerce</h3>
         </div>
+        -->
+
+        <div class="footer-info">
+            <div class="info-left">
+                <p><strong>Contact Information</strong></p>
+                <p>Location: Recife, Pernambuco, Brazil</p>
+                <p>Email: rdasilva4@byupathway.edu</p>
+                <p>Number: +5581986990000</p>
+            </div>
+            <!--
         <div class="info-contact">
             <p id="company-address"><strong>123 Mark Zero Street, Recife - Pernambuco, 12345</strong></p>
             <p id="company-email"><strong>contactus@recifecitychamber.pe</strong></p>
@@ -94,16 +107,40 @@
             <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i>
                 </span> <a href="https://maps.app.goo.gl/MJjt9VY4aYwTdUcy9">Location Map</a></p>
         </div>
+        -->
+
+            <div class="social">
+                <a href="https://github.com/ronaldovenancio" target="_blank"><img src="images/github.svg" alt="my github"
+                        width="16" height="16"></a>
+                <a href="https://linkedin.com/in/ronaldo-venancio-b2772280/" target="_blank"><img src="images/linkedin.svg"
+                        alt="linked in" width="16" height="16"></a>
+                <a href="https://facebook.com/ronaldo.venancio.908/" target="_blank"><img src="images/facebook.svg"
+                        alt="facebook" width="16" height="16"></a>
+                <a href="https://x.com/@RonaldoVen98700" target="_blank"><img src="images/twitter-x.svg" alt="twitter"
+                        width="16" height="16"></a>
+            </div>
+
+            <div class="info-right">
+                <p> <strong>WDD231 Chamber Project</strong></p>
+                <p>By Ronaldo Venancio da Silva</p>
+                <p>&copy;<span id="currentYear"></span> - Recife Chamber of Commerce</p>
+                <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+
+        <!--
         
         <div class="info-stats">
-            <!-- 
+            
             <p id="visits">Total visits: <span id="visit-count"></span> | Days since last visit: <span id="visit-since"></span>
             </p>
-            -->
+            
             <p id="credits"></p>
-            <p id="copy">&copy; <span id="currentYear"></span> Recife City Chamber .:|:. Ronaldo Venancio da Silva
+            <p id="copy">&copy; <span id="currentYear"></span> Recife Chamber of Commerce .:|:. Ronaldo Venancio da Silva
                 - WDD231 .:|:. Last Modification: <span id="lastModified" class="highlight"></span></p>
-        </div>   
+        </div>  
+        
+        -->
     </footer>
     
 </body>
