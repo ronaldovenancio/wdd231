@@ -1212,6 +1212,13 @@ textarea:focus {
     margin: 0px;
 }
 
+.view-list .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-xs);
+    align-items: center;
+}
+
 .view-list .card:nth-child(even) {
     background-color: var(--shading);
 }
@@ -1246,4 +1253,15 @@ textarea:focus {
 
 .view-list .card-logo {
     display: none;
+}
+
+/* Ajusta títulos, endereço, telefone e URL */
+.view-list .card-titles,
+.view-list .card-address,
+.view-list .card-phone,
+.view-list .card-url {
+    padding: var(--space-xs);
+    font-size: var(--font-body-list);
+    background-color: inherit;
+    color:#000000
 }

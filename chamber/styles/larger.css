@@ -79,6 +79,13 @@
 
 /* Large Display Properties (~ 520px+ wide) */
 @media screen and (min-width: 38rem) {
+
+    #directory-area {
+    width: 100%;
+    max-width: 1200px; /* opcional, mantém layout centralizado */
+    margin: 0 auto;
+    overflow-x: auto; /* permite rolagem horizontal se necessário */
+}
         
     #profile {
         grid-column: 2/3;
@@ -282,12 +289,12 @@ display: grid;
         display: grid;
         min-height: 80px;
         border-bottom: 1px solid #ddd; /* separa as linhas */
+        border-bottom: none;
         padding: var(--space-xs) 0;
-        grid-template-columns: minmax(150px, 250px) minmax(150px, 250px) minmax(350px, 2fr) 1fr minmax(350px, 2fr);
+        grid-template-columns: minmax(150px, 250px) minmax(150px, 250px) minmax(350px, 2fr) minmax(350px, 2fr);
         grid-auto-rows: 1fr;  /* força altura igual */
         width: 100%;
         margin: 0px;
-        border-bottom: 1px solid #ddd;
         align-items: stretch;    /* estica as células para mesma altura */     
     }  
     
@@ -320,16 +327,28 @@ display: grid;
         background-color: #f5f5f5;  /* cinza clarinho */
     }
 
+    /*
+
+    .view-list .card-logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: block;
+        max-width: 80px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+*/
 
     .view-list .card-titles {
-        grid-column: 2/3;
+        grid-column: 1/2;
         grid-row: 1/2;
         font-size: var(--font-body-list);
         color: #333;
     }
 
     .view-list .card-address {
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 1/2; 
         min-width: 350px;
             /* largura mínima válida */
@@ -342,7 +361,7 @@ display: grid;
 
 
     .view-list .card-phone {
-        grid-column: 4/5;
+        grid-column: 3/4;
         grid-row: 1/2;
         text-align: center;
         white-space: nowrap;  /* evita quebra do número */
@@ -350,21 +369,70 @@ display: grid;
     }
 
     .view-list .card-url {
-        grid-column: 5/6;
+        grid-column: 4/5;
         grid-row: 1/2;
         word-break: break-word;
         color: blue;
         background-color: inherit;
     }
 
+    
+
+    .view-list .card {
+    grid-template-columns: minmax(200px, 3fr) minmax(200px, 3fr) 1fr minmax(150px, 3fr);
+}
+
+.view-list .card>* {
+    padding: var(--space-xs) var(--space-sm);
+}
+
+.view-list .card {
+    display: grid;
+    grid-template-columns:
+        minmax(150px, 3fr)
+        /* title */
+        minmax(150px, 3fr)
+        /* address */
+        minmax(100px, 1fr)
+        /* phone */
+        minmax(150px, 3fr);
+    /* URL */
+    grid-auto-rows: auto;
+    gap: var(--space-xs);
+    align-items: center;
+    padding: var(--space-sm);
+    width: 100%;
+    box-sizing: border-box;
+    /* garante que padding não aumente a largura total */
+}
+
+
+    .view-list .card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr; /* title | address | phone | url */
+        grid-auto-rows: auto;
+        gap: var(--space-xs);
+        align-items: center;
+        padding: var(--space-sm);
+    }
+
+    /* Remove a coluna do logo, já escondida */
     .view-list .card-logo {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        display: block;
-        max-width: 80px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+        display: none;
+    }
+
+    /* Centraliza o título e subtitle */
+    .view-list .card-titles {
+        text-align: left;
+        font-size: var(--font-body-list);
+    }
+
+    /* Ajuste de cada coluna */
+    .view-list .card-address,
+    .view-list .card-phone,
+    .view-list .card-url {
+        text-align: left;
+        font-size: var(--font-body-list);
     }
 
        
