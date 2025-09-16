@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231: Web Frontend Development - Ronaldo Venancio</title>
+    <title>BYU Weather Data - WDD 231: Web Frontend Development</title>
     <meta name="description"
         content="This page is part of the WDD 231 - Web Frontend Development I course and demonstrates how to use media queries to create responsive layouts using HTML and CSS.">
     <meta name="author" content="Ronaldo Venancio da Silva">
@@ -24,9 +24,15 @@
 <body>
     <h1>OpenWeatherMap.org API Test</h1>
     <main>
-        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+        <p>The current temperature in Trier, Germany is <span id="temperature"></span></p>
+        <div class="card">
+            <h2 id="town"></h2>
+            <img id="graphic" src="" alt="">
+            <p id="description"></p>
+            <p id="temperature"></p>
+        </div>
         <figure>
-            <img id="weather-icon" src="" alt="">
+            <img id="graphic" src="" alt="">
             <figcaption></figcaption>
         </figure>
     </main>
