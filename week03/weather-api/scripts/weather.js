@@ -13,7 +13,7 @@ const myKey = "8191049f8b9fbcbf128a13964ad3426c";
 const myLat = "49.7498219849936";
 const myLong = "6.642236524752449";
 
-const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
+const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
 // TRY TO GRAB THE CURRENT WEATHER DATA
 
@@ -40,7 +40,7 @@ function displayResults(data) {
   console.log("hello");
   myTown.innerHTML = data.name;
   myDescription.innerHTML = data.weather[0].description;
-  myTemperature.innerHTML = `${data.main.temp}&deg;F`;
+  myTemperature.innerHTML = `${data.main.temp}&deg;C`;
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
   myGraphic.setAttribute("SRC", iconsrc);
   myGraphic.setAttribute("alt", data.weather[0].description);
