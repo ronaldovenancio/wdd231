@@ -380,8 +380,18 @@
                     /* empurra para o final da coluna */
                 }
 
-                                
-
+        .highlight {
+            display: inline;
+            /* ou inline-block */
+            white-space: nowrap;
+            /* opcional, evita quebra */
+            text-align: left;
+        }
+    
+        #lastModified {
+            display: inline;
+            /* garante que o span não quebre linha */
+        }
 
     
     /* Responsividade para colunas pequenas */
@@ -395,4 +405,97 @@
         /* uma coluna em telas pequenas */
         }
 }
+
+/* ------------------ FOOTER ------------------ */
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info div {
+    flex: 1;
+    min-width: 350px;
+}
+
+.footer-info p {
+    margin: 0.1rem 0;
+    line-height: 1.3;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s;
+}
+
+.social img {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    background-color: #eec22d;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.info-left p,
+.info-right p {
+    padding-inline: 20px;
+    text-align: left;
+}
+
+.highlight {
+    display: block;
+    /* ou inline-block */
+    white-space: nowrap;
+    /* opcional, evita quebra */
+    text-align: left;
+}
+
+#lastModified {
+    display: inline;
+    /* garante que o span não quebre linha */
+}
+
 }
