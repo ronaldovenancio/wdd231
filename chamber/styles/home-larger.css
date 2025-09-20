@@ -284,8 +284,11 @@
         gap: 1rem;
         margin-top: var(--space-md);
         margin-top: var(--space-sm);
-            /* antes var(--space-md) */
-            
+            /* antes var(--space-md) */      
+    }
+
+    .spotlight h3 {
+        text-align: center;
     }
 
     .sub-box {
