@@ -9,7 +9,7 @@
         content="Explore the Recife Chamber of Commerce Directory to find member businesses, services, and contact information. Connect with local enterprises efficiently and discover new opportunities.">
     <meta property="og:description"
         content="Explore the Recife Chamber of Commerce Directory to find member businesses, services, and contact information. Connect with local enterprises efficiently and discover new opportunities.">
-    <meta name="og:type" content="website">
+    <meta property="og:type" content="website">
     <meta property="og:title" content="WDD231 - Web Frontend Development - Recife Chamber of Commeerce - Directory">
     <meta property="og:image" content="https://images.app.goo.gl/xepRjvRTSMs75R1KA">
     <meta property="og:url" content="https://ronaldovenancio.github.io/wdd231/chamber">
@@ -26,16 +26,21 @@
 
 
     <!-- JavaScript -->
-    <script src="scripts/get-dates.js" defer></script>
-    <script src="scripts/responsive-menu.js" defer></script>
-    <script src="scripts/business-directory.js" defer></script>
+    <script src="../chamber/scripts/get-dates.js" defer></script>
+    <script src="../chamber/scripts/responsive-menu.js" defer></script> 
+    <script src="../chamber/scripts/business-spotlight.js" defer></script>
+    <script src="../chamber/scripts/weatherChamber.js" defer></script>
+    <script src="../chamber/scripts/windchill.js" defer></script>
+    <script src="../chamber/scripts/chamberJS.js" defer></script>
     <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
+
+
 
     <!-- Styles Sheets Here -->
     <link rel="stylesheet" href="../chamber/styles/normalize.css">
-    <link rel="stylesheet" href="../chamber/styles/base.css">
-    <link rel="stylesheet" href="../chamber/styles/larger.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../chamber/styles/home-base.css">
+    <link rel="stylesheet" href="../chamber/styles/home-larger.css">
+<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
 
 </head>
 
@@ -70,18 +75,102 @@
 
 
     <main>
-        <h1>Chamber Directory</h1>
+        <div class="call-to-action">
+            <picture id="hero-image">
+                <source media="(max-width: 500px)" srcset="../chamber/images/recife-500x250.webp">
+                <source media="(min-width: 500px) and (max-width: 1000px)" srcset="../chamber/images/recife-1000x500.webp">
+                <source media="(min-width: 1000px)" srcset="../chamber/images/recife-1500x750.webp">
+                <img data-src="../chamber/images/recife-1500x750.webp" src="../chamber/images/recife-1500x750.webp"
+                    alt="Image of Recife-PE, Brazil" width="1500" height="750">
+            </picture>
+            <h2 class="hero-title">Recife City Welcomes You</h2>
+            <a href="join.html">Become a Member Now!</a>
+        </div>
+        
+        <h1>Home</h1>
 
-        <div class="directory-box">
-            <!--   <h2 class="box-title">Business Directory</h2> -->
-            <div id="view-buttons" class="box-content">
-                <button id="button-cards"><i class="fas fa-th-large"></i><b>Card</b></button>
-                <button id="button-list"><i class="fas fa-list"></i><b>List</b></button>
-            </div>
-            <div id="directory-area" class="view-cards">
-                <!--This section to be filled in with JSON data-->
+        <!-- container que agrupa as 3 colunas -->
+        <div class="three-columns">
+            <!-- Coluna 1: Events -->
+            <section class="events">
+                <h3 class="box-title">Events</h3>
+
+                <div class="event-item">
+                    <h4 class="box-subtitle">
+                        Mark Zero Recife & Recife Mayor at the Brazilian Veneza Expo Center
+                    </h4>
+                </div>
+
+                <div class="event-item">
+                    <p class="box-content">
+                        There is an upcoming event in Mark Zero Recife, Pernambuco-Brazil on October 24-26, 10am-9pm. If
+                        you are a lover of folclore and events cultural. Be sure to check it out!
+                    </p>
+                </div>
+
+                <div class="event-item">
+                    <h4 class="box-subtitle">
+                        Recife Jazz Festival at Marco Zero
+                    </h4>
+                    <p class="box-content">
+                        Enjoy live jazz music in the heart of Recife at Marco Zero from November 10-12, 6pm-11pm. Local and
+                        international artists will perform. Bring your friends and family for a cultural evening!
+                    </p>
+                </div>
+
+                <div class="event-item">
+                    <h4 class="box-subtitle">
+                        Recife Food & Culture Fair
+                    </h4>
+                    <p class="box-content">
+                        Taste the best of Recife’s cuisine and enjoy cultural performances at the Recife Food & Culture Fair on December
+                        5-7, 10am-8pm. A perfect event for food lovers and families to experience local traditions.
+                    </p>
+                </div>
+            </section>
+            
+        
+            <!-- Coluna 2: Current Weather -->
+            <article id="weather" class="weather-card">
+                <h3>Current Weather</h3>
+                <p id="location"></p>
+                <figure>
+                    <div class="temp-area"></div>
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+                <div class="alt-weather">
+                    <div class="weather-box">Feels Like: <span id="feels-like"></span></div>
+                    <div class="weather-box">Humidity: <span id="humidity"></span></div>
+                    <div class="weather-box">Wind: <span id="wind-speed"></span></div>
+                    <div class="weather-box">Wind Chill: <span id="wind-chill"></span></div>
+                </div>
+            </article>
+        
+            <!-- Coluna 3: Weather Forecast -->
+            <article id="five-day" class="weather-card">
+                <h3>Weather Forecast</h3>
+                <div id="forecast"></div>
+            </article>
+        </div>
+
+        <div class="spotlight">
+            <h3 class="box-title">Spotlight</h3>
+            <div class="spotlight-grid">
+                <div id="spotlight-1" class="sub-box"></div>
+                <div id="spotlight-2" class="sub-box"></div>
+                <div id="spotlight-3" class="sub-box"></div>
             </div>
         </div>
+
+<!--
+        <div class="join">
+            <h3 class="box-title">Join</h3>
+            <p class="box-content">Do you wish to be part of our community? Apply for our Chamber of Commerce today! We look
+                forward to working with you.</p>
+            <button id="join-button" onclick="window.location.href='join.html';">Join</button>
+        </div>
+
+        -->
     </main>
 
     <footer>
@@ -142,6 +231,8 @@
         
         -->
     </footer>
+
+   
 
 </body>
 

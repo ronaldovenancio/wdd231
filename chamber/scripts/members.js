@@ -1,6 +1,6 @@
 const container = document.getElementById("membersContainer");
- const gridBtn = document.getElementById("gridBtn");
- const listBtn = document.getElementById("listBtn");
+const gridBtn = document.getElementById("gridBtn");
+const listBtn = document.getElementById("listBtn");
 
 // Fetch members.json
 async function loadMembers() {

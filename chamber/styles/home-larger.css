@@ -1,0 +1,395 @@
+:root {
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+    --font-title: 32px;
+    --font-subtitle: 24px;
+    --font-body: 20px;
+    --font-title-list: 24px;
+    --font-subtitle-list: 18px;
+    --font-body-list: 16px;
+    --primary: #a0001e;
+    --secondary: #180e0d;
+    --accent1: #9d6451;
+    --accent2: #e2beab;
+}
+
+/* Small screens (menos de 520px) */
+@media screen and (max-width: 37.99rem) {
+    .view-list .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+        width: 90%;
+        margin: var(--space-sm) auto;
+    }
+
+    .view-list .card>* {
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 1.4rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .navigation .nav-li {
+        width: 100%;
+        margin: 0.25rem 0;
+    }
+
+    .navigation .nav-li a {
+        display: block;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-radius: 5px;
+    }
+
+    #nav-icon {
+        color: white;
+        font-size: 28px;
+    }
+
+    #nav-button {
+        background-color: transparent;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+    }
+}
+
+/* Large screens (~520px+) */
+@media screen and (min-width: 38rem) {
+
+    /* Directory area */
+    #directory-area {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow-x: auto;
+    }
+
+    .view-list .card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr;
+        /* title | address | phone | url */
+        gap: var(--space-xs);
+        align-items: center;
+        padding: var(--space-sm);
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 80px;
+    }
+
+    .view-list .card-logo {
+        display: none;
+    }
+
+    .view-list .card-titles,
+    .view-list .card-address,
+    .view-list .card-phone,
+    .view-list .card-url {
+        text-align: left;
+        font-size: var(--font-body-list);
+        background-color: inherit;
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    /* Alterna cores das linhas */
+    .view-list .card:nth-child(odd),
+    .view-list .card:nth-child(odd)>* {
+        background-color: #ffffff;
+    }
+
+    .view-list .card:nth-child(even),
+    .view-list .card:nth-child(even)>* {
+        background-color: #f5f5f5;
+    }
+
+    /* Cards em grid de 3 colunas */
+    .view-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+    }
+
+    .view-cards .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.25rem;
+        margin: 10px auto;
+    }
+
+    .view-cards .card-title {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+    }
+
+    .view-cards .card .card-address,
+    .view-cards .card .card-phone,
+    .view-cards .card .card-url {
+        font-size: 0.875rem;
+        text-align: center;
+        padding: 0 0.125rem;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 0.8rem 1rem;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-info div {
+        flex: 1;
+        min-width: 350px;
+    }
+
+    .footer-info p {
+        margin: 0.1rem 0;
+        line-height: 1.3;
+        font-size: 14px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.2rem 0;
+    }
+
+    .social a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: white;
+        transition: background-color 0.3s;
+    }
+
+    .social img {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+
+    .social a:hover {
+        background-color: #eec22d;
+    }
+
+    /* Three-columns layout (Events | Current Weather | Forecast) */
+    .three-columns {
+        display: grid;
+        grid-template-columns: minmax(150px, 2fr) minmax(100px, 1fr) minmax(100px, 1fr);
+        gap: var(--space-md);
+        
+        align-items: stretch;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0;
+            /* remove padding horizontal que poderia criar “espaço” */
+    
+    }
+
+    .three-columns>* {
+        background-color: #f9f9f9;
+        padding: var(--space-sm);
+        box-sizing: border-box;
+        min-height: 200px;
+    }
+
+    .events {
+
+        background-color: #f9f9f9;
+            width: 100%;
+            min-height: 100%;
+            /* garante altura mínima da célula */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            /* remove qualquer margem residual */
+            padding: var(--space-sm);
+            /* mantém espaçamento interno */
+    }
+
+        .events,
+        .weather-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: var(--space-sm);
+            box-sizing: border-box;
+        }
+
+    .current-weather {
+        background-color: #ffeaa7;
+    }
+
+    .forecast {
+        background-color: #fab1a0;
+    }
+
+    .current-weather h3,
+    .forecast h3 {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+
+    .current-weather p,
+    .forecast p,
+    .current-weather .alt-weather,
+    .forecast #forecast {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+        .call-to-action a {
+            left: 76%;
+            font-size: 20px;
+        }
+
+
+    .spotlight-grid {
+        display: flex;
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-top: var(--space-md);
+        margin-top: var(--space-sm);
+            /* antes var(--space-md) */
+            
+    }
+
+    .sub-box {
+        background-color: #f9f9f9;
+        padding: var(--space-sm);
+        box-sizing: border-box;
+        min-height: 100px;
+        /* altura mínima */
+    }
+
+        .spotlight {
+            margin-bottom: 0.5rem;
+            /* antes poderia estar maior, ex: 2rem ou 3rem */
+        }
+    
+        .join {
+            margin-top: 0rem;
+            /* ajusta para aproximar a seção Spotlight */
+        }
+
+                 
+        
+                 
+        
+                
+
+                
+                                        
+        
+                 .sub-box img {
+                    max-width: 100px;
+                    max-height: 100px;
+                     height: auto;
+                     margin-bottom: 0.5rem;
+                     /* espaçamento da imagem para o link/endereço */
+                     border-radius: 5px;
+                 }
+        
+                 .sub-box a {
+                     color: #1a73e8;
+                     font-size: 1rem;
+                     text-align: left;
+                     text-decoration: none;
+                     margin-bottom: 0.75rem;
+                     /* espaçamento do link para o endereço */
+                     word-break: break-word;
+                 }
+        
+                 .sub-box p {
+                     margin-bottom: 0.75rem;
+                    font-size: 1rem;
+                    text-align: left;
+                     /* espaçamento entre os parágrafos */
+                     font-size: 0.95rem;
+                     color: #333;
+                 }
+        
+                 .sub-box .member-level {
+                    margin-top: 0.5rem;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-size: 1rem;
+                        /* evita quebra de linha automática */
+                     /* mantém sempre no fundo da caixa */
+                     font-weight: bold;
+                     color: #555;
+                 }
+
+                                  .sub-box .number-phone {
+                                      margin-top: 0.5rem;
+                                      white-space: nowrap;
+                                      text-align: left;
+                                      font-size: 1rem;
+                                      /* evita quebra de linha automática */
+                                      /* mantém sempre no fundo da caixa */
+                                      font-weight: bold;
+                                      color: #555;
+                                  }
+
+
+                 .spotlight p.member-level {
+                     align-items: center;
+                     display: inline-block;
+                 }
+
+
+                .member-level {
+                    margin-top: auto;
+                    /* empurra para o final da coluna */
+                }
+
+                                
+
+
+    
+    /* Responsividade para colunas pequenas */
+    @media screen and (max-width: 768px) {
+        .three-columns {
+            grid-template-columns: 1fr;
+        }
+
+    .spotlight-grid {
+        grid-template-columns: 1fr;
+        /* uma coluna em telas pequenas */
+        }
+}
+}
