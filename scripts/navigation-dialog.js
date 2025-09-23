@@ -143,6 +143,11 @@ function renderCourses(coursesToRender) {
         // Mostrar apenas subject e number, com ícone se completo
         courseDiv.innerHTML = `<h3>${checkIcon}${course.subject} ${course.number}</h3>`;
 
+        // 👉 Adiciona evento para abrir modal com detalhes desse curso
+        courseDiv.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         courseList.appendChild(courseDiv);
     });
     updateCredits(coursesToRender); // atualiza créditos dinamicamente
@@ -209,4 +214,56 @@ navbuttom.addEventListener('click', () => {
     navbuttom.classList.toggle('show');
     navlinks.classList.toggle('show');
 });
+
+
+
+
+// Add the dialog in the home
+// pega o dialog
+const courseDetails = document.getElementById("course-details");
+
+function displayCourseDetails(course) {
+    // limpa o conteúdo anterior
+    courseDetails.innerHTML = "";
+
+    // adiciona novo conteúdo
+    courseDetails.innerHTML = `
+    <button id="closeModal" class="close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+  `;
+
+    // abre o modal
+    courseDetails.showModal();
+
+    // botão de fechar
+    document.getElementById("closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    // fechar clicando fora do modal (no backdrop)
+    courseDetails.addEventListener("click", (event) => {
+        const rect = courseDetails.getBoundingClientRect();
+        const inDialog =
+            rect.top <= event.clientY &&
+            event.clientY <= rect.top + rect.height &&
+            rect.left <= event.clientX &&
+            event.clientX <= rect.left + rect.width;
+
+        if (!inDialog) {
+            courseDetails.close();
+        }
+    });
+}
+
+// Exemplo: abrir modal ao clicar em um curso
+document.querySelector(".course").addEventListener("click", () => {
+    displayCourseDetails(courses);
+});
+
+
 
