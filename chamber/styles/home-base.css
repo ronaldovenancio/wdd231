@@ -913,8 +913,8 @@ strong {
 
 #form-title {
     padding: 10px;
-    background-color: var(--accent2);
-    color: var(--secondary);
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 #form-instructions {
