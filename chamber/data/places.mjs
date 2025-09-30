@@ -55,11 +55,12 @@ export const places = [
         "description": "The Ricardo Brennand Institute, in Recife, houses one of the most important artistic and historical collections in the country.The 80 thousand square meter architectural complex is the greatest legacy left by the businessman and patron from Pernambuco.",
         "photo_link": "castelodeBrennand-1000x500-Istoé-Independente.webp"
     },
+    /*
     {
         "name": "Francisco Brennand Oficina",
         "address": "Rua Diogo de Vasconcelos, Várzea, Recife - PE, Brazil",
         "cost": "R$40,00",
         "description": "The history of Oficina Brennand began in 1971 in the ruins of Cerâmica São João da Várzea, a pottery from the beginning of the 20th century.As a result, what was an old brick and tile factory inherited from master Francisco Brennand's father became his large studio and is now a monumental architectural complex of great originality.As a result, the work is associated with architecture to give shape to Brennand's incomparable universe of art.",
         "photo_link": "oficina-Francisco-Brennand-1000x500-Revista SIM.webp"
-    },
+    },*/
 ]
