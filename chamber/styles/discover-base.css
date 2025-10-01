@@ -192,6 +192,14 @@ header {
     grid-row: 1/2;
 }
 
+#header-logo {
+    width: 100px;
+    /* ou o tamanho que desejar */
+    height: auto;
+    padding: 10px;
+    /* mantém proporção */
+}
+
 #header-company {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -397,7 +405,7 @@ figcaption a:active {
 
 img {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -561,6 +569,7 @@ main {
     width: 100%;
     font-size: 0.8rem;
 }
+
 #forecast .weather-day {
     display: flex;
     justify-content: space-between;
@@ -801,7 +810,11 @@ strong {
     padding: 0.2px;
 }
 
-.spotlight-grid a, h3, h4, p, h5 {
+.spotlight-grid a,
+h3,
+h4,
+p,
+h5 {
     font-size: 1rem;
 }
 
@@ -1048,6 +1061,41 @@ textarea {
     }
 }
 
+
+#showHere div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location";
+}
+
+#showHere div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#showHere div img {
+    width: 100%;
+    grid-area: photograph;
+}
+
+#showHere div p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#showHere div address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
 
 
 

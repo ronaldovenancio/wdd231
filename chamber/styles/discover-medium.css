@@ -49,6 +49,10 @@
     --paragraph: 'DM Sans', tahoma, sans-serif;
 }
 
+@media only screen and (min-width: 38rem) {
+
+
+
 h1 {
     font-size: 40px;
 }
@@ -190,6 +194,14 @@ header {
 #header-logo {
     grid-column: 1/2;
     grid-row: 1/2;
+}
+
+#header-logo {
+    width: 100px;
+    /* ou o tamanho que desejar */
+    height: auto;
+    padding: 10px;
+    /* mantém proporção */
 }
 
 #header-company {
@@ -397,7 +409,7 @@ figcaption a:active {
 
 img {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -561,6 +573,7 @@ main {
     width: 100%;
     font-size: 0.8rem;
 }
+
 #forecast .weather-day {
     display: flex;
     justify-content: space-between;
@@ -801,7 +814,11 @@ strong {
     padding: 0.2px;
 }
 
-.spotlight-grid a, h3, h4, p, h5 {
+.spotlight-grid a,
+h3,
+h4,
+p,
+h5 {
     font-size: 1rem;
 }
 
@@ -1047,6 +1064,23 @@ textarea {
         transform: translateY(0);
     }
 }
+
+
+#showHere div {
+   
+    grid-template-areas: 
+    "photograph name"
+    "photograph description"
+    "photograph location";
+}
+
+
+#showHere div img {
+    width: 300px;
+    height: 100%;
+   
+}
+
 
 
 
@@ -1452,14 +1486,14 @@ footer {
     /* garante que o span não quebre linha */
 }
 
-@media (max-width: 600px) {
+
     footer {
         font-size: 14px;
         /* menor em telas pequenas */
     }
 
     footer .footer-info {
-        flex-direction: column;
+        flex-direction: row;
         /* garante que fique empilhado no mobile */
         text-align: center;
     }

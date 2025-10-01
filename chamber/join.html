@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Home Page</title>
+    <title>Chamber of Commerce - Join Page</title>
     <meta name="description"
-        content="Explore the Recife Chamber of Commerce Home Page to find member businesses, services, and contacts. Connect with local enterprises and opportunities.">
+        content="Explore the Recife Chamber of Commerce Join Page to find member businesses, services, and contacts. Connect with local enterprises and opportunities.">
     <meta property="og:description"
-        content="Explore the Recife Chamber of Commerce Home Page to find member businesses, services, and contact information. Connect with local enterprises efficiently and discover new opportunities.">
+        content="Explore the Recife Chamber of Commerce Join Page to find member businesses, services, and contact information. Connect with local enterprises efficiently and discover new opportunities.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WDD231 - Web Frontend Development - Recife Chamber of Commerce - Home">
+    <meta property="og:title" content="WDD231 - Web Frontend Development - Recife Chamber of Commerce - Join">
     <meta property="og:image" content="https://images.app.goo.gl/xepRjvRTSMs75R1KA">
     <meta property="og:url" content="https://ronaldovenancio.github.io/wdd231/chamber">
     <meta name="author" content="Ronaldo Venancio da Silva">
     <link rel="icon" href="favicon.ico">
-
 
     <!-- Fonts (optional) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,25 +22,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap"
         rel="stylesheet">
 
-
-
     <!-- JavaScript -->
     <script src="../chamber/scripts/get-dates.js" defer></script>
-    <script src="../chamber/scripts/responsive-menu.js" defer></script> 
-    <script src="../chamber/scripts/business-spotlight.js" defer></script>
-    <script src="../chamber/scripts/weather-chamber.js" defer></script>
-    <script src="../chamber/scripts/windchill.js" defer></script>
+    <script src="../chamber/scripts/responsive-menu.js" defer></script>
     <script src="../chamber/scripts/chamber-js.js" defer></script>
     <script src="../chamber/scripts/last-visited.js" defer></script>
     <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
-
-
 
     <!-- Styles Sheets Here -->
     <link rel="stylesheet" href="../chamber/styles/normalize.css">
     <link rel="stylesheet" href="../chamber/styles/home-base.css">
     <link rel="stylesheet" href="../chamber/styles/home-larger.css">
-<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+    <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
 
 </head>
 
@@ -56,10 +48,10 @@
         <nav>
             <ul class="navigation">
                 <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li>
-                <li class="nav-li"><a id="nav-current" href="index.html">Home</a></li>
+                <li class="nav-li"><a href="index.html">Home</a></li>
                 <li class="nav-li"><a href="discover.html">Discover</a></li>
                 <li class="nav-li"><a href="directory.html">Directory</a></li>
-                <li class="nav-li"><a href="join.html">Join</a></li>
+                <li class="nav-li"><a id="nav-current" href="join.html">Join</a></li>
             </ul>
 
             <!-- Social media agora dentro do nav -->
@@ -74,108 +66,78 @@
         </nav>
     </header>
 
-
-    <main>
-        <h1>Home</h1>
-
-        <div class="call-to-action">
-            <picture id="hero-image">
-                <source media="(max-width: 500px)" srcset="../chamber/images/recife-500x250.webp">
-                <source media="(min-width: 500px) and (max-width: 1000px)" srcset="../chamber/images/recife-1000x500.webp">
-                <source media="(min-width: 1000px)" srcset="../chamber/images/recife-1500x750.webp">
-                <img data-src="../chamber/images/recife-1500x750.webp" src="../chamber/images/recife-1500x750.webp"
-                    alt="Image of Recife-PE, Brazil" width="1500" height="750">
-            </picture>
-            <h2 class="hero-title">Recife City Welcomes You</h2>
-            <a href="join.html">Become a Member Now!</a>
+    <main class="join-grid">
+        <h1>Join</h1>
+        <div id="form-area">
+            <h2 id="form-title">Recife Chamber of Commerce Application</h2>
+            <p id="form-instructions">Please complete the form below so we may review your application. Required fields are
+                marked with an asterisk.</p>
+    
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label><span class="label-title req">First Name</span>
+                        <input type="text" id="info-first" name="first-name" required>
+                    </label>
+                    <label><span class="label-title req">Last Name</span>
+                        <input type="text" id="info-last" name="first-name" required>
+                    </label>
+                    <label><span class="label-title">Business Title</span>
+                        <input type="text" id="info-position" name="position" minlength="7"
+                            pattern="^[a-zA-Z]+[a-zA-Z- ]*[a-zA-Z]$"
+                            title="Business Title must be at least 7 characters in length and only contain letters A-Z, hyphens, and spaces.">
+                    </label>
+                    <label><span class="label-title req">Business Name</span>
+                        <input type="text" id="info-company" name="company" required>
+                    </label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label><span class="label-title req">Email</span>
+                        <input type="email" id="info-email" name="email" placeholder="example@email.com"
+                            title="Provide an email address." required>
+                    </label>
+                    <label><span class="label-title req">Phone Number</span>
+                        <input type="tel" id="info-phone" name="phone"
+                            title="Phone number must be entered without spaces, hyphens, or underscores." required>
+                    </label>
+                </fieldset>
+    
+                <fieldset id="memberships">
+                    <legend>Membership Level</legend>
+                    <div id="mem-selection">
+                        <h2 class="label-title">Choose a Membership Level</h2>
+                        <p class="p-hint">Select one of the following memberships to apply for.</p>
+                        <label class="label-radio"><input type="radio" id="mem-np" name="membership"
+                                value="beginner">NP</label>
+                        <label class="label-radio"><input type="radio" id="mem-bronze" name="membership" value="beginner"
+                                checked="checked">Bronze</label>
+                        <label class="label-radio"><input type="radio" id="mem-silver" name="membership"
+                                value="intermediate">Silver</label>
+                        <label class="label-radio"><input type="radio" id="mem-gold" name="membership"
+                                value="advanced">Gold</label>
+                    </div>
+                    <div id="mem-description">
+                        <p>These membership levels have increasing costs as well as increased benefits per level.
+                            Benefits might include special events, training, advertising (like spotlight positions on the
+                            home page), event discounts, etc.</p>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Buisness Description</legend>
+                    <h2 class="label-title">Describe your Business</h2>
+                    <p class="p-hint">Write a brief description about your company.</p>
+                    <label><textarea id="business-description" rows="10" cols="40"></textarea></label>
+                </fieldset>
+    
+                <input type="hidden" name="form-date" id="display-form-date" value="">
+                <input type="submit" id="submit-button" value="Submit Application">
+            </form>
         </div>
-        
-        
-
-        <!-- container que agrupa as 3 colunas -->
-        <div class="three-columns">
-            <!-- Coluna 1: Events -->
-            <section class="events">
-                <h3 class="box-title">Events</h3>
-
-                <div class="event-item">
-                    <h4 class="box-subtitle">
-                        Mark Zero Recife & Recife Mayor at the Brazilian Veneza Expo Center
-                    </h4>
-                </div>
-
-                <div class="event-item">
-                    <p class="box-content">
-                        There is an upcoming event in Mark Zero Recife, Pernambuco-Brazil on October 24-26, 10am-9pm. If
-                        you are a lover of folclore and events cultural. Be sure to check it out!
-                    </p>
-                </div>
-
-                <div class="event-item">
-                    <h4 class="box-subtitle">
-                        Recife Jazz Festival at Marco Zero
-                    </h4>
-                    <p class="box-content">
-                        Enjoy live jazz music in the heart of Recife at Marco Zero from November 10-12, 6pm-11pm. Local and
-                        international artists will perform. Bring your friends and family for a cultural evening!
-                    </p>
-                </div>
-
-                <div class="event-item">
-                    <h4 class="box-subtitle">
-                        Recife Food & Culture Fair
-                    </h4>
-                    <p class="box-content">
-                        Taste the best of Recife’s cuisine and enjoy cultural performances at the Recife Food & Culture Fair on December
-                        5-7, 10am-8pm. A perfect event for food lovers and families to experience local traditions.
-                    </p>
-                </div>
-            </section>
-            
-        
-            <!-- Coluna 2: Current Weather -->
-            <article id="weather" class="weather-card">
-                <h3>Current Weather</h3>
-                <p id="location"></p>
-                <figure>
-                    <div class="temp-area"></div>
-                    <figcaption id="weather-description"></figcaption>
-                </figure>
-                <div class="alt-weather">
-                    <div class="weather-box">Feels Like: <span id="feels-like"></span></div>
-                    <div class="weather-box">Humidity: <span id="humidity"></span></div>
-                    <div class="weather-box">Wind: <span id="wind-speed"></span></div>
-                    <div class="weather-box">Wind Chill: <span id="wind-chill"></span></div>
-                </div>
-            </article>
-        
-            <!-- Coluna 3: Weather Forecast -->
-            <article id="five-day" class="weather-card">
-                <h3>Weather Forecast</h3>
-                <div id="forecast"></div>
-            </article>
-        </div>
-
-        <div class="spotlight">
-            <h3 class="box-title">Spotlight</h3>
-            <div class="spotlight-grid">
-                <div id="spotlight-1" class="sub-box"></div>
-                <div id="spotlight-2" class="sub-box"></div>
-                <div id="spotlight-3" class="sub-box"></div>
-            </div>
-        </div>
-
-<!--
-        <div class="join">
-            <h3 class="box-title">Join</h3>
-            <p class="box-content">Do you wish to be part of our community? Apply for our Chamber of Commerce today! We look
-                forward to working with you.</p>
-            <button id="join-button" onclick="window.location.href='join.html';">Join</button>
-        </div>
-
-        -->
     </main>
-
+    
     <footer>
         <!--
         <div class="info-company">
@@ -235,9 +197,5 @@
         
         -->
     </footer>
-
-   
-
 </body>
-
 </html>

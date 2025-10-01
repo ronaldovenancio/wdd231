@@ -67,7 +67,7 @@
 }
 
 /* Large screens (~520px+) */
-@media screen and (min-width: 38rem) {
+@media screen and (min-width: 64rem) {
 
     /* Directory area */
     #directory-area {
@@ -394,7 +394,7 @@
         }
 
     
-    /* Responsividade para colunas pequenas */
+    /* Responsividade para colunas pequenas antes era 768px*/
     @media screen and (max-width: 768px) {
         .three-columns {
             grid-template-columns: 1fr;
