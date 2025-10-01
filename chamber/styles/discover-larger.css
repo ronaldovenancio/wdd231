@@ -646,6 +646,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #showHere div img {
+        width: 300px;
+        height: auto;
+      /* display: block; */
+        border-radius: 10px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
     @media only screen and (min-width: 1200px) {
     
         /* ou seu breakpoint maior */
@@ -671,6 +679,16 @@
             padding:10px;
             /* mantém proporção */
             }
+
+        #showHere div img:hover {
+            width: 300px;
+            height: auto;
+            transform: scale(1.04);   /* zoom suave */
+            filter: brightness(1.1);  /* aumenta o brilho */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
     }
 
 }
