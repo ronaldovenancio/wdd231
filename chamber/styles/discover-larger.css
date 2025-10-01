@@ -648,7 +648,7 @@
 
     #showHere div img {
         width: 300px;
-        height: auto;
+        height: 100%;
       /* display: block; */
         border-radius: 10px;
         transition: transform 0.3s ease, filter 0.3s ease;
@@ -682,11 +682,46 @@
 
         #showHere div img:hover {
             width: 300px;
-            height: auto;
+            height: 100%;
             transform: scale(1.04);   /* zoom suave */
             filter: brightness(1.1);  /* aumenta o brilho */
             border-radius: 10px;
             cursor: pointer;
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            width:100%;
+            margin-top: 0.5rem;
+            padding: 0.2rem 0.2rem;
+            text-align: center;
+            background: var(--primary, #a0001e);
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+             background: var(--accent1, #9d6451);
+        }
+
+        .learn-btn {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.2rem 0.2rem;
+            border: none;
+            border-radius: 8px;
+            background: var(--primary, #a0001e);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .learn-btn:hover {
+            background: #7a0016;
         }
 
     }
