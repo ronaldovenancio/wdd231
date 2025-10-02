@@ -52,7 +52,7 @@ export const places = [
         "address": "Avenida Engenheiro José de Estelita, Recife Antigo, Recife - PE, Brazil",
         "cost": "R$40,00",
         "description": "Wonderful tour along the waters of the Capibaribe River, covering the three Islands in the Center of Recife(Santo Antônio Recife Antigo and Boa Vista) passing under Ponte do Limeiro Ponte Princesa Isabel and Ponte Duarte Coelho.",
-        "photo_link": "catamarã-tour-rio-capibaribe-1000x500-Tripadvisor.webp",
+        "photo_link": "catamara-tour-rio-capibaribe-1000x500-Tripadvisor.webp",
         "url": "https://reservas.catamarantours.com.br"
     },
     {
@@ -60,7 +60,7 @@ export const places = [
         "address": "Rua Mário Campelo, 700, Várzea, Recife - PE, Brazil",
         "cost": "R$50,00",
         "description": "The Ricardo Brennand Institute, in Recife, houses one of the most important artistic and historical collections in the country.The 80 thousand square meter architectural complex is the greatest legacy left by the businessman and patron from Pernambuco.",
-        "photo_link": "castelodeBrennand-1000x500-Istoé-Independente.webp",
+        "photo_link": "castelodeBrennand-1000x500-Istoe-Independente.webp",
         "url": "http://www.institutoricardobrennand.org.br"
     },
     /*
