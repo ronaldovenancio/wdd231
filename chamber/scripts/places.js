@@ -13,6 +13,7 @@ function displayItems(places) {
 
         //build the photo element
         const thephoto = document.createElement('img')
+        thephoto.classList.add("course") // classe p/ estilizar no CSS
         thephoto.src = `images/${x.photo_link}`
         thephoto.alt = x.name
         thephoto.setAttribute('loading', 'lazy')
@@ -61,12 +62,12 @@ function displayCourseDetails(places) {
     // adiciona novo conteúdo
     placesDetails.innerHTML = `
     <button id="closeModal" class="close">❌</button>
-    <h2>${places.subject} ${places.cost}</h2>
-    <h3>${places.adress}</h3>
-    <p><strong>Credits</strong>: ${places.credits}</p>
+    <h2>${places.name} ${places.cost}</h2>
+    <h3>${places.address}</h3>
+    <p><strong>Credits</strong>: ${places.photo_link}</p>
     <p><strong>Certificate</strong>: ${places.description}</p>
     <p>${places.description}</p>
-    <p><strong>Technologies</strong>: ${places.name.join(", ")}</p>
+    <p><strong>Technologies</strong>: ${places.name}</p>
   `;
 
     // abre o modal
@@ -91,4 +92,9 @@ function displayCourseDetails(places) {
         }
     });
 }
+
+// Exemplo: abrir modal ao clicar em um curso
+document.querySelector(".course").addEventListener("click", () => {
+    displayCourseDetails(places);
+});
 
