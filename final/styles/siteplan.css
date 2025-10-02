@@ -1,0 +1,350 @@
+/* ============================================
+   GOOGLE FONTS
+=============================================== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&family=Acme&display=swap');
+
+/* ============================================
+   ROOT VARIABLES (Colors & Fonts)
+=============================================== */
+:root {
+    --primary-color: #ccd5ae;
+    --secondary-color: #e9edc9;
+    --accent1-color: #fefae0;
+    --accent2-color: #aba5a5;
+
+    --heading-font: 'Playfair Display';
+    --paragraph-font: 'Roboto', Lato, Helvetica, sans-serif;
+
+    --headline-color-on-white: #274c67;
+    --headline-color-on-color: #9e9a9a;
+    --paragraph-color-on-white: #074b7b;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #143b57;
+
+    --nav-link-color: whitesmoke;
+    --nav-background-color: #ddd09c;
+    --nav-hover-link-color: #4f4d4d;
+    --nav-hover-background-color: #dabd19;
+}
+
+/* ============================================
+   GLOBAL STYLES
+=============================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    text-align: center;
+}
+
+/* ============================================
+   TYPOGRAPHY
+=============================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: rgb(3, 3, 21);
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Acme', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: darkgreen;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+    text-align: left;
+}
+
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+/* ============================================
+   HEADER & LOGO
+=============================================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    background-color: darkblue;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    color: white;
+    background-color: darkblue;
+}
+
+.logo {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ============================================
+   NAVIGATION
+=============================================== */
+#menu {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation.show li {
+    display: block;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+
+.lista_scenario {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+    /* espaço entre a borda esquerda e o texto */
+    text-align: left;
+    margin: 1rem auto;
+    max-width: 900px;
+    /* opcional: limita a largura para melhor leitura */
+}
+
+.lista_scenario li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: var(--paragraph-color-on-white);
+}
+
+
+
+/* Wide view (desktop) */
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: flex;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+/* ============================================
+   COLOR TABLE
+=============================================== */
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+}
+
+/* ============================================
+   SITEMAP GRID
+=============================================== */
+.sitemap {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: 3em 1.5em 1.5em 3em;
+    grid-template-areas:
+        ". . home home . ."
+        ". . . top . ."
+        ". left left right right ."
+        "page2 page2 . . page3 page3";
+}
+
+.sitemap div {
+    text-align: center;
+}
+
+.sm-home,
+.sm-page2,
+.sm-page3 {
+    background-color: #ccc;
+    line-height: 3em;
+}
+
+.sm-home {
+    grid-area: home;
+}
+
+.sm-page2 {
+    grid-area: page2;
+}
+
+.sm-page3 {
+    grid-area: page3;
+}
+
+.top {
+    grid-area: top;
+    border-left: 1px solid;
+}
+
+.left {
+    grid-area: left;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.right {
+    grid-area: right;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+/* ============================================
+   CONTAINERS & SECTIONS
+=============================================== */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+section.stdlf {
+    background-color: ghostwhite;
+}
+
+.container section {
+    background-color: whitesmoke;
+    width: 320px;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.stdlf {
+    font-weight: 700;
+    border-bottom: 1px solid #777;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ============================================
+   FOOTER
+=============================================== */
+footer {
+    background: darkblue;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 0.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.2rem;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+.highlight {
+    color: yellow;
+    padding-top: 10px;
+    text-align: center;
+}
