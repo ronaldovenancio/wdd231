@@ -109,6 +109,14 @@ header h1 {
     background-color: darkblue;
 }
 
+header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    color: white;
+    background-color: darkblue;
+}
+
 .logo {
     width: 50px;
     display: block;
