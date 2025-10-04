@@ -1070,11 +1070,11 @@ textarea {
     overflow: hidden;
 
     display: grid;
-    grid-template-areas: 
-    "name"
-    "photograph"
-    "description"
-    "location";
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "location";
 }
 
 #showHere div h2 {
@@ -1543,23 +1543,26 @@ footer {
     }
 
     .learn-more-btn {
-            display: inline-block;
-            width:100%;
-            margin-top: 0.5rem;
-            padding: 0.2rem 0.2rem;
-            text-align: center;
-            background: var(--primary, #a0001e);
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
+        display: inline-block;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.2rem 0.2rem;
+        text-align: center;
+        background: var(--primary, #a0001e);
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
 
     .learn-more-btn:hover {
         background: var(--accent1, #9d6451);
     }
 
     .learn-btn {
+        display: block;
+        width: fit-content;
+        margin: 1rem auto;
         font-size: 1rem;
         text-align: center;
         margin-top: 1rem;
@@ -1573,6 +1576,7 @@ footer {
         transition: background 0.3s ease;
     }
 
+
     .learn-btn:hover {
         background: #7a0016;
     }
@@ -1584,7 +1588,7 @@ footer {
         background-color: #fff;
         box-shadow: 0 0 3rem #777;
         width: 90%;
-        max-width: 600px;
+        max-width: 400px;
     }
 
     ::backdrop {
@@ -1593,8 +1597,8 @@ footer {
 
     dialog button {
         position: absolute;
-        top: 23px;
-        right: 23px;
+        top: 5px;
+        right: 10px;
         padding: .5rem 1rem;
         border: 1px solid rgb(0 0 0 / 10%);
     }

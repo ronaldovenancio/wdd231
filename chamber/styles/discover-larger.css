@@ -641,7 +641,7 @@
     }
 
     #showHere div {
-    
+
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -649,24 +649,24 @@
     #showHere div img {
         width: 300px;
         height: 100%;
-      /* display: block; */
+        /* display: block; */
         border-radius: 10px;
         transition: transform 0.3s ease, filter 0.3s ease;
     }
 
     @media only screen and (min-width: 1200px) {
-    
+
         /* ou seu breakpoint maior */
         header {
             display: flex;
-                /* ou grid */
+            /* ou grid */
             align-items: center;
             /* verticalmente */
             padding: 0.5rem 0.1rem;
             /* ajuste conforme necessário */
             min-height: 60px;
             /* limite mínimo */
-                
+
             /* menos padding vertical */
             min-height: 80px;
             /* se quiser limitar a altura */
@@ -676,22 +676,24 @@
             width: 100px;
             /* ou o tamanho que desejar */
             height: auto;
-            padding:10px;
+            padding: 10px;
             /* mantém proporção */
-            }
+        }
 
         #showHere div img:hover {
             width: 300px;
             height: 100%;
-            transform: scale(1.04);   /* zoom suave */
-            filter: brightness(1.1);  /* aumenta o brilho */
+            transform: scale(1.04);
+            /* zoom suave */
+            filter: brightness(1.1);
+            /* aumenta o brilho */
             border-radius: 10px;
             cursor: pointer;
         }
 
         .learn-more-btn {
             display: inline-block;
-            width:100%;
+            width: 100%;
             margin-top: 0.5rem;
             padding: 0.2rem 0.2rem;
             text-align: center;
@@ -703,10 +705,13 @@
         }
 
         .learn-more-btn:hover {
-             background: var(--accent1, #9d6451);
+            background: var(--accent1, #9d6451);
         }
 
         .learn-btn {
+            display: block;
+            width: fit-content;
+            margin: 1rem auto;
             font-size: 1rem;
             text-align: center;
             margin-top: 1rem;
@@ -723,6 +728,28 @@
         .learn-btn:hover {
             background: #7a0016;
         }
+
+                dialog {
+                    border: 1px solid rgb(0 0 0 / 10%);
+                    border-radius: .25rem;
+                    padding: 1rem;
+                    background-color: #fff;
+                    box-shadow: 0 0 3rem #777;
+                    width: 90%;
+                    max-width: 600px;
+                }
+        
+                ::backdrop {
+                    background-color: rgb(0 0 0 / 50%);
+                }
+        
+                dialog button {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                    padding: .5rem 1rem;
+                    border: 1px solid rgb(0 0 0 / 10%);
+                }
 
     }
 
