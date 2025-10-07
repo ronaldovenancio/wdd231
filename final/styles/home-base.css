@@ -111,6 +111,10 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
+.fa-solid, .fa-bars {
+    border: none;
+}
+
 button,
 input[type="submit"] {
     border: none;
