@@ -107,7 +107,7 @@ p {
     margin: 0px 0px 4px 0px;
 }
 
-.fa-solid, .fa-bars, .event-item, .location-icon, .fas, .fa-map-marker-alt {
+ .event-item, .location-icon, .fas, .fa-map-marker-alt {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 

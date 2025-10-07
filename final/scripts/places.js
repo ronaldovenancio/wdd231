@@ -57,7 +57,7 @@ function displayPlacesDetails(place) {
 
     placesDetails.showModal();
 
-    document.querySelector("#closeModal").addEventListener("click", () => {
+    document.getElementById("closeModal").addEventListener("click", () => {
         placesDetails.close();
     });
 
