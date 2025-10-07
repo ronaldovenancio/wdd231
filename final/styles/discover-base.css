@@ -49,8 +49,12 @@
     --paragraph: 'DM Sans', tahoma, sans-serif;
 }
 
-.fa-solid, .fa-bars, .event-item, .location-icon, .fas, .fa-map-marker-alt, .close {
+.event-item, .location-icon, .fas, .fa-map-marker-alt, .close {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fa-solid, .fa-bars {
+    border: none;
 }
 
 h1 {
