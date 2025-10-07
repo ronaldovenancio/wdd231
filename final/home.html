@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathStarsCMR - Home Page</title>
+    <meta name="description"
+        content="Explore the MathStarsCMR Home Page to find Math Olympiads in Brazil and around the world and contacts. Connect with local Math Societs and opportunities to learn more about Mathematics.">
+    <meta property="og:description"
+        content="Explore the MathStarsCMR Home Page to find Math Olympiads in Brazil and contact with us. Connect with local Math Society efficiently and discover new opportunities.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WDD231 - Web Frontend Development - Recife Chamber of Commerce - Home">
+    <meta property="og:image" content="https://images.app.goo.gl/xepRjvRTSMs75R1KA">
+    <meta property="og:url" content="https://ronaldovenancio.github.io/wdd231/chamber">
+    <meta name="author" content="Ronaldo Venancio da Silva">
+    <link rel="icon" href="favicon.ico">
+
+
+    <!-- Fonts (optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- JavaScript -->
+    <script src="../final/scripts/get-dates.js" defer></script>
+    <script src="../final/scripts/responsive-menu.js" defer></script>
+    <script src="../final/scripts/olympiads-spotlight.js" defer></script>
+    <script src="../final/scripts/weather-project.js" defer></script>
+    <script src="../final/scripts/windchill.js" defer></script>
+  <!--  <script src="../chamber/scripts/chamber-js.js" defer></script> -->
+    <script src="scripts/last-visited.js" defer></script>
+    <script src="https://kit.fontawesome.com/8e1934d7eb.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- Styles Sheets Here -->
+    <link rel="stylesheet" href="../final/styles/normalize.css">
+    <link rel="stylesheet" href="../final/styles/home-base.css">
+    <link rel="stylesheet" href="../final/styles/home-larger.css">
+    <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="page-content">
+            <img id="header-logo" src="../final/images/logosite.webp" alt="Logo of MathStars - Militar School of Recife"
+                loading="lazy" width="50" height="50">
+            <span class="header-title">MathStars CMR - Militar School of Recife</span>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li class="nav-li"><a id="nav-button" href="#"><i id="nav-icon" class="fa-solid fa-bars"></i></a></li>
+                <li class="nav-li"><a id="nav-current" href="home.html">Home</a></li>
+                <li class="nav-li"><a href="discover.html">Discover</a></li>
+                <li class="nav-li"><a href="directory.html">Directory</a></li>
+                <li class="nav-li"><a href="join.html">Join</a></li>
+            </ul>
+
+            <!-- Social media agora dentro do nav -->
+            <!--
+            <div id="header-links">
+                <a href="https://www.facebook.com/" target="_blank"><img id="link-facebook"
+                        src="../chamber/images/facebook-w-100x100.webp" alt="Facebook Logo" width="32" height="32"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img id="link-linkedin"
+                        src="../chamber/images/linkedin-w-100x100.webp" alt="LinkedIn Logo" width="32" height="32"></a>
+            </div>
+            -->
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="call-to-action">
+            <picture id="hero-image">
+                <source media="(max-width: 600px)" srcset="../final/images/cmr-image4.webp">
+                <source media="(min-width: 600px) and (max-width: 700px)"
+                    srcset="../final/images/cmr-image3.webp">
+                <source media="(min-width: 700px) and (max-width: 900px)" srcset="../final/images/cmr-image2.webp">
+                <img data-src="../chamber/images/recife-1500x750.webp" src="../final/images/cmr-image1.webp"
+                    alt="Image of Recife-PE, Brazil" width="1500" height="750">
+            </picture>
+            <h2 class="hero-title">MathStars CMR Welcomes You</h2>
+            <a href="join.html">Become a Member Now!</a>
+        </div>
+
+
+
+        <!-- container que agrupa as 3 colunas -->
+        <div class="three-columns">
+            <!-- Coluna 1: Events -->
+            <section class="events">
+                <h3 class="box-title">About the MathStarsCMR</h3>
+
+                <div class="event-item">
+                    <h4 class="box-subtitle">
+                        The site name <strong>MathStarsCMR Brazil</strong> was chosen to represent Brazilian students who excel in
+                        national and regional mathematics competitions such as OBM, OBMEP, and OMU.
+                        The term "MathStars" conveys the idea of excellence, talent, and prominence-young stars shining through
+                        mathematics. The word "Brazil" provides the geographic and national context for the project.           
+                        <p><em>Optional domain availability:</em> mathstarscmrbrazil.eb.mil.br</p>
+                    </h4>
+                </div>
+
+                <div class="event-item">
+                    <p class="box-content">
+                        The Mathematics Olympiad is an extension activity carried out, in general, by the Mathematics Department
+                        of Federal Universities (UFs) with the support of the Brazilian Mathematics Olympiad Association
+                        <strong>(AOBM)</strong> and STONE, together with other Higher Education Institutions (IES).
+                        
+                    </p>
+                </div>
+
+                <div class="event-item">
+                    <h4 class="box-subtitle">
+                        The Brazilian Mathematics Society organized the first Mathematics Olympiad (OBM) in 1979. Over the years,
+                        OBM has undergone several changes in its format, but maintained the central idea, which is to encourage
+                        the study of Mathematics in students, develop and improve teacher training, influence the improvement of
+                        teaching, in addition to discovering young people talented.
+                    </h4>
+                    <p class="box-content">
+                        The Brazilian Mathematics Olympiad (OBM) is a program of the Brazilian Mathematics Society (SBM) and the
+                        Brazilian Mathematics Olympiad Association (AOBM). In addition to holding the annual edition of the
+                        Olympics throughout Brazil, the OBM organizing committee is responsible for selecting and training
+                        Brazilian teams that participate in international competitions, such as the International Mathematical
+                        Olympiad (IMO), Ibero-American Mathematics Olympiad (IMO) and International Mathematics Competition for
+                        University Students (IMC).</p>
+                </div>
+
+                <div class="event-item">
+                    <h4 class="box-subtitle">
+                        <b>Medals -</b> This year, OBMEP multiplied the number of medals for those registered. 650 gold, 1,950
+                        silver and 5,850 bronze medals will be distributed to participants from public and private units.
+                        Students who win these medals will be invited to participate in the Jr. Scientific Initiation Program
+                        (PIC) as an incentive and promotion of academic development.
+                    </h4>
+                    <p class="box-content">
+                        This guide have the intention to help students to find some of the most known mathematics olympics in
+                        Northeast of Brazil, and, of course, some of the most important mathematics olympics in Brazil, like,
+                        OMU and OBM. Some links of them will be presented in this guide</p>
+                </div>
+            </section>
+
+
+            <!-- Coluna 2: Current Weather -->
+            <article id="weather" class="weather-card">
+                <h3>Current Weather</h3>
+                <p id="location"></p>
+                <figure>
+                    <div class="temp-area"></div>
+                    <figcaption id="weather-description"></figcaption>
+                </figure>
+                <div class="alt-weather">
+                    <div class="weather-box">Feels Like: <span id="feels-like"></span></div>
+                    <div class="weather-box">Humidity: <span id="humidity"></span></div>
+                    <div class="weather-box">Wind: <span id="wind-speed"></span></div>
+                    <div class="weather-box">Wind Chill: <span id="wind-chill"></span></div>
+                </div>
+            </article>
+
+            <!-- Coluna 3: Weather Forecast -->
+            <article id="five-day" class="weather-card">
+                <h3>Weather Forecast</h3>
+                <div id="forecast"></div>
+            </article>
+        </div>
+
+        <div class="spotlight">
+            <h3 class="box-title">Math Olympiads Spotlight</h3>
+            <div class="spotlight-grid">
+                <div id="spotlight-1" class="sub-box"></div>
+                <div id="spotlight-2" class="sub-box"></div>
+                <div id="spotlight-3" class="sub-box"></div>
+            </div>
+        </div>
+
+        <!--
+        <div class="join">
+            <h3 class="box-title">Join</h3>
+            <p class="box-content">Do you wish to be part of our community? Apply for our Chamber of Commerce today! We look
+                forward to working with you.</p>
+            <button id="join-button" onclick="window.location.href='join.html';">Join</button>
+        </div>
+
+        -->
+    </main>
+
+    <footer>
+        <!--
+        <div class="info-company">
+            <img id="footer-logo" src="../chamber/images/chamber-logo.webp" alt="Recife City Chamber Logo" width="180" height="180">
+            <h3 id="footer-company">Recife Chamber of Commerce</h3>
+        </div>
+        -->
+
+        <div class="footer-info">
+            <div class="info-left">
+                <p><strong>Contact Information</strong></p>
+                <p>Location: Recife, Pernambuco, Brazil</p>
+                <p>Email: rdasilva4@byupathway.edu</p>
+                <p>Number: +5581986990000</p>
+            </div>
+            <!--
+        <div class="info-contact">
+            <p id="company-address"><strong>123 Mark Zero Street, Recife - Pernambuco, 12345</strong></p>
+            <p id="company-email"><strong>contactus@recifecitychamber.pe</strong></p>
+            <p id="company-phone"><strong>(081)-9876-5432</strong></p>
+            <p id="company-map"><span class="location-icon"><i class="fas fa-map-marker-alt"></i>
+                </span> <a href="https://maps.app.goo.gl/MJjt9VY4aYwTdUcy9">Location Map</a></p>
+        </div>
+        -->
+
+            <div class="social">
+                <a href="https://github.com/ronaldovenancio" target="_blank"><img src="images/github.svg"
+                        alt="my github" width="16" height="16"></a>
+                <a href="https://linkedin.com/in/ronaldo-venancio-b2772280/" target="_blank"><img
+                        src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+                <a href="https://profile.indeed.com/?hl=pt_BR&co=BR&from=gnav-homepage" target="_blank"><img
+                        src="images/indeed.svg" alt="indeed" width="16" height="16"></a>
+                <a href="https://facebook.com/ronaldo.venancio.908/" target="_blank"><img src="images/facebook.svg"
+                        alt="facebook" width="16" height="16"></a>
+                <a href="https://x.com/@RonaldoVen98700" target="_blank"><img src="images/twitter-x.svg" alt="twitter"
+                        width="16" height="16"></a>
+            </div>
+
+            <div class="info-right">
+                <p> <strong>WDD231 Final Project</strong></p>
+                <p>By Ronaldo Venancio da Silva</p>
+                <p>&copy;<span id="currentYear"></span> - MathStars CMR - Military School of Recife</p>
+                <p class="highlight">Last Modification: <span id="lastModified"></span></p>
+                <p id="visits">Total visits: <span id="visit-count"></span> | Days since last visit: <span
+                        id="visit-since"></span></p>
+            </div>
+        </div>
+
+        <!--
+        
+        <div class="info-stats">
+            
+            <p id="visits">Total visits: <span id="visit-count"></span> | Days since last visit: <span id="visit-since"></span>
+            </p>
+            
+            <p id="credits"></p>
+            <p id="copy">&copy; <span id="currentYear"></span> Recife Chamber of Commerce .:|:. Ronaldo Venancio da Silva
+                - WDD231 .:|:. Last Modification: <span id="lastModified" class="highlight"></span></p>
+        </div>  
+        
+        -->
+    </footer>
+
+
+
+</body>
+
+</html>

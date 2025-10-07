@@ -1,0 +1,105 @@
+{
+    "olympiads": [
+        {
+            "name": "OBMEP Math Olympiad",
+            "name_add": "",
+            "address": "National, Brazil",
+            "address_end": "National, Brazil",
+            "phone": "+5581980157138",
+            "url": "https://www.obmep.org.br/",
+            "logo": "../final/images/olympiads/obmep.webp",
+            "mem_lvl": "Gold"
+        },
+        {
+            "name": "OPEMAT Olympiad",
+            "name_add": "",
+            "address": "Pernambuco, Nordeste, Brazil",
+            "address_end": "Recife, PE 50030-030",
+            "phone": "+5581984670214",
+            "url": "https://www.opemat.com.br/",
+            "logo": "../final/images/olympiads/opemat.webp",
+            "mem_lvl": "Gold"
+        },
+        {
+            "name": "OBM Math Olympiad",
+            "name_add": "",
+            "address": "National, Brazil",
+            "address_end": "Nacional, Brazil",
+            "phone": "+558199344825",
+            "url": "https://www.obm.org.br/",
+            "logo": "../final/images/olympiads/obm.webp",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "Canguru Math Olympiad",
+            "name_add": "",
+            "address": "National, Brazil",
+            "address_end": "National, Brazil",
+            "phone": "+558121274763",
+            "url": "https://www.cangurudematematicabrasil.com.br",
+            "logo": "../final/images/olympiads/canguru.webp",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "OMU Math Olympiad",
+            "name_add": "",
+            "address": "São Paulo, Sudeste, National, Brazil",
+            "address_end": "São Paulo, Sudeste, National, Brazil",
+            "phone": "+558132764312",
+            "url": "https://www.olimpiada.ime.unicamp.br",
+            "logo": "../final/images/olympiads/omu.webp",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "OMIF Math Olympiad",
+            "name_add": "",
+            "address": "National, Brazil",
+            "address_end": "National, Brazil",
+            "phone": "+558132271188",
+            "url": "https://omif.com.br/",
+            "logo": "../final/images/olympiads/omif.webp",
+            "mem_lvl": "Bronze"
+        },
+        {
+            "name": "OPM Math Olympiad",
+            "name_add": "",
+            "address": "Paraíba, Nordeste, Brazil",
+            "address_end": "Paraíba, Nordeste, Brazil",
+            "phone": "+558132243794",
+            "url": "https://mat.ufpb.br/opm/",
+            "logo": "../final/images/olympiads/opm.webp",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "OCMAT Math Olympiad",
+            "name_add": "",
+            "address": "Espírito Santo, Sudeste, Brazil",
+            "address_end": "Espírito Santo, Sudeste, Brazil",
+            "phone": "+558131828267",
+            "url": "https://matematicanarede.sedu.es.gov.br/ocmat",
+            "logo": "../final/images/olympiads/ocmat.webp",
+            "mem_lvl": "Silver"
+        },
+        {
+            "name": "OMOC Math Olympiad",
+            "name_add": "",
+            "address": "Santa Catarina, Sul, Brazil",
+            "address_end": "Santa Catarina, Sul, Brazil",
+            "phone": "+558134198014",
+            "url": "https://omoc.uffs.edu.br",
+            "logo": "../final/images/olympiads/omoc.webp",
+            "mem_lvl": "Gold"
+        },
+        {
+            "name": "Mandacaru Math Olympiad",
+            "name_add": "",
+            "address": "Rio Grande do Norte, Nordeste, Brazil",
+            "address_end": "Natal, RN",
+            "phone": "+558134198014",
+            "url": "https://olimpiadamandacaru.com.br",
+            "logo": "../final/images/olympiads/mandacaru.jpeg",
+            "mem_lvl": "Gold"
+        }
+    ]
+}
+

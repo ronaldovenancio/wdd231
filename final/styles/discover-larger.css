@@ -1,0 +1,756 @@
+:root {
+    --space-xs: 0.5rem;
+    /* 8px */
+    --space-sm: 1rem;
+    /* 16px */
+    --space-md: 2rem;
+    /* 32px */
+    --space-lg: 3rem;
+    /* 48px */
+    --font-title: 32px;
+    --font-subtitle: 24px;
+    --font-body: 20px;
+
+    --font-title-list: 24px;
+    --font-subtitle-list: 18px;
+    --font-body-list: 16px;
+    /* Colors */
+    --primary: #a0001e;
+    --secondary: #180e0d;
+    --accent1: #9d6451;
+    --accent2: #e2beab;
+}
+
+/* Small screens (menos de 520px) */
+@media screen and (max-width: 37.99rem) {
+    .view-list .card {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* uma coluna única */
+        gap: var(--space-xs);
+        width: 90%;
+        /* reduz largura e deixa margem automática */
+        margin: var(--space-sm) auto;
+        /* centraliza horizontalmente */
+        /* text-align: center;
+        /* opcional: centraliza o conteúdo */
+    }
+
+    .view-list .card>* {
+        text-align: center;
+        /* centraliza todos os elementos internos */
+    }
+
+    .header-title {
+        font-size: 1.4rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        /* empilha os itens verticalmente */
+        align-items: flex-start;
+        /* alinha à esquerda */
+        padding: 0;
+    }
+
+    .navigation .nav-li {
+        width: 100%;
+        /* cada botão ocupa toda a largura */
+        margin: 0.25rem 0;
+        /* espaço entre os botões */
+    }
+
+    .navigation .nav-li a {
+        display: block;
+        /* faz o link preencher o li */
+        width: 100%;
+        padding: 0.75rem 1rem;
+        /* aumenta área clicável */
+        text-align: left;
+        /* opcional: mantém o texto à esquerda */
+        /*  background-color: #f0f0f0; /* opcional: cor de destaque */
+        border-radius: 5px;
+        /* opcional: bordas arredondadas */
+    }
+
+
+    #nav-icon {
+        color: white;
+        /* Cor desejada */
+        font-size: 28px;
+        /* Opcional: aumenta o tamanho do ícone */
+    }
+
+    /* Se você quiser mudar o fundo do botão também */
+    #nav-button {
+        background-color: transparent;
+        /* Cor de fundo do botão */
+        border: none;
+        /* Remove borda se houver */
+        padding: 8px;
+        border-radius: 5px;
+        /* opcional */
+    }
+
+}
+
+/* Large Display Properties (~ 520px+ wide) */
+@media screen and (min-width: 38rem) {
+
+    #directory-area {
+        width: 100%;
+        max-width: 1200px;
+        /* opcional, mantém layout centralizado */
+        margin: 0 auto;
+        overflow-x: auto;
+        /* permite rolagem horizontal se necessário */
+    }
+
+    #profile {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #header-links {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding: 6px 6px;
+    }
+
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 100%;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        /*  grid-template-columns: 10% 1fr 1fr 10%; */
+        grid-template-rows: 1fr auto;
+    }
+
+    footer,
+    .home-grid,
+    .discover-box,
+    #memberships,
+    .view-list {
+        gap: var(--space-sm);
+    }
+
+    .info-company {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .info-contact {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-top: 70px;
+        text-align: left;
+        padding-top: var(--space-lg);
+    }
+
+    .info-stats {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    /* Home Page Content */
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .call-to-action {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .events {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .weather {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .spotlight {
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+
+    .join {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #join-button {
+        margin: 20px auto;
+        margin: var(--space-md) auto;
+    }
+
+    /* Discover Page Content */
+
+    .discover-box {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: var(--space-lg);
+    }
+
+
+    /* Join Page Content */
+
+    #memberships {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #mem-selection {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #mem-description {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #mem-description p {
+        margin: 48px auto 0px auto;
+    }
+
+    textarea {
+        max-width: 90%;
+    }
+
+    /* Directory Page Content */
+
+    .view-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-md);
+    }
+
+
+
+
+    .view-cards .card {
+        margin: 10px auto;
+    }
+
+
+    .view-cards .card {
+        /*   display: block; 
+        flex-wrap: wrap; */
+        /* permite quebra se necessário */
+        gap: 0.125rem 0.25rem;
+        /* espaço vertical e horizontal reduzido */
+        align-items: center;
+        /* alinha verticalmente */
+        padding: 0.125rem 0.25rem;
+        /* padding interno mínimo */
+        margin: 10px auto;
+    }
+
+
+
+    .view-cards .card-title {
+        display: flex;
+        width: 100%;
+        /* ocupa toda a linha do card */
+        justify-content: center;
+        text-align: center;
+        /* centraliza horizontalmente o texto */
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        /* espaçamento abaixo do título */
+    }
+
+
+    .view-cards .card .card-address,
+    .view-cards .card .card-phone,
+    .view-cards .card .card-url {
+        margin: 0;
+        padding: 0 0.125rem;
+        /* padding horizontal mínimo */
+        font-size: 0.875rem;
+        /* opcional: reduz um pouco a fonte se quiser compactar mais */
+    }
+
+    .view-cards .card-logo {
+        margin-right: 0.25rem;
+        margin: 0 auto 0.5rem auto;
+        /* centraliza e adiciona 0.5rem abaixo da imagem */
+        /* diminui o espaço entre logo e os outros campos */
+    }
+
+
+
+    .view-list .card {
+        display: grid;
+        min-height: 80px;
+        border-bottom: 1px solid #ddd;
+        /* separa as linhas */
+        border-bottom: none;
+        padding: var(--space-xs) 0;
+        grid-template-columns: minmax(150px, 250px) minmax(150px, 250px) minmax(350px, 2fr) minmax(350px, 2fr);
+        grid-auto-rows: 1fr;
+        /* força altura igual */
+        width: 100%;
+        margin: 0px;
+        align-items: stretch;
+        /* estica as células para mesma altura */
+    }
+
+
+
+    /* Garante que todos os elementos internos herdem a cor de fundo */
+    .view-list .card>* {
+        background-color: inherit;
+        box-sizing: border-box;
+        margin: 0;
+        padding: var(--space-xs);
+
+
+    }
+
+
+    /*
+    .view-list .card:nth-child(even) .card-title {
+        background-color: var(--black);
+    } 
+*/
+    /* cores alternadas para linhas */
+    .view-list .card:nth-child(odd),
+    .view-list .card:nth-child(odd)>* {
+        background-color: #ffffff;
+        /* branco */
+    }
+
+    .view-list .card:nth-child(even),
+    .view-list .card:nth-child(even)>* {
+        background-color: #f5f5f5;
+        /* cinza clarinho */
+    }
+
+    /*
+
+    .view-list .card-logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: block;
+        max-width: 80px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+*/
+
+    .view-list .card-titles {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: var(--font-body-list);
+        color: #333;
+    }
+
+    .view-list .card-address {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        min-width: 350px;
+        /* largura mínima válida */
+        padding: var(--space-xs);
+        /* usa variável de espaçamento */
+        font-size: var(--font-body-list);
+        color: #333;
+        background-color: inherit;
+    }
+
+
+    .view-list .card-phone {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        text-align: center;
+        white-space: nowrap;
+        /* evita quebra do número */
+        background-color: inherit;
+    }
+
+    .view-list .card-url {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        /*   word-break: break-word; */
+        color: blue;
+        background-color: inherit;
+    }
+
+
+
+    .view-list .card {
+        grid-template-columns: minmax(200px, 3fr) minmax(200px, 3fr) 1fr minmax(150px, 3fr);
+    }
+
+    .view-list .card>* {
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .view-list .card {
+        display: grid;
+        grid-template-columns:
+            minmax(150px, 3fr)
+            /* title */
+            minmax(150px, 3fr)
+            /* address */
+            minmax(100px, 1fr)
+            /* phone */
+            minmax(150px, 3fr);
+        /* URL */
+        grid-auto-rows: auto;
+        gap: var(--space-xs);
+        align-items: center;
+        padding: var(--space-sm);
+        width: 100%;
+        box-sizing: border-box;
+        /* garante que padding não aumente a largura total */
+    }
+
+
+    .view-list .card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 2fr;
+        /* title | address | phone | url */
+        grid-auto-rows: auto;
+        gap: var(--space-xs);
+        align-items: center;
+        padding: var(--space-sm);
+    }
+
+    /* Remove a coluna do logo, já escondida */
+    .view-list .card-logo {
+        display: none;
+    }
+
+    /* Centraliza o título e subtitle */
+    .view-list .card-titles {
+        text-align: left;
+        font-size: var(--font-body-list);
+    }
+
+    /* Ajuste de cada coluna */
+    .view-list .card-address,
+    .view-list .card-phone,
+    .view-list .card-url {
+        text-align: left;
+        font-size: var(--font-body-list);
+    }
+
+
+
+    /* ------------------ FOOTER ------------------ */
+    footer {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 0.8rem 1rem;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-info div {
+        flex: 1;
+        min-width: 350px;
+    }
+
+    .footer-info p {
+        margin: 0.1rem 0;
+        line-height: 1.3;
+        font-size: 14px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.2rem 0;
+    }
+
+    .social a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background-color: white;
+        transition: background-color 0.3s;
+    }
+
+    .social img {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+
+    .social a:hover {
+        background-color: #eec22d;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .info-left p,
+    .info-right p {
+        padding-inline: 20px;
+        text-align: left;
+    }
+
+    .highlight {
+        display: block;
+        /* ou inline-block */
+        white-space: nowrap;
+        /* opcional, evita quebra */
+        text-align: left;
+    }
+
+    #lastModified {
+        display: inline;
+        /* garante que o span não quebre linha */
+    }
+
+
+    /* --- Three columns layout (Events | Current Weather | Forecast) --- */
+    .three-columns {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        /* Events maior que as outras duas */
+        gap: var(--space-md);
+        align-items: stretch;
+        /* todas terão a mesma altura */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--space-sm);
+    }
+
+
+    .three-columns>* {
+        background-color: #f9f9f9;
+        padding: var(--space-sm);
+        box-sizing: border-box;
+        min-height: 300px;
+        /* ajusta a altura mínima */
+    }
+
+    /*
+.events {
+    flex: 2;
+}
+
+.weather-card {
+    flex: 1;
+}
+    */
+
+    .events,
+    .weather-card {
+        background-color: #f9f9f9;
+        padding: var(--space-sm);
+        box-sizing: border-box;
+    }
+
+    /* Apenas para diferenciação visual */
+    .events {
+        background-color: #dfe6e9;
+    }
+
+    .current-weather {
+        background-color: #ffeaa7;
+    }
+
+    .forecast {
+        background-color: #fab1a0;
+    }
+
+
+    /* Se quiser ajustar títulos e conteúdo separadamente: */
+    .current-weather h3,
+    .forecast h3 {
+        font-size: 0.9rem;
+        /* título menor */
+        margin-bottom: 0.5rem;
+    }
+
+
+
+    .current-weather p,
+    .forecast p,
+    .current-weather .alt-weather,
+    .forecast #forecast {
+        font-size: 0.85rem;
+        /* conteúdo um pouco menor */
+        line-height: 1.3;
+    }
+
+    /* Responsividade: em telas pequenas, empilha */
+    @media screen and (max-width: 768px) {
+        .three-columns {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #showHere div {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #showHere div img {
+        width: 300px;
+        height: 100%;
+        /* display: block; */
+        border-radius: 10px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    @media only screen and (min-width: 1200px) {
+
+        /* ou seu breakpoint maior */
+        header {
+            display: flex;
+            /* ou grid */
+            align-items: center;
+            /* verticalmente */
+            padding: 0.5rem 0.1rem;
+            /* ajuste conforme necessário */
+            min-height: 60px;
+            /* limite mínimo */
+
+            /* menos padding vertical */
+            min-height: 80px;
+            /* se quiser limitar a altura */
+        }
+
+        #header-logo {
+            width: 100px;
+            /* ou o tamanho que desejar */
+            height: auto;
+            padding: 10px;
+            /* mantém proporção */
+        }
+
+        #showHere div img:hover {
+            width: 300px;
+            height: 100%;
+            transform: scale(1.04);
+            /* zoom suave */
+            filter: brightness(1.1);
+            /* aumenta o brilho */
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .learn-more-btn {
+            display: inline-block;
+            width: 100%;
+            margin-top: 0.5rem;
+            padding: 0.2rem 0.2rem;
+            text-align: center;
+            background: var(--primary, #a0001e);
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background: var(--accent1, #9d6451);
+        }
+
+        .learn-btn {
+            display: block;
+            width: fit-content;
+            margin: 1rem auto;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.2rem 0.2rem;
+            border: none;
+            border-radius: 8px;
+            background: var(--primary, #a0001e);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .learn-btn:hover {
+            background: #7a0016;
+        }
+
+        dialog {
+            border: 1px solid rgb(0 0 0 / 10%);
+            border-radius: .25rem;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 3rem #777;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        ::backdrop {
+            background-color: rgb(0 0 0 / 50%);
+        }
+
+        dialog button {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            padding: .5rem 1rem;
+            border: 1px solid rgb(0 0 0 / 10%);
+        }
+
+    }
+
+}
