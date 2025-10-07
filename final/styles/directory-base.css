@@ -49,6 +49,10 @@
     --paragraph: 'DM Sans', tahoma, sans-serif;
 }
 
+.fa-solid, .fa-bars, .event-item, .location-icon, .fas, .fa-map-marker-alt {
+    
+}
+
 h1 {
     font-size: 40px;
 }
