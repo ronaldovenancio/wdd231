@@ -50,7 +50,8 @@
 }
 
 .fa-solid, .fa-bars, .event-item, .location-icon, .fas, .fa-map-marker-alt {
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 h1 {
