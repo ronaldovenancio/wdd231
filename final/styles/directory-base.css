@@ -606,6 +606,7 @@ main {
 
 
 /* Footer */
+/*
 
 footer {
     display: block;
@@ -638,6 +639,8 @@ footer a:hover,
 footer a:active {
     color: var(--accent2);
 }
+
+*/
 
 strong {
     font-weight: 500;
