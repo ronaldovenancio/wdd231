@@ -245,15 +245,11 @@
         cursor: pointer;
     }
 
-    #header-links img {
-        /* border: 4px solid var(--primary);
-    border:none; */
-        border-radius: 40px;
-    }
 
     #header-links img {
         width: 24px;
         height: 24px;
+        border-radius: 40px;
     }
 
     #header-links img:hover {
