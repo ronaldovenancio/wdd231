@@ -152,14 +152,10 @@
 
     /* Home Page Content */
 
-   
-
-
     
     /* Directory Page Content */
 
     .view-cards {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: var(--space-md);
     }
