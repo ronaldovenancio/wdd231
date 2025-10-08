@@ -1233,18 +1233,8 @@ footer {
         /* menos espaçamento */
     }
 
-
-
-    
-
-    .info-left p,
-    .info-right p {
-        font-size: 14px;
-    }
-
     .highlight {
         display: block;
-        text-align: left;
         margin-top: 0.2rem;
     }
 
