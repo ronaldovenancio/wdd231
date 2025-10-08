@@ -674,8 +674,7 @@
     
     .events,
     .weather,
-    .join,
-    .spotlight {
+    .join {
         border: 1px solid var(--background);
         border: none;
         width: auto;
@@ -701,67 +700,6 @@
     }
 
 
-
-
-    .spotlight-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-row-gap: 10px;
-    }
-
-    #spotlight-1,
-    #spotlight-2,
-    #spotlight-3 {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr auto auto auto 1fr;
-        text-align: center;
-        height: auto;
-    }
-
-    .spotlight-grid img {
-        grid-column: 1/2;
-        grid-row: 2/6;
-        max-width: 100%;
-        max-height: 100%;
-        border: 2px solid var(--black);
-        border: none;
-    }
-
-    .spotlight-grid h4 {
-        grid-column: 1/3;
-        grid-row: 1/2;
-        padding: 10px;
-    }
-
-    .spotlight-grid h5 {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        padding: 0.2px;
-    }
-
-    .spotlight-grid a {
-        grid-column: 2/3;
-        grid-row: 3/4;
-        height: 22px;
-        padding: 0.2px;
-        margin-bottom: 0.2rem;
-    }
-
-    .spotlight-grid p {
-        grid-column: 2/3;
-        grid-row: 4/5;
-        padding: 0.2px;
-    }
-
-    .spotlight-grid a,
-    h3,
-    h4,
-    p,
-    h5 {
-        font-size: 1rem;
-    }
 
     .weather .box-content {
         display: grid;
