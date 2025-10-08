@@ -737,6 +737,7 @@ footer {
     /* ou inline-block */
     white-space: nowrap;
     /* opcional, evita quebra */
+    margin-left: 0;
     text-align: left;
 }
 
@@ -759,9 +760,5 @@ footer {
     }
 
 
-    .highlight {
-        display: block;
-        margin-top: 0.2rem;
-    }
-
+   
 }
