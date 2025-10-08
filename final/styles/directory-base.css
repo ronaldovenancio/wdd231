@@ -479,7 +479,7 @@ main {
 }
 
 /* Weather Article ********************************* */
-
+/*
 #weather {
     width: 100%;
 }
@@ -546,7 +546,6 @@ main {
     align-items: center;
     gap: 2px;
     padding: 15px;
-    /* border: 1px solid var(--accent3-color); */
     font-size: 1.5rem;
 }
 
@@ -568,7 +567,6 @@ main {
     gap: 30px;
     font-size: 1.5rem;
     margin-left: 10px;
-    /* margin: 20px 0; */
 }
 
 #forecast .weather-day:not(:last-child) {
@@ -576,7 +574,6 @@ main {
 }
 
 .weather-day h5 {
-    /* font-size: 1.2rem; */
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -609,7 +606,7 @@ main {
     font-weight: 800;
 }
 
-
+*/
 
 
 
