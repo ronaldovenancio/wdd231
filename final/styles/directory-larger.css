@@ -431,13 +431,4 @@
         line-height: 1.3;
     }
 
-    /* Responsividade: em telas pequenas, empilha */
-    @media screen and (max-width: 768px) {
-        .three-columns {
-            grid-template-columns: 1fr;
-        }
-    }
-
-
-
 }
