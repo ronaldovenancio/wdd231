@@ -132,7 +132,6 @@
 
     footer,
     .home-grid,
-    .discover-box,
     .view-list {
         gap: var(--space-sm);
     }
@@ -184,17 +183,6 @@
     .join {
         grid-column: 1/3;
         grid-row: 3/4;
-    }
-
-
-
-    /* Discover Page Content */
-
-    .discover-box {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: 1fr;
-        margin-bottom: var(--space-lg);
     }
 
 

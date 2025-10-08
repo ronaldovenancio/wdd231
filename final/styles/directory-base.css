@@ -780,46 +780,6 @@ strong {
 }
 */
 
-/* Discover Page Content */
-
-.discover-grid {
-    display: block;
-}
-
-.discover-box {
-    border: 1px solid var(--background);
-    width: auto;
-    height: auto;
-    margin-bottom: 60px;
-    background-color: var(--background);
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
-
-.discover-box .box-title {
-    min-width: 200px;
-}
-
-.discover-box .box-content {
-    padding-bottom: 40px;
-}
-
-.discover-grid img {
-    transition: 1s;
-    max-width: 600px;
-    background-color: lightgray;
-}
-
-.discover-grid img:hover {
-    transition: 0.5s;
-    transform: scale(1.02, 1.02);
-    border-radius: 6px;
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
-
-.discover-grid img:active {
-    filter: blur(2px);
-    transition: 2s;
-}
 
 .fade-in {
     animation: fade 3s;
