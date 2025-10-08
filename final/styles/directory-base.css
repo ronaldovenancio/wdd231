@@ -1233,13 +1233,7 @@ footer {
         /* menos espaçamento */
     }
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
+
 
     
 

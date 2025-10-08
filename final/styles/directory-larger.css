@@ -439,15 +439,6 @@
     }
     
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
-
-
 
 
     /* --- Three columns layout (Events | Current Weather | Forecast) --- */
