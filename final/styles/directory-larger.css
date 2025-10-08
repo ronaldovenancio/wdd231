@@ -436,6 +436,7 @@
 
     footer {
         margin-top: 50px;
+        font-size: 12px;
     }
 
     .footer-info {
@@ -443,13 +444,10 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
+        
     }
 
-    .info-left p,
-    .info-right p {
-        padding-inline: 20px;
-        text-align: left;
-    }
+    
 
     .highlight {
         display: block;
