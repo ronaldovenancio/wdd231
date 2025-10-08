@@ -133,7 +133,6 @@
     }
 
     footer,
-    .home-grid,
     .view-list {
         gap: var(--space-sm);
     }
@@ -151,20 +150,11 @@
         padding-top: var(--space-lg);
     }
 
-    .info-stats {
-        grid-column: 1/5;
-        grid-row: 2/3;
-    }
+
 
     /* Home Page Content */
 
-    .home-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto 1fr 1fr;
-        grid-gap: 1rem;
-    }
-
+   
 
 
     .weather {
