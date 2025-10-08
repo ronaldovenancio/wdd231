@@ -671,7 +671,7 @@ strong {
 }
 
 
-.view-list .card-titles {
+.view-list .card-title {
     grid-column: 1/3;
     grid-row: 1/2;
     text-align: left;
@@ -697,7 +697,7 @@ strong {
 }
 
 /* Ajusta títulos, endereço, telefone e URL */
-.view-list .card-titles,
+.view-list .card-title,
 .view-list .card-address,
 .view-list .card-phone,
 .view-list .card-url {

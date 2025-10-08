@@ -124,13 +124,13 @@
         display: grid;
         /*  grid-template-columns: 10% 1fr 1fr 10%; */
         grid-template-rows: 1fr auto;
+        gap: var(--space-sm);
     }
 
     .footer-info .info-left {
         margin-top: 2rem;
     }
 
-    footer,
     .view-list {
         gap: var(--space-sm);
     }
@@ -229,7 +229,7 @@
     }
 */
 
-    .view-list .card-titles {
+    .view-list .card-title {
         grid-column: 1/2;
         grid-row: 1/2;
         font-size: var(--font-body-list);
@@ -313,7 +313,7 @@
     }
 
     /* Centraliza o título e subtitle */
-    .view-list .card-titles {
+    .view-list .card-title {
         text-align: left;
         font-size: var(--font-body-list);
     }
