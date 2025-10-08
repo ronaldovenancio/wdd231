@@ -1509,8 +1509,9 @@
         font-weight: 600;
         font-style: italic;
         font-size: 12px;
-        display: inline;
-        margin-top: 0.3rem;
+        display: block;
+        text-align: left;
+        margin-top: 0.2rem;
     }
 
     .highlight {
@@ -1554,8 +1555,7 @@
         font-size: 14px;
     }
 
-    .highlight,
-    #lastModified {
+    .highlight {
         display: block;
         text-align: left;
         margin-top: 0.2rem;
