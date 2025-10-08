@@ -186,48 +186,6 @@
 
 
 
-    .view-cards .card {
-        margin: 10px auto;
-    }
-
-
-    .view-cards .card {
-        /*   display: block; 
-        flex-wrap: wrap; */
-        /* permite quebra se necessário */
-        gap: 0.125rem 0.25rem;
-        /* espaço vertical e horizontal reduzido */
-        align-items: center;
-        /* alinha verticalmente */
-        padding: 0.125rem 0.25rem;
-        /* padding interno mínimo */
-        margin: 10px auto;
-    }
-
-
-
-    .view-cards .card-title {
-        display: flex;
-        width: 100%;
-        /* ocupa toda a linha do card */
-        justify-content: center;
-        text-align: center;
-        /* centraliza horizontalmente o texto */
-        font-weight: bold;
-        margin-bottom: 0.25rem;
-        /* espaçamento abaixo do título */
-    }
-
-
-    .view-cards .card .card-address,
-    .view-cards .card .card-phone,
-    .view-cards .card .card-url {
-        margin: 0;
-        padding: 0 0.125rem;
-        /* padding horizontal mínimo */
-        font-size: 0.875rem;
-        /* opcional: reduz um pouco a fonte se quiser compactar mais */
-    }
 
     .view-cards .card-logo {
         margin-right: 0.25rem;
@@ -267,11 +225,7 @@
     }
 
 
-    /*
-    .view-list .card:nth-child(even) .card-title {
-        background-color: var(--black);
-    } 
-*/
+
     /* cores alternadas para linhas */
     .view-list .card:nth-child(odd),
     .view-list .card:nth-child(odd)>* {
