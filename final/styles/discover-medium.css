@@ -1006,21 +1006,7 @@
         font-size: 24px;
     }
 
-    #memberships .label-radio {
-        display: block;
-        max-width: 400px;
-        width: 80%;
-        height: auto;
-        margin: 0.2rem;
-        padding: 0.1rem 0.2rem;
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        background: #f9f9f9;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeSlide 0.8s ease forwards;
-    }
-
+    
     /* Stagger animations for each card */
     #mem-np {
         animation-delay: 0.2s;

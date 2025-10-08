@@ -150,7 +150,6 @@
     footer,
     .home-grid,
     .discover-box,
-    #memberships,
     .view-list {
         gap: var(--space-sm);
     }
@@ -219,32 +218,7 @@
     }
 
 
-    /* Join Page Content */
-
-    #memberships {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    #mem-selection {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-    #mem-description {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    #mem-description p {
-        margin: 48px auto 0px auto;
-    }
-
-    textarea {
-        max-width: 90%;
-    }
-
+    
     /* Directory Page Content */
 
     .view-cards {
