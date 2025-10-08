@@ -267,14 +267,8 @@ nav {
 
 
 .navigation {
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-}
-
-.navigation {
     display: flex;
+    text-align: center;
     gap: 1rem;
     list-style: none;
     margin: 0;
