@@ -1479,14 +1479,7 @@
 
 
     /* ------------------ LAST MODIFIED ------------------ */
-    #lastModified {
-        font-weight: 600;
-        font-style: italic;
-        font-size: 12px;
-        display: block;
-        text-align: left;
-        margin-top: 0.2rem;
-    }
+    
 
     .highlight {
         display: inline;

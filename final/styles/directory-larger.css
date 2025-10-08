@@ -511,10 +511,7 @@
         text-align: left;
     }
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
+
 
 
     /* --- Three columns layout (Events | Current Weather | Forecast) --- */
