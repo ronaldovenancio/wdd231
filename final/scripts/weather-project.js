@@ -21,7 +21,7 @@ async function apiFetchWeather(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            
             displayWeatherResults(data);
         } else {
             throw new Error(await response.text());
@@ -37,7 +37,7 @@ async function apiFetchForecast(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            
             // displayForecastResults(data);
         } else {
             throw new Error(await response.text());
@@ -53,7 +53,7 @@ async function apiFetchOpenWeather(url) {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data);
+            
             displayOneCallResults(data);
         } else {
             throw new Error(await response.text());
@@ -65,7 +65,7 @@ async function apiFetchOpenWeather(url) {
 apiFetchOpenWeather(urlOpenWeather);
 
 function displayWeatherResults(data) {
-    // console.log(data);
+   
     const location = document.querySelector("#location");
     const tempArea = document.querySelector(".temp-area");
     // const currentTemp = document.querySelector("#current-temp");
@@ -106,12 +106,12 @@ function displayWeatherResults(data) {
 }
 
 function displayForecastResults(data) {
-    // console.log(data);
+   
 
     const threDayResults = data.list
         .filter((fc) => fc.dt_txt.includes("21:00:00"))
         .map((fc) => {
-            // console.log(fc);
+           
             // Unix timestamp in UTC
             const timestamp = fc.dt * 1000;
 
@@ -126,7 +126,7 @@ function displayForecastResults(data) {
                 precipChance: fc.pop,
             };
         });
-    // console.log(threDayResults);
+   
 
     const forecast = document.querySelector("#forecast");
 
@@ -177,7 +177,7 @@ function displayForecastResults(data) {
 }
 
 function displayOneCallResults(data) {
-    // console.log(data.daily);
+    
 
     const results = data.daily;
 

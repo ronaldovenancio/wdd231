@@ -6,7 +6,7 @@
 function calculateWindChill(temperature, windSpeed) {
     // const temperature = document.getElementById("current-temp").innerHTML;
     // const windSpeed = document.getElementById("wind-speed").innerHTML;
-    // console.log( temperature, windSpeed);
+    
 
     let windChill;
     // Check if the temperature and wind speed  are valid
@@ -21,7 +21,7 @@ function calculateWindChill(temperature, windSpeed) {
     windChill = windChillFactor.toFixed(1) + `&deg;C`;
     document.getElementById("wind-chill").innerHTML = windChill;
 
-    // console.log("Wind Chill Factor: " + windChill);
+   
 }
 
 

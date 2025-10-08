@@ -17,8 +17,7 @@ lastVisited();
 
 
 let visitsNumber = parseInt(window.localStorage.getItem("visit-since")) || 0;
-//console.log('visitsNumber');
-//console.log(visitsNumber);
+
 
 
 if (visitsNumber == 0) {
@@ -33,7 +32,7 @@ if (visitsNumber == 0) {
     // visitsNumber = new Date("2024-02-24T22:33:34");  
 
     let dayDifference = (Date.now() - visitsNumber) / msToDays
-    //console.log(dayDifference);
+   
 
     if (dayDifference < 1) {
         visitSince.textContent = "Back so soon! Awesome!";
@@ -50,9 +49,6 @@ if (visitsNumber == 0) {
 
 }
 
-//console.log(visitCounter);
-//console.log('lastVisit');
-
 
 
 // store current time in local storage.
@@ -63,19 +59,18 @@ function lastVisited() {
     }
     // get last and current visit from local storage.
     last = localStorage.getItem('visits-last');
-    //console.log(last);
-    //console.log(totalVisits);
+  
     //last = localStorage.getItem('lastVisit');
     //last = new Date("2025-09-30T22:33:34");  
-    //console.log(last)
+   
     current = localStorage.getItem('visits-current');
     // convert string values to intergers (milliseconds).
     last_int = Date.parse(last);
-    //console.log(last_int)
+   
     current_int = Date.parse(current);
     // compare difference.
     difference = current_int - last_int;
-    //console.log(difference);
+   
     // convert miliseconds to seconds;
     diffS = difference / 1000;
     // convert seconds to minutes;
