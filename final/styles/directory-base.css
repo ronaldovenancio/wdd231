@@ -1332,7 +1332,7 @@ footer {
     font-weight: 600;
     font-style: italic;
     font-size: 12px;
-    display: block;
+    display: inline;
     margin-top: 0.3rem;
 }
 
@@ -1344,10 +1344,6 @@ footer {
     text-align: left;
 }
 
-#lastModified {
-    display: inline;
-    /* garante que o span não quebre linha */
-}
 
 @media (max-width: 600px) {
     footer {
@@ -1374,10 +1370,7 @@ footer {
         text-align: left;
     }
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
+    
 
     .info-left p,
     .info-right p {

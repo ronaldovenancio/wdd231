@@ -1509,7 +1509,7 @@
         font-weight: 600;
         font-style: italic;
         font-size: 12px;
-        display: block;
+        display: inline;
         margin-top: 0.3rem;
     }
 
@@ -1521,10 +1521,7 @@
         text-align: left;
     }
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
+
 
 
     footer {
@@ -1551,11 +1548,7 @@
         text-align: left;
     }
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
-
+   
     .info-left p,
     .info-right p {
         font-size: 14px;
