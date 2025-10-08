@@ -155,17 +155,6 @@
    
 
 
-    .weather {
-        grid-column: 1/4;
-        grid-row: 5/6;
-    }
-
-    .join {
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-
-
     
     /* Directory Page Content */
 
@@ -385,50 +374,6 @@
         /* ajusta a altura mínima */
     }
 
-    /*
-
-
-.weather-card {
-    flex: 1;
-}
-    */
-
-    
-    .weather-card {
-        background-color: #f9f9f9;
-        padding: var(--space-sm);
-        box-sizing: border-box;
-    }
-
-    /* Apenas para diferenciação visual */
    
-
-    .current-weather {
-        background-color: #ffeaa7;
-    }
-
-    .forecast {
-        background-color: #fab1a0;
-    }
-
-
-    /* Se quiser ajustar títulos e conteúdo separadamente: */
-    .current-weather h3,
-    .forecast h3 {
-        font-size: 0.9rem;
-        /* título menor */
-        margin-bottom: 0.5rem;
-    }
-
-
-
-    .current-weather p,
-    .forecast p,
-    .current-weather .alt-weather,
-    .forecast #forecast {
-        font-size: 0.85rem;
-        /* conteúdo um pouco menor */
-        line-height: 1.3;
-    }
 
 }
