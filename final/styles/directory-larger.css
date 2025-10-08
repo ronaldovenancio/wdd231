@@ -41,9 +41,7 @@
         /* centraliza todos os elementos internos */
     }
 
-    .header-title {
-        font-size: 1.4rem;
-    }
+
 
     .navigation {
         display: flex;
@@ -409,6 +407,7 @@
         align-items: center;
         gap: 0.5rem;
         padding: 0.2rem 0;
+        padding-top: 3rem;
     }
 
     .social a {
