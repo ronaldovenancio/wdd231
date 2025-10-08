@@ -701,11 +701,9 @@ strong {
     max-width: 1920px;
     padding: 0px;
     background-color: lightgray;
-}
-
-#hero-image img {
     object-fit: cover;
 }
+
 
 #join-button {
     display: flex;
