@@ -75,24 +75,7 @@
     }
 
 
-    #nav-icon {
-        color: white;
-        /* Cor desejada */
-        font-size: 28px;
-        /* Opcional: aumenta o tamanho do ícone */
-    }
-
-    /* Se você quiser mudar o fundo do botão também */
-    #nav-button {
-        background-color: transparent;
-        /* Cor de fundo do botão */
-        border: none;
-        /* Remove borda se houver */
-        padding: 8px;
-        border-radius: 5px;
-        /* opcional */
-    }
-
+    
 }
 
 /* Large Display Properties (~ 520px+ wide) */

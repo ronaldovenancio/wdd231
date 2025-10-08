@@ -312,21 +312,9 @@
         display: block;
     }
 
-    #nav-icon {
-        color: white;
-        /* Cor desejada */
-    }
 
-    #nav-button {
-        background-color: transparent;
-        /* Cor do fundo do botão */
-        border: none;
-        /* Remove borda se houver */
-        padding: 8px;
-        /* Ajusta o tamanho do botão */
-        border-radius: 5px;
-        /* Opcional: borda arredondada */
-    }
+
+   
 
     #nav-button.active {
         background-color: var(--accent1);
