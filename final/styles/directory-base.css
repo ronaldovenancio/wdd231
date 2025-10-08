@@ -1167,6 +1167,7 @@ footer {
     font-weight: 300;
 }
 
+
 /* ------------------ SOCIAL ------------------ */
 .social {
     display: flex;
@@ -1232,6 +1233,7 @@ footer {
         margin: 0.25rem 0;
         /* menos espaçamento */
     }
+
 
     .highlight {
         display: block;
