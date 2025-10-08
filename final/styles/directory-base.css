@@ -721,6 +721,7 @@ strong {
     border-radius: 30px;
 }
 
+/*
 .spotlight-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -803,6 +804,7 @@ strong {
 #weather-icon {
     padding: 10px;
 }
+*/
 
 /* Discover Page Content */
 
@@ -861,6 +863,7 @@ strong {
 
 /* Join Page Content */
 
+/*
 .join-grid {
     display: block;
 }
@@ -967,8 +970,10 @@ textarea {
     font-weight: 500;
     font-size: 24px;
 }
+*/
 
 /* TEMP ************************* */
+/*
 .hero {
     background-size: cover;
     background-position: center;
@@ -1031,9 +1036,10 @@ textarea {
 .btn:hover {
     background-color: #651717;
 }
-
+*/
 
 /* Join Page CSS Effects */
+/*
 input[type="text"]:valid,
 input[type="tel"]:valid,
 input[type="email"]:valid {
@@ -1055,8 +1061,10 @@ textarea:focus {
 .required {
     color: var(--status-red);
 }
-
+*/
 /* Thankyou Page Content */
+
+/*
 
 .thankyou-grid {
     padding-top: 100px;
@@ -1072,6 +1080,8 @@ textarea:focus {
     background-color: var(--background);
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
+*/
+
 
 /* Directory Page Content */
 .card-title {
