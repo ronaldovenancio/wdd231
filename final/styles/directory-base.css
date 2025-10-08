@@ -665,7 +665,6 @@ strong {
 /* Home Page Content */
 
 
-.events,
 .weather {
     border: 1px solid var(--background);
     width: auto;
