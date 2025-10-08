@@ -432,12 +432,7 @@ main {
     padding: 10px;
 }
 
-.sub-box {
-    width: auto;
-    height: 200px;
-    padding: 10px;
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
+
 
 
 
@@ -467,9 +462,6 @@ strong {
 
 
 
-
-
-
 .fade-in {
     animation: fade 3s;
 }
@@ -483,9 +475,6 @@ strong {
         opacity: 1;
     }
 }
-
-
-
 
 
 
