@@ -212,22 +212,23 @@
         color: var(--white);
     }
 
+    /*
+
     #header-links {
         grid-column: 3/4;
         grid-row: 1/2;
         padding: 6px 0px;
     }
+        */
 
     /* Ícones sociais */
     #header-links {
         display: flex;
         gap: 0.5rem;
+        background-color: transparent;
     }
 
-    #header-links {
-        background-color: transparent;
-        /* remove qualquer cor de fundo */
-    }
+
 
     #header-links a {
         background-color: transparent;
