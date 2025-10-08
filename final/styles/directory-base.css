@@ -735,11 +735,12 @@ footer {
 }
 
 .highlight {
-    display: inline;
+    display: flex;
     /* ou inline-block */
     white-space: nowrap;
     /* opcional, evita quebra */
     text-align: left;
+    margin-left: 0;
 }
 
 
@@ -758,12 +759,6 @@ footer {
     footer .footer-info p {
         margin: 0.25rem 0;
         /* menos espaçamento */
-    }
-
-
-    .highlight {
-        display: block;
-        margin-top: 0.2rem;
     }
 
 }
