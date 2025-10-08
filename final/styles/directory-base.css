@@ -695,14 +695,6 @@ strong {
     color: var(--white);
 }
 
-#hero-image img {
-    width: 100%;
-    height: auto;
-    max-width: 1920px;
-    padding: 0px;
-    background-color: lightgray;
-    object-fit: cover;
-}
 
 
 
