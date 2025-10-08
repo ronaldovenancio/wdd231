@@ -164,10 +164,7 @@
         grid-gap: 1rem;
     }
 
-    .call-to-action {
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
+
 
     .events {
         grid-column: 1/4;

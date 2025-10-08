@@ -664,7 +664,7 @@ strong {
 
 /* Home Page Content */
 
-.call-to-action,
+
 .events,
 .weather,
 .join,
@@ -678,9 +678,6 @@ strong {
     box-shadow: 0px 2px 5px 0px var(--shadow);
 }
 
-.call-to-action {
-    position: relative;
-}
 
 .hero-title {
     position: absolute;
