@@ -59,15 +59,6 @@
     border: none;
 }
 
-h1 {
-    font-size: 40px;
-}
-
-h2,
-h3 {
-    font-size: 32px;
-}
-
 
 li,
 p {
@@ -388,10 +379,6 @@ img {
     margin: 0 auto;
 }
 
-hr {
-    border: 1px solid var(--black);
-    margin: 10px;
-}
 
 /* Responsive Menu */
 .menu {
