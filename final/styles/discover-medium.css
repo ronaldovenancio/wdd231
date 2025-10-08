@@ -750,14 +750,6 @@
 
 
 
-    #join-button {
-        display: flex;
-        justify-content: space-evenly;
-        min-width: 60%;
-        margin: 0px auto;
-        border-radius: 30px;
-    }
-
     .spotlight-grid {
         display: grid;
         grid-template-columns: 1fr;
