@@ -107,9 +107,6 @@
 
 
 
-    
-
-
 
 
     /* Garante que todos os elementos internos herdem a cor de fundo */
@@ -164,6 +161,14 @@
         text-align: center;
         white-space: nowrap;
         /* evita quebra do número */
+        background-color: inherit;
+    }
+
+    .view-list .card-url {
+        grid-column: 4/5;
+        grid-row: 1/2;
+        /*   word-break: break-word; */
+        color: blue;
         background-color: inherit;
     }
 

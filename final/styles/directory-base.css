@@ -740,7 +740,6 @@ footer {
     white-space: nowrap;
     /* opcional, evita quebra */
     text-align: left;
-    margin-left: 0;
 }
 
 
@@ -760,5 +759,6 @@ footer {
         margin: 0.25rem 0;
         /* menos espaçamento */
     }
+
 
 }
