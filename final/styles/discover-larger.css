@@ -100,11 +100,7 @@
         padding: 10px;
     }
 
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-    }
-
+   
     nav li {
         display: inline-block;
         width: 100%;
