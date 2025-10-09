@@ -49,11 +49,11 @@
     --paragraph: 'DM Sans', tahoma, sans-serif;
 }
 
-.event-item, .location-icon, 
-.fas, .fa-map-marker-alt, .fa-th-large,
-.fa-list {
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 
 .fa-solid, .fa-bars {
     border: none;
@@ -61,16 +61,12 @@
 
 
 
-
-
 h1, h2, h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
     margin: 0px;
 }
 
 h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     margin: 0px 0px 4px 0px;
     font-size: 24px;
@@ -79,13 +75,11 @@ h4 {
 a,
 li,
 span {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     margin: 0px;
 }
 
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     margin: 0px 0px 4px 0px;
 }
@@ -351,7 +345,6 @@ picture {
 
 figcaption {
     padding: 6px 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     background-color: var(--black);
     color: var(--white);
