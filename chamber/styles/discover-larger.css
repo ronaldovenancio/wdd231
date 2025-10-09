@@ -680,6 +680,12 @@
             /* mantém proporção */
         }
 
+        #showHere {
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
         #showHere div img:hover {
             width: 300px;
             height: 100%;

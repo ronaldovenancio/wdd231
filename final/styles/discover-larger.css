@@ -680,6 +680,34 @@
             /* mantém proporção */
         }
 
+        #showHere div {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #showHere div img {
+        width: 300px;
+        height: 100%;
+        /* display: block; */
+        border-radius: 10px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+        #showHere {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #showHere div img {
+        width: 300px;
+        height: 100%;
+        /* display: block; */
+        border-radius: 10px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
         #showHere div img:hover {
             width: 300px;
             height: 100%;
