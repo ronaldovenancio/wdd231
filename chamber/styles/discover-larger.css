@@ -641,7 +641,6 @@
     }
 
     #showHere div {
-
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -681,7 +680,6 @@
         }
 
         #showHere {
-        
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
