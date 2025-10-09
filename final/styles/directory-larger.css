@@ -111,23 +111,6 @@
 
 
 
-    .view-list .card {
-        display: grid;
-        min-height: 80px;
-        border-bottom: 1px solid #ddd;
-        /* separa as linhas */
-        border-bottom: none;
-        padding: var(--space-xs) 0;
-        grid-template-columns: minmax(150px, 250px) minmax(150px, 250px) minmax(350px, 2fr) minmax(350px, 2fr);
-        grid-auto-rows: 1fr;
-        /* força altura igual */
-        width: 100%;
-        margin: 0px;
-        align-items: stretch;
-        /* estica as células para mesma altura */
-    }
-
-
 
     /* Garante que todos os elementos internos herdem a cor de fundo */
     .view-list .card>* {
