@@ -569,15 +569,7 @@ strong {
 }
 
 
-.view-cards .card .card-address,
-.view-cards .card .card-phone,
-.view-cards .card .card-url {
-    margin: 0;
-    padding: 0 0.125rem;
-    /* padding horizontal mínimo */
-    font-size: 0.875rem;
-    /* opcional: reduz um pouco a fonte se quiser compactar mais */
-}
+
 
 
 .view-list {
