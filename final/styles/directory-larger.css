@@ -107,12 +107,7 @@
 
 
 
-    .card-logo {
-        margin-right: 0.25rem;
-        margin: 0 auto 0.5rem auto;
-        /* centraliza e adiciona 0.5rem abaixo da imagem */
-        /* diminui o espaço entre logo e os outros campos */
-    }
+    
 
 
 
@@ -211,9 +206,7 @@
     }
 
     /* Remove a coluna do logo, já escondida */
-    .view-list .card-logo {
-        display: none;
-    }
+    
 
     /* Centraliza o título e subtitle */
     .view-list .card-title {
