@@ -228,32 +228,6 @@
         margin-top: 50px;
         font-size: 12px;
     }
-    
-
-
-
-    /* --- Three columns layout (Events | Current Weather | Forecast) --- */
-    .three-columns {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        /* Events maior que as outras duas */
-        gap: var(--space-md);
-        align-items: stretch;
-        /* todas terão a mesma altura */
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: var(--space-sm);
-    }
-
-
-    .three-columns>* {
-        background-color: #f9f9f9;
-        padding: var(--space-sm);
-        box-sizing: border-box;
-        min-height: 300px;
-        /* ajusta a altura mínima */
-    }
-
    
 
 }
