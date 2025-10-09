@@ -470,35 +470,8 @@
         font-size: 14px;
     }
 
-    .social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.2rem 0;
-    }
-
-    .social a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        background-color: white;
-        transition: background-color 0.3s;
-    }
-
-    .social img {
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-    }
-
-    .social a:hover {
-        background-color: #eec22d;
-    }
-
+    
+   
     /* Footer */
 
     footer {
