@@ -22,30 +22,7 @@
 }
 
 /* Small screens (menos de 520px) */
-@media screen and (max-width: 37.99rem) {
-    .view-list .card {
-        display: grid;
-        grid-template-columns: 1fr;
-        /* uma coluna única */
-        gap: var(--space-xs);
-        width: 90%;
-        /* reduz largura e deixa margem automática */
-        margin: var(--space-sm) auto;
-        /* centraliza horizontalmente */
-        /* text-align: center;
-        /* opcional: centraliza o conteúdo */
-    }
 
-    .view-list .card>* {
-        text-align: center;
-        /* centraliza todos os elementos internos */
-    }
-
-
-
-
-    
-}
 
 /* Large Display Properties (~ 520px+ wide) */
 @media screen and (min-width: 38rem) {
@@ -124,13 +101,13 @@
     .view-cards {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--space-md);
+        margin-right: 0.25rem;
+        margin: 0 auto 0.5rem auto;
     }
 
 
 
-
-
-    .view-cards .card-logo {
+    .card-logo {
         margin-right: 0.25rem;
         margin: 0 auto 0.5rem auto;
         /* centraliza e adiciona 0.5rem abaixo da imagem */
@@ -182,18 +159,6 @@
         /* cinza clarinho */
     }
 
-    /*
-
-    .view-list .card-logo {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        display: block;
-        max-width: 80px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-*/
 
     .view-list .card-title {
         grid-column: 1/2;
@@ -224,43 +189,15 @@
         background-color: inherit;
     }
 
-    .view-list .card-url {
-        grid-column: 4/5;
-        grid-row: 1/2;
-        /*   word-break: break-word; */
-        color: blue;
-        background-color: inherit;
-    }
 
 
-
-    .view-list .card {
-        grid-template-columns: minmax(200px, 3fr) minmax(200px, 3fr) 1fr minmax(150px, 3fr);
-    }
+   
 
     .view-list .card>* {
         padding: var(--space-xs) var(--space-sm);
     }
 
-    .view-list .card {
-        display: grid;
-        grid-template-columns:
-            minmax(150px, 3fr)
-            /* title */
-            minmax(150px, 3fr)
-            /* address */
-            minmax(100px, 1fr)
-            /* phone */
-            minmax(150px, 3fr);
-        /* URL */
-        grid-auto-rows: auto;
-        gap: var(--space-xs);
-        align-items: center;
-        padding: var(--space-sm);
-        width: 100%;
-        box-sizing: border-box;
-        /* garante que padding não aumente a largura total */
-    }
+   
 
 
     .view-list .card {
