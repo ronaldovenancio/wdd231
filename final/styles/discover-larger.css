@@ -45,34 +45,9 @@
         font-size: 1.4rem;
     }
 
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        /* empilha os itens verticalmente */
-        align-items: flex-start;
-        /* alinha à esquerda */
-        padding: 0;
-    }
+   
 
-    .navigation .nav-li {
-        width: 100%;
-        /* cada botão ocupa toda a largura */
-        margin: 0.25rem 0;
-        /* espaço entre os botões */
-    }
-
-    .navigation .nav-li a {
-        display: block;
-        /* faz o link preencher o li */
-        width: 100%;
-        padding: 0.75rem 1rem;
-        /* aumenta área clicável */
-        text-align: left;
-        /* opcional: mantém o texto à esquerda */
-        /*  background-color: #f0f0f0; /* opcional: cor de destaque */
-        border-radius: 5px;
-        /* opcional: bordas arredondadas */
-    }
+    
 
 
     #nav-icon {
