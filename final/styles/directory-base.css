@@ -302,6 +302,7 @@ nav li.open {
     display: block;
 }
 
+/*
 nav a,
 nav a:visited {
     text-decoration: none;
@@ -310,13 +311,18 @@ nav a:visited {
     background-color: var(--secondary);
     color: var(--white);
 }
+    */
 
 nav a {
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    color: var(--white);
     background-color: transparent;
     /* remove qualquer fundo */
-    color: inherit;
+    /* color: inherit;
     /* mantém a cor do texto do link */
-    text-decoration: none;
+    /*text-decoration: none;
     /* opcional: remove sublinhado */
 }
 
