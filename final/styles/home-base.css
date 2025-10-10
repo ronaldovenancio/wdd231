@@ -231,14 +231,7 @@ header {
 }
 
 
-#link-facebook,
-#link-linkedin {
-    display: inline;
-    width: 40px;
-    height: 40px;
-    padding: 4px;
-    cursor: pointer;
-}
+
 
 #header-links img {
     /* border: 4px solid var(--primary);
