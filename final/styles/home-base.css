@@ -1201,13 +1201,7 @@ footer {
 
 
 /* ------------------ LAST MODIFIED ------------------ */
-#lastModified {
-    font-weight: 600;
-    font-style: italic;
-    font-size: 12px;
-    display: block;
-    margin-top: 0.3rem;
-}
+
 
 .highlight {
     display: inline;
