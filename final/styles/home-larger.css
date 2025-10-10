@@ -1,20 +1,3 @@
-:root {
-    --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 2rem;
-    --space-lg: 3rem;
-    --font-title: 32px;
-    --font-subtitle: 24px;
-    --font-body: 20px;
-    --font-title-list: 24px;
-    --font-subtitle-list: 18px;
-    --font-body-list: 16px;
-    --primary: #a0001e;
-    --secondary: #180e0d;
-    --accent1: #9d6451;
-    --accent2: #e2beab;
-}
-
 /* Small screens (menos de 520px) */
 @media screen and (max-width: 37.99rem) {
     .view-list .card {
