@@ -738,7 +738,7 @@ strong {
     color: var(--white);
 }
 
-#hero-image img {
+.hero-image img {
     width: 100%;
     height: auto;
     max-width: 1920px;
@@ -746,7 +746,7 @@ strong {
     background-color: lightgray;
 }
 
-#hero-image img {
+.hero-image img {
     object-fit: cover;
 }
 
