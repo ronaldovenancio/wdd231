@@ -1,26 +1,3 @@
-:root {
-    --space-xs: 0.5rem;
-    /* 8px */
-    --space-sm: 1rem;
-    /* 16px */
-    --space-md: 2rem;
-    /* 32px */
-    --space-lg: 3rem;
-    /* 48px */
-    --font-title: 32px;
-    --font-subtitle: 24px;
-    --font-body: 20px;
-
-    --font-title-list: 24px;
-    --font-subtitle-list: 18px;
-    --font-body-list: 16px;
-    /* Colors */
-    --primary: #a0001e;
-    --secondary: #180e0d;
-    --accent1: #9d6451;
-    --accent2: #e2beab;
-}
-
 /* Small screens (menos de 520px) */
 
 
