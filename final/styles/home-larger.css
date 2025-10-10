@@ -2,6 +2,12 @@
 /* Large screens (~520px+) */
 @media screen and (min-width: 64rem) {
 
+    .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
 
    
 

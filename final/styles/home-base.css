@@ -107,11 +107,15 @@ p {
     margin: 0px 0px 4px 0px;
 }
 
- .event-item, .location-icon, .fas, .fa-map-marker-alt {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+.event-item,
+.location-icon,
+.fas,
+.fa-map-marker-alt {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.fa-solid, .fa-bars {
+.fa-solid,
+.fa-bars {
     border: none;
 }
 
@@ -215,6 +219,7 @@ nav {
 
 .navigation {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     list-style: none;
     margin: 0;
@@ -1155,7 +1160,7 @@ footer {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 38rem) {
     footer {
         font-size: 14px;
         /* menor em telas pequenas */
@@ -1191,7 +1196,7 @@ footer {
         display: flex;
         text-align: left;
         margin-top: 0.2rem;
-        margin-left:0;
+        margin-left: 0;
     }
 
 }
