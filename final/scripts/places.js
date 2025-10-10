@@ -2,6 +2,14 @@ import { places } from "../data/places.mjs";
 
 const showHere = document.querySelector("#showHere");
 //const placesDetails = document.querySelector("#course-details");
+// Seleciona o botão de fechar
+const closeBtn = document.querySelector("#course-details .close");
+
+// Adiciona o evento
+closeBtn.addEventListener("click", () => {
+    document.getElementById("course-details").close();
+});
+
 const placesDetails = document.getElementById("course-details");
 
 function displayItems(places) {
