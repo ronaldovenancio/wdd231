@@ -1224,10 +1224,6 @@ footer {
     text-align: left;
 }
 
-#lastModified {
-    display: inline;
-    /* garante que o span não quebre linha */
-}
 
 @media (max-width: 600px) {
     footer {
@@ -1254,10 +1250,6 @@ footer {
         text-align: left;
     }
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
 
     .info-left p,
     .info-right p {
@@ -1266,9 +1258,10 @@ footer {
 
     .highlight,
     #lastModified {
-        display: block;
+        display: flex;
         text-align: left;
         margin-top: 0.2rem;
+        margin-left:0;
     }
 
 }
