@@ -515,84 +515,14 @@
         color: var(--status-red);
     }
 
-    /* Thankyou Page Content */
-
-    .thankyou-grid {
-        padding-top: 100px;
-        min-height: 350px;
-    }
-
-    .thankyou-message {
-        border: 1px solid var(--background);
-        width: auto;
-        height: auto;
-        min-height: 200px;
-        margin-bottom: 20px;
-        background-color: var(--background);
-        box-shadow: 0px 2px 5px 0px var(--shadow);
-    }
+    
 
     /* Directory Page Content */
     
-    .learn-more-btn {
-        display: inline-block;
-        width: 100%;
-        margin-top: 0.5rem;
-        padding: 0.2rem 0.2rem;
-        text-align: center;
-        background: var(--primary, #a0001e);
-        color: #fff;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background 0.3s ease;
-    }
+    
+    
 
-    .learn-more-btn:hover {
-        background: var(--accent1, #9d6451);
-    }
-
-    .learn-btn {
-        display: block;
-        width: fit-content;
-        margin: 1rem auto;
-        font-size: 1rem;
-        text-align: center;
-        margin-top: 1rem;
-        padding: 0.2rem 0.2rem;
-        border: none;
-        border-radius: 8px;
-        background: var(--primary, #a0001e);
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
-
-    .learn-btn:hover {
-        background: #7a0016;
-    }
-
-    dialog {
-        border: 1px solid rgb(0 0 0 / 10%);
-        border-radius: .25rem;
-        padding: 1rem;
-        background-color: #fff;
-        box-shadow: 0 0 3rem #777;
-        width: 90%;
-        max-width: 500px;
-    }
-
-    ::backdrop {
-        background-color: rgb(0 0 0 / 50%);
-    }
-
-    dialog button {
-        position: absolute;
-        top: 5px;
-        right: 10px;
-        padding: .5rem 1rem;
-        border: 1px solid rgb(0 0 0 / 10%);
-    }
+  
 
 
     /* ------------------ FOOTER ------------------ */

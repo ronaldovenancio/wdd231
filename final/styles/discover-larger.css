@@ -224,42 +224,11 @@
     }
 
 
-    /* --- Three columns layout (Events | Current Weather | Forecast) --- */
-    .three-columns {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        /* Events maior que as outras duas */
-        gap: var(--space-md);
-        align-items: stretch;
-        /* todas terão a mesma altura */
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: var(--space-sm);
-    }
-
-
-    .three-columns>* {
-        background-color: #f9f9f9;
-        padding: var(--space-sm);
-        box-sizing: border-box;
-        min-height: 300px;
-        /* ajusta a altura mínima */
-    }
-
-
-   
-
-
-
 
    
 
     /* Responsividade: em telas pequenas, empilha */
-    @media screen and (max-width: 768px) {
-        .three-columns {
-            grid-template-columns: 1fr;
-        }
-    }
+   
 
     #showHere div {
 
@@ -339,67 +308,5 @@
             border-radius: 10px;
             cursor: pointer;
         }
-
-        .learn-more-btn {
-            display: inline-block;
-            width: 100%;
-            margin-top: 0.5rem;
-            padding: 0.2rem 0.2rem;
-            text-align: center;
-            background: var(--primary, #a0001e);
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .learn-more-btn:hover {
-            background: var(--accent1, #9d6451);
-        }
-
-        .learn-btn {
-            display: block;
-            width: fit-content;
-            margin: 1rem auto;
-            font-size: 1rem;
-            text-align: center;
-            margin-top: 1rem;
-            padding: 0.2rem 0.2rem;
-            border: none;
-            border-radius: 8px;
-            background: var(--primary, #a0001e);
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .learn-btn:hover {
-            background: #7a0016;
-        }
-
-        dialog {
-            border: 1px solid rgb(0 0 0 / 10%);
-            border-radius: .25rem;
-            padding: 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 3rem #777;
-            width: 90%;
-            max-width: 600px;
-        }
-
-        ::backdrop {
-            background-color: rgb(0 0 0 / 50%);
-        }
-
-        dialog button {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            padding: .5rem 1rem;
-            border: 1px solid rgb(0 0 0 / 10%);
-        }
-
     }
-
 }
