@@ -839,10 +839,11 @@ footer {
 .info-left p,
 .info-right p {
     text-align: left;
-    font-size: 20px;
+    font-size: 14px;
     color: white;
     line-height: 1.2;
     font-weight: 300;
+    padding-inline: 20px;
 }
 
 /* ------------------ SOCIAL ------------------ */
@@ -898,11 +899,6 @@ footer {
         /* menos espaçamento */
     }
 
-   
-    .info-left p,
-    .info-right p {
-        font-size: 14px;
-    }
 
     .highlight {
         display: flex;
