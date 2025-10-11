@@ -93,40 +93,8 @@
 
   
 
-    header {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-        grid-template-rows: 1fr;
-        background-color: var(--primary);
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        /* logo à esquerda, nav à direita */
-        align-items: center;
-        padding: 0.5rem 1rem;
-    }
-
-    .header-title {
-        font-size: 2rem;
-        /* aumenta o tamanho da fonte */
-        font-weight: 700;
-        color: white;
-        /* deixa em negrito */
-        /*color: #004080;
-    /* cor destacada, você pode mudar */
-        /* text-transform: uppercase;
-    /* opcional, deixa em maiúsculas */
-        letter-spacing: 1px;
-        /* espaçamento entre letras */
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-        /* leve sombra */
-        display: inline-block;
-        /* facilita ajustes de margin/padding */
-        margin-left: 1rem;
-        /* espaço do logo, se necessário */
-    }
+  
+  
 
     /* Logo + nome */
     .page-content {
@@ -135,15 +103,7 @@
         gap: 0.5rem;
     }
 
-    .header-logo {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 80px;
-            /* ou o tamanho que desejar */
-        height: auto;
-        padding: 10px;
-            /* mantém proporção */
-    }
+    
 
 
 
