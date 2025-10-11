@@ -386,9 +386,6 @@ main {
 
 
 /* Directory Page Content */
-.view-list .card-title {
-    font-size: var(--font-title-list);
-}
 
 .card h4 p a {
     font-size: 12px;
