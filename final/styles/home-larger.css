@@ -217,10 +217,6 @@
 
     /* Footer */
 
-    footer {
-        margin-top: 50px;
-    }
-
     .footer-info {
         display: flex;
         justify-content: space-between;
