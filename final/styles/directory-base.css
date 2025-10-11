@@ -634,23 +634,6 @@ footer {
 }
 
 /* ------------------ LAST MODIFIED ------------------ */
-#lastModified {
-    font-weight: 600;
-    font-style: italic;
-    font-size: 12px;
-    display: inline;
-    text-align: left;
-    margin-top: 0.2rem;
-}
-
-.highlight {
-    display: flex;
-    /* ou inline-block */
-    white-space: nowrap;
-    /* opcional, evita quebra */
-    text-align: left;
-}
-
 
 @media (max-width: 600px) {
    
