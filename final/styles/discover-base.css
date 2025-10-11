@@ -535,20 +535,6 @@ textarea:focus {
 
 /* Thankyou Page Content */
 
-.thankyou-grid {
-    padding-top: 100px;
-    min-height: 350px;
-}
-
-.thankyou-message {
-    border: 1px solid var(--background);
-    width: auto;
-    height: auto;
-    min-height: 200px;
-    margin-bottom: 20px;
-    background-color: var(--background);
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
 
 /* Directory Page Content */
 
@@ -560,6 +546,8 @@ footer {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
+    display: block;
+    color: var(--white);
 }
 
 
@@ -616,7 +604,6 @@ footer {
 .social img {
     width: 16px;
     height: 16px;
-    border-radius: 50%;
 }
 
 .social a:hover {
