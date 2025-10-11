@@ -64,10 +64,6 @@ h3 {
     font-size: 32px;
 }
 
-h4,
-button {
-    font-size: 24px;
-}
 
 
 h1,
@@ -93,27 +89,6 @@ p {
     margin: 0px 0px 4px 0px;
 }
 
-button,
-input[type="submit"] {
-    border: none;
-    padding: 14px 32px;
-    background-color: var(--primary);
-    color: var(--white);
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
-
-button:hover,
-input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: var(--secondary);
-}
-
-button:active,
-input[type="submit"]:active {
-    background-color: var(--black);
-    color: var(--accent2);
-    box-shadow: none;
-}
 
 body {
     margin: 0 auto;
@@ -294,11 +269,7 @@ nav a:active {
     color: var(--accent1);
 }
 
-figure,
-picture {
-    margin: 0px;
-    padding: 0px;
-}
+
 
 figcaption {
     padding: 6px 10px;
@@ -391,42 +362,6 @@ main {
 }
 
 /* Weather Article ********************************* */
-
-
-.temp-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2.5rem;
-}
-
-#current-temp {
-    font-size: 1.8rem;
-    font-weight: 800;
-}
-
-.temp-area figure {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
-}
-
-.temp-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.temp-div p {
-    font-size: 0.8rem;
-    margin: 0;
-}
-
-.temp-div p:nth-last-child(1) {
-    font-size: 1.2rem;
-    font-weight: 800;
-}
 
 
 
