@@ -583,9 +583,6 @@ footer {
 
 
 
-
-
-
 @media (max-width: 37.99rem) {
     footer {
         font-size: 14px;
@@ -604,16 +601,12 @@ footer {
     }
 
 
-
     .info-left p,
     .info-right p {
         font-size: 14px;
     }
 
    
-
-  
-
    
 
     .learn-btn {

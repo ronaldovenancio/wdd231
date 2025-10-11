@@ -172,6 +172,8 @@
 
 
 
+
+
     /* Footer */
 
     footer {
@@ -191,6 +193,18 @@
         text-align: left;
     }
 
+    .highlight {
+        display: block;
+        /* ou inline-block */
+        white-space: nowrap;
+        /* opcional, evita quebra */
+        text-align: left;
+    }
+
+    #lastModified {
+        display: inline;
+        /* garante que o span não quebre linha */
+    }
 
 
     /* --- Three columns layout (Events | Current Weather | Forecast) --- */
@@ -284,34 +298,7 @@
 
        
 
-        .learn-btn {
-            display: block;
-            width: fit-content;
-            margin: 1rem auto;
-            font-size: 1rem;
-            text-align: center;
-            margin-top: 1rem;
-            padding: 0.2rem 0.2rem;
-            border: none;
-            border-radius: 8px;
-            background: var(--primary, #a0001e);
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .learn-btn:hover {
-            background: #7a0016;
-        }
-
         dialog {
-            border: 1px solid rgb(0 0 0 / 10%);
-            border-radius: .25rem;
-            padding: 1rem;
-            background-color: #fff;
-            box-shadow: 0 0 3rem #777;
-            width: 90%;
             max-width: 600px;
         }
 
