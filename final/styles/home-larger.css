@@ -81,10 +81,7 @@
         line-height: 1;
     }
 
-    .call-to-action a {
-        left: 76%;
-        font-size: 20px;
-    }
+   
 
 
     .spotlight-grid {
@@ -96,9 +93,7 @@
         /* antes var(--space-md) */
     }
 
-    .spotlight h3 {
-        text-align: center;
-    }
+   
 
     .sub-box {
         background-color: #f9f9f9;
@@ -108,10 +103,7 @@
         /* altura mínima */
     }
 
-    .spotlight {
-        margin-bottom: 0.5rem;
-        /* antes poderia estar maior, ex: 2rem ou 3rem */
-    }
+   
 
     .join {
         margin-top: 0rem;
@@ -173,16 +165,9 @@
     }
 
 
-    .spotlight p.member-level {
-        align-items: center;
-        display: inline-block;
-    }
+ 
 
 
-    .member-level {
-        margin-top: auto;
-        /* empurra para o final da coluna */
-    }
 
     .highlight {
         display: inline;
@@ -192,10 +177,7 @@
         text-align: left;
     }
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
+    
 
 
    
@@ -210,17 +192,7 @@
     }
 
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
+   
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
 
 }
