@@ -210,15 +210,6 @@
         margin-top: 20px;
     }
 
-    .footer-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 1rem;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
 
     .footer-info div {
         flex: 1;
