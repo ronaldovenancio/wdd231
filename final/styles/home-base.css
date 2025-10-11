@@ -566,6 +566,38 @@ main {
 
 /* Footer */
 
+footer {
+    display: block;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+#footer-logo {
+    width: 180px;
+    height: 180px;
+}
+
+#footer-company {
+    color: var(--white);
+}
+
+.info-company,
+.info-contact,
+.info-stats {
+    text-align: center;
+    padding: 10px 10px 30px 10px;
+}
+
+footer a,
+footer a:visited {
+    color: var(--white);
+}
+
+footer a:hover,
+footer a:active {
+    color: var(--accent2);
+}
+
 strong {
     font-weight: 500;
     letter-spacing: 1px;
@@ -795,6 +827,8 @@ h5 {
 
 
 /* TEMP ************************* */
+
+
 
 .btn {
     padding: 10px 20px;
