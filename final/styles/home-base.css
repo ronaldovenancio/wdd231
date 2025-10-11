@@ -150,14 +150,10 @@ body {
 
 
 header {
-    display: grid;
+    display: flex;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: 1fr;
     background-color: var(--primary);
-}
-
-header {
-    display: flex;
     justify-content: space-between;
     /* logo à esquerda, nav à direita */
     align-items: center;
@@ -211,15 +207,9 @@ nav {
 
 
 .navigation {
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-}
-
-.navigation {
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 1rem;
     list-style: none;
     margin: 0;
@@ -357,36 +347,7 @@ hr {
 }
 
 /* Responsive Menu */
-.menu {
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    z-index: 10;
-    overflow: hidden;
-    background-color: var(--secondary);
-    color: var(--white);
-    background: linear-gradient(to bottom, var(--black), var(--secondary));
-    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
-}
 
-.menu li:hover {
-    background-color: var(--black);
-    color: var(--accent2);
-}
-
-.menu li a {
-    display: block;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
-    padding: 10px 10px 10px 0px;
-    border-bottom: 1px solid var(--shadow);
-}
-
-.menu li span {
-    padding-left: 10px;
-}
 
 /* Main */
 main {
@@ -559,9 +520,6 @@ main {
     font-size: 1.2rem;
     font-weight: 800;
 }
-
-
-
 
 
 /* Footer */
