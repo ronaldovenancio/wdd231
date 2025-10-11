@@ -211,10 +211,7 @@
     /* Responsive Menu */
    
     /* Main */
-    main {
-        background-color: var(--white);
-        padding: 12px;
-    }
+   
 
     .box-title {
         font-size: 1.8rem;
@@ -249,10 +246,12 @@
     /* Footer */
 
     footer {
-        display: block;
+        display:inline;
         background-color: var(--primary);
         color: var(--white);
     }
+
+            
 
 
 
@@ -265,6 +264,34 @@
     footer a:active {
         color: var(--accent2);
     }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.2rem 0;
+        }
+    
+        .social a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: white;
+            transition: background-color 0.3s;
+        }
+    
+        .social img {
+            width: 16px;
+            height: 16px;
+        }
+    
+        .social a:hover {
+            background-color: #eec22d;
+        }
 
    
   

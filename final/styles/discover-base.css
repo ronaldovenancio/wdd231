@@ -294,14 +294,6 @@ main {
 
 /* Footer */
 
-footer {
-    display: block;
-    background-color: var(--primary);
-    color: var(--white);
-}
-
-
-
 #visit-count,
 #visit-since {
     color: var(--white);

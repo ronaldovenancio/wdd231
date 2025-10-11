@@ -71,7 +71,6 @@
     }
 
     footer,
-    .home-grid,
     .discover-box {
         gap: var(--space-sm);
     }
@@ -129,9 +128,6 @@
 
     /* Footer */
 
-    footer {
-        margin-top: 50px;
-    }
 
     .footer-info {
         display: flex;
@@ -146,18 +142,7 @@
         text-align: left;
     }
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
-
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
+  
 
 
     /* --- Three columns layout (Events | Current Weather | Forecast) --- */
