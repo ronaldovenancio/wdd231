@@ -22,27 +22,7 @@
 }
 
 /* Small screens (menos de 520px) */
-@media screen and (max-width: 37.99rem) {
-    .view-list .card {
-        display: grid;
-        grid-template-columns: 1fr;
-        /* uma coluna única */
-        gap: var(--space-xs);
-        width: 90%;
-        /* reduz largura e deixa margem automática */
-        margin: var(--space-sm) auto;
-        /* centraliza horizontalmente */
-        /* text-align: center;
-        /* opcional: centraliza o conteúdo */
-    }
 
-    .view-list .card>* {
-        text-align: center;
-        /* centraliza todos os elementos internos */
-    }
-
-
-}
 
 /* Large Display Properties (~ 520px+ wide) */
 @media screen and (min-width: 38rem) {

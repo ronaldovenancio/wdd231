@@ -251,6 +251,8 @@
         color: var(--white);
     }
 
+
+
             
 
 
@@ -264,7 +266,6 @@
     footer a:active {
         color: var(--accent2);
     }
-
    
   
     /* Home Page Content */
@@ -369,45 +370,10 @@
 
 
     /* Join Page CSS Effects */
-    input[type="text"]:valid,
-    input[type="tel"]:valid,
-    input[type="email"]:valid {
-        border-left: 8px solid var(--good);
-    }
-
-    input[type="text"]:invalid,
-    input[type="tel"]:invalid,
-    input[type="email"]:invalid {
-        border-left: 8px solid var(--bad);
-    }
-
-    input:focus,
-    textarea:focus {
-        background-color: var(--secondary);
-        color: var(--white);
-    }
-
-    .required {
-        color: var(--status-red);
-    }
-
+    
     /* Thankyou Page Content */
 
-    .thankyou-grid {
-        padding-top: 100px;
-        min-height: 350px;
-    }
-
-    .thankyou-message {
-        border: 1px solid var(--background);
-        width: auto;
-        height: auto;
-        min-height: 200px;
-        margin-bottom: 20px;
-        background-color: var(--background);
-        box-shadow: 0px 2px 5px 0px var(--shadow);
-    }
-
+   
     /* Directory Page Content */
     
     
