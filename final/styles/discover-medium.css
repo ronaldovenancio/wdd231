@@ -614,21 +614,7 @@
         color: var(--white);
     }
 
-    #footer-logo {
-        width: 180px;
-        height: 180px;
-    }
 
-    #footer-company {
-        color: var(--white);
-    }
-
-    .info-company,
-    .info-contact,
-    .info-stats {
-        text-align: center;
-        padding: 10px 10px 30px 10px;
-    }
 
     footer a,
     footer a:visited {
