@@ -26,7 +26,6 @@
     main {
         max-width: 1200px;
         margin: 0 auto;
-        padding: 10px;
     }
 
     .navigation {
@@ -57,9 +56,7 @@
         margin-top: 2rem;
     }
 
-    .view-list {
-        gap: var(--space-sm);
-    }
+   
 
     .info-company {
         grid-column: 2/3;

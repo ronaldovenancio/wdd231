@@ -422,12 +422,6 @@ main {
 
 
 
-
-strong {
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
 .info-contact i {
     color: var(--accent2);
     padding-right: 8px;
