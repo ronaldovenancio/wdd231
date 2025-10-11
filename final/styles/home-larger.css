@@ -22,18 +22,15 @@
         align-items: stretch;
         max-width: 1400px;
         margin: 0 auto;
-        padding: 0;
+        background-color: #f9f9f9;
+        padding: var(--space-sm);
+        box-sizing: border-box;
+        min-height: 200px;
         
         /* remove padding horizontal que poderia criar “espaço” */
 
     }
 
-    .three-columns>* {
-        background-color: #f9f9f9;
-        padding: var(--space-sm);
-        box-sizing: border-box;
-        min-height: 200px;
-    }
 
     .events {
 
@@ -44,13 +41,14 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         margin: 0;
         /* remove qualquer margem residual */
         padding: var(--space-sm);
         /* mantém espaçamento interno */
     }
 
-    .events,
+    
     .weather-card {
         display: flex;
         flex-direction: column;
@@ -59,19 +57,8 @@
         box-sizing: border-box;
     }
 
-    .current-weather {
-        background-color: #ffeaa7;
-    }
 
-    .forecast {
-        background-color: #fab1a0;
-    }
-
-    .current-weather h3,
-    .forecast h3 {
-        font-size: 14px;
-        margin-bottom: 0.5rem;
-    }
+  
 
     .current-weather p,
     .forecast p,

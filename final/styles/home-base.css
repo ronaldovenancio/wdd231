@@ -71,8 +71,6 @@ figcaption {
     font-size: 18px;
 }
 
-
-
 h1,
 h2,
 h3 {
@@ -89,8 +87,7 @@ h4 {
 
 a,
 li,
-span,
-label {
+span {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     margin: 0px;
