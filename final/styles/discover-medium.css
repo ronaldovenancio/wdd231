@@ -140,14 +140,7 @@
 
     /* Header */
 
-    #banner {
-        padding: 0rem;
-        text-align: center;
-        /*background-color: var(--white); */
-        background-color: black;
-        color: yellow;
-        font-size: 1.5rem;
-    }
+  
 
     header {
         display: grid;

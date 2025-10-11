@@ -144,14 +144,6 @@ body {
 
 /* Header */
 
-#banner {
-    padding: 0rem;
-    text-align: center;
-    /*background-color: var(--white); */
-    background-color: black;
-    color: yellow;
-    font-size: 1.5rem;
-}
 
 header {
     display: grid;
@@ -1488,26 +1480,11 @@ footer {
 
 
 /* ------------------ LAST MODIFIED ------------------ */
-#lastModified {
-    font-weight: 600;
-    font-style: italic;
-    font-size: 12px;
-    display: block;
-    margin-top: 0.3rem;
-}
 
-.highlight {
-    display: inline;
-    /* ou inline-block */
-    white-space: nowrap;
-    /* opcional, evita quebra */
-    text-align: left;
-}
 
-#lastModified {
-    display: inline;
-    /* garante que o span não quebre linha */
-}
+
+
+
 
 @media (max-width: 38rem) {
     footer {
