@@ -626,7 +626,6 @@ strong {
 .call-to-action,
 .events,
 .weather,
-.join,
 .spotlight {
     border: 1px solid var(--background);
     border: none;
@@ -689,14 +688,6 @@ strong {
 }
 
 
-
-#join-button {
-    display: flex;
-    justify-content: space-evenly;
-    min-width: 60%;
-    margin: 0px auto;
-    border-radius: 30px;
-}
 
 .spotlight-grid {
     display: grid;
@@ -827,22 +818,6 @@ h5 {
 
 
 /* TEMP ************************* */
-
-
-
-.btn {
-    padding: 10px 20px;
-    background-color: var(--accent3-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--text-color-secondary);
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #651717;
-}
 
 
 
