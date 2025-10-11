@@ -347,12 +347,6 @@ main {
 }
 
 
-.box-content {
-    padding: 10px;
-}
-
-
-
 
 
 .info-contact i {
@@ -396,14 +390,11 @@ main {
     font-size: var(--font-title-list);
 }
 
-.card h4 {
-    font-size: 16px;
+.card h4 p a {
+    font-size: 12px;
 }
 
-.card p,
-.card a {
-    font-size: 14px;
-}
+
 
 .directory-grid {
     display: block;
