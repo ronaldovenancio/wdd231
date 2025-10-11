@@ -111,23 +111,11 @@
     /* Navigation */
 
     /* Agrupa menu + social */
-    nav {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        /* espaço entre lista de navegação e ícones sociais */
-    }
-
+   
 
     .navigation {
+        display: flex;
         text-align: center;
-        padding: 0px;
-        margin: 0px;
-        list-style: none;
-    }
-
-    .navigation {
-        display: flex;
         flex-direction: row;
         gap: 1rem;
         list-style: none;
@@ -141,10 +129,11 @@
         color: #222;
     }
 
-    nav li {
-        display: none;
+     nav li {
+        display: inline-block;
         width: 100%;
     }
+    
 
     nav .nav-li a {
         display: inline-block;

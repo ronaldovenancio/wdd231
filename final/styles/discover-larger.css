@@ -93,11 +93,7 @@
         padding: 10px;
     }
 
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+   
 
     nav li {
         display: inline-block;
