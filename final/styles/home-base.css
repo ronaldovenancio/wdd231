@@ -685,11 +685,10 @@ strong {
     max-width: 1920px;
     padding: 0px;
     background-color: lightgray;
-}
-
-.hero-image img {
     object-fit: cover;
 }
+
+
 
 #join-button {
     display: flex;
@@ -828,54 +827,6 @@ h5 {
 
 
 /* TEMP ************************* */
-.hero {
-    background-size: cover;
-    background-position: center;
-    padding: 150px 0;
-}
-
-.hero-home {
-    background-image: url("../images/recife-1500x750.webp");
-}
-
-.hero-join {
-    background-image: url("../images/hero/litchfield-park.webp");
-}
-
-.hero-directory {
-    background-image: url("../images/hero/buisness-park.webp");
-}
-
-.hero-discover {
-    background-image: url("../images/hero/sunset.webp");
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
-}
-
-.hero-content {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-}
-
-.hero-content h2 {
-    font-size: 3em;
-    font-weight: 800;
-    color: var(--text-color-secondary);
-    margin: 20px;
-}
-
-.hero-content p {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: var(--text-color-secondary);
-    margin-bottom: 20px;
-}
 
 .btn {
     padding: 10px 20px;
