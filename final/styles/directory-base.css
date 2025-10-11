@@ -76,27 +76,6 @@ h4 {
     font-size: var(--font-subtitle);
 }
 
-button,
-input[type="submit"] {
-    border: none;
-    padding: 14px 32px;
-    background-color: var(--primary);
-    color: var(--white);
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
-
-button:hover,
-input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: var(--secondary);
-}
-
-button:active,
-input[type="submit"]:active {
-    background-color: var(--black);
-    color: var(--accent2);
-    box-shadow: none;
-}
 
 body {
     margin: 0 auto;
@@ -105,14 +84,6 @@ body {
 
 /* Header */
 
-#banner {
-    padding: 0rem;
-    text-align: center;
-    /*background-color: var(--white); */
-    background-color: black;
-    color: yellow;
-    font-size: 1.5rem;
-}
 
 
 header {
