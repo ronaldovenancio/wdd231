@@ -511,30 +511,8 @@ footer {
 
 
 /* Join Page CSS Effects */
-input[type="text"]:valid,
-input[type="tel"]:valid,
-input[type="email"]:valid {
-    border-left: 8px solid var(--good);
-}
-
-input[type="text"]:invalid,
-input[type="tel"]:invalid,
-input[type="email"]:invalid {
-    border-left: 8px solid var(--bad);
-}
-
-input:focus,
-textarea:focus {
-    background-color: var(--secondary);
-    color: var(--white);
-}
-
-.required {
-    color: var(--status-red);
-}
 
 /* Thankyou Page Content */
-
 
 /* Directory Page Content */
 
@@ -618,7 +596,7 @@ footer {
 
 
 
-@media (max-width: 38rem) {
+@media (max-width: 37.99rem) {
     footer {
         font-size: 14px;
         /* menor em telas pequenas */
@@ -635,16 +613,30 @@ footer {
         /* menos espaçamento */
     }
 
-   
+    .highlight {
+        display: block;
+        /* ou inline-block */
+        white-space: nowrap;
+        /* opcional, evita quebra */
+        text-align: left;
+    }
 
-   
+    #lastModified {
+        display: inline;
+        /* garante que o span não quebre linha */
+    }
 
     .info-left p,
     .info-right p {
         font-size: 14px;
     }
 
-
+    .highlight,
+    #lastModified {
+        display: block;
+        text-align: left;
+        margin-top: 0.2rem;
+    }
 
     .learn-more-btn {
         display: inline-block;

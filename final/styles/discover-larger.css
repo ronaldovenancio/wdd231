@@ -78,6 +78,17 @@
         /* permite rolagem horizontal se necessário */
     }
 
+    #profile {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #header-links {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding: 6px 6px;
+    }
+
 
     main {
         max-width: 1200px;
@@ -108,12 +119,11 @@
 
     footer,
     .home-grid,
-    .discover-box,
-    #memberships,
-    .view-list {
+    .discover-box {
         gap: var(--space-sm);
     }
 
+    
    
 
     /* Discover Page Content */
@@ -128,33 +138,45 @@
 
     /* Join Page Content */
 
-
-    /* ------------------ FOOTER ------------------ */
    
-
-
-    .social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.2rem 0;
+    /* ------------------ FOOTER ------------------ */
+    footer {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 0.8rem 1rem;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
     }
 
-    .social a {
+    .footer-info {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        background-color: white;
-        transition: background-color 0.3s;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
     }
+
+    .footer-info div {
+        flex: 1;
+        min-width: 350px;
+    }
+
+    .footer-info p {
+        margin: 0.1rem 0;
+        line-height: 1.3;
+        font-size: 14px;
+    }
+
 
 
     /* Footer */
 
+    footer {
+        margin-top: 50px;
+    }
 
     .footer-info {
         display: flex;
@@ -169,12 +191,29 @@
         text-align: left;
     }
 
+    .highlight {
+        display: block;
+        /* ou inline-block */
+        white-space: nowrap;
+        /* opcional, evita quebra */
+        text-align: left;
+    }
+
+    #lastModified {
+        display: inline;
+        /* garante que o span não quebre linha */
+    }
 
 
-   
+    /* --- Three columns layout (Events | Current Weather | Forecast) --- */
+    
 
     /* Responsividade: em telas pequenas, empilha */
-   
+    @media screen and (max-width: 768px) {
+        .three-columns {
+            grid-template-columns: 1fr;
+        }
+    }
 
     #showHere div {
 
@@ -254,5 +293,67 @@
             border-radius: 10px;
             cursor: pointer;
         }
+
+        .learn-more-btn {
+            display: inline-block;
+            width: 100%;
+            margin-top: 0.5rem;
+            padding: 0.2rem 0.2rem;
+            text-align: center;
+            background: var(--primary, #a0001e);
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background: var(--accent1, #9d6451);
+        }
+
+        .learn-btn {
+            display: block;
+            width: fit-content;
+            margin: 1rem auto;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0.2rem 0.2rem;
+            border: none;
+            border-radius: 8px;
+            background: var(--primary, #a0001e);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .learn-btn:hover {
+            background: #7a0016;
+        }
+
+        dialog {
+            border: 1px solid rgb(0 0 0 / 10%);
+            border-radius: .25rem;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 3rem #777;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        ::backdrop {
+            background-color: rgb(0 0 0 / 50%);
+        }
+
+        dialog button {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            padding: .5rem 1rem;
+            border: 1px solid rgb(0 0 0 / 10%);
+        }
+
     }
+
 }
