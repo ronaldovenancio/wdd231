@@ -579,7 +579,7 @@
             /* se quiser limitar a altura */
         }
 
-        #header-logo {
+        .header-logo {
             width: 80px;
             /* ou o tamanho que desejar */
             height: auto;
