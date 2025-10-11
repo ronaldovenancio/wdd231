@@ -95,93 +95,6 @@
 
    
 
-    .sub-box {
-        background-color: #f9f9f9;
-        padding: var(--space-sm);
-        box-sizing: border-box;
-        min-height: 100px;
-        /* altura mínima */
-    }
-
-   
-
-    .join {
-        margin-top: 0rem;
-        /* ajusta para aproximar a seção Spotlight */
-    }
-
-
-
-
-
-    .sub-box img {
-        max-width: 100px;
-        max-height: 100px;
-        height: auto;
-        margin-bottom: 0.5rem;
-        /* espaçamento da imagem para o link/endereço */
-        border-radius: 5px;
-    }
-
-    .sub-box a {
-        color: #1a73e8;
-        font-size: 1rem;
-        text-align: left;
-        text-decoration: none;
-        margin-bottom: 0.75rem;
-        /* espaçamento do link para o endereço */
-        word-break: break-word;
-    }
-
-    .sub-box p {
-        margin-bottom: 0.75rem;
-        font-size: 1rem;
-        text-align: left;
-        /* espaçamento entre os parágrafos */
-        font-size: 0.95rem;
-        color: #333;
-    }
-
-    .sub-box .member-level {
-        margin-top: 0.5rem;
-        white-space: nowrap;
-        text-align: left;
-        font-size: 1rem;
-        /* evita quebra de linha automática */
-        /* mantém sempre no fundo da caixa */
-        font-weight: bold;
-        color: #555;
-    }
-
-    .sub-box .number-phone {
-        margin-top: 0.5rem;
-        white-space: nowrap;
-        text-align: left;
-        font-size: 1rem;
-        /* evita quebra de linha automática */
-        /* mantém sempre no fundo da caixa */
-        font-weight: bold;
-        color: #555;
-    }
-
-
- 
-
-
-
-    .highlight {
-        display: inline;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
-
-    
-
-
-   
-
     /* ------------------ FOOTER ------------------ */
 
     .footer-info {
@@ -190,9 +103,5 @@
         align-items: center;
         margin: 0 auto;
     }
-
-
-   
-
 
 }
