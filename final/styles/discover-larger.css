@@ -125,23 +125,7 @@
         gap: var(--space-sm);
     }
 
-    .info-company {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .info-contact {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        padding-top: 70px;
-        text-align: left;
-        padding-top: var(--space-lg);
-    }
-
-    .info-stats {
-        grid-column: 1/5;
-        grid-row: 2/3;
-    }
+    
 
     /* Home Page Content */
 

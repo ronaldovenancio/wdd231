@@ -377,22 +377,7 @@
         color: var(--accent2);
     }
 
-    strong {
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-
-    .info-contact i {
-        color: var(--accent2);
-        padding-right: 8px;
-    }
-
-    .info-stats {
-        background-color: var(--secondary);
-        padding-top: 20px;
-        color: var(--accent2);
-    }
-
+   
     #visit-count,
     #visit-since {
         color: var(--white);
