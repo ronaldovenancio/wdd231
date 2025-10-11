@@ -270,24 +270,6 @@ nav a:active {
 }
 
 
-
-figcaption {
-    padding: 6px 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    background-color: var(--black);
-    color: var(--white);
-}
-
-figcaption a,
-figcaption a:hover {
-    color: var(--accent2);
-}
-
-figcaption a:active {
-    color: var(--accent1);
-}
-
 img {
     display: block;
     width: 100%;
@@ -295,10 +277,7 @@ img {
     margin: 0 auto;
 }
 
-hr {
-    border: 1px solid var(--black);
-    margin: 10px;
-}
+
 
 /* Responsive Menu */
 .menu {
@@ -338,28 +317,6 @@ main {
     padding: 12px;
 }
 
-.box-title {
-    font-size: 1.8rem;
-    padding: 5px 10px;
-    background-color: var(--accent2);
-    background-color: var(--primary);
-    color: var(--white);
-}
-
-.box-subtitle {
-    padding: 10px 10px 0px 10px;
-}
-
-.box-content {
-    padding: 10px;
-}
-
-.sub-box {
-    width: auto;
-    height: 200px;
-    padding: 10px;
-    box-shadow: 0px 2px 5px 0px var(--shadow);
-}
 
 
 /* Footer */
