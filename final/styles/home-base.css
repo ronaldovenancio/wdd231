@@ -924,13 +924,6 @@ footer {
 /* ------------------ LAST MODIFIED ------------------ */
 
 
-.highlight {
-    display: inline;
-    /* ou inline-block */
-    white-space: nowrap;
-    /* opcional, evita quebra */
-    text-align: left;
-}
 
 
 @media (max-width: 38rem) {
@@ -950,22 +943,13 @@ footer {
         /* menos espaçamento */
     }
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
-
-
+   
     .info-left p,
     .info-right p {
         font-size: 14px;
     }
 
-    .highlight,
-    #lastModified {
+    .highlight {
         display: flex;
         text-align: left;
         margin-top: 0.2rem;
