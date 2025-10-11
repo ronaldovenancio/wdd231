@@ -166,14 +166,7 @@ nav .nav-li a {
     /* aumenta área clicável */
 }
 
-nav li:first-child {
-    display: block;
-}
 
-#nav-icon {
-    color: white;
-    /* Cor desejada */
-}
 
 #nav-button {
     background-color: transparent;
