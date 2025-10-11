@@ -460,22 +460,11 @@
 
 
 
-    footer {
-        font-size: 12px;
-        /* menor em telas pequenas */
-    }
+    
 
-    footer .footer-info {
-        flex-direction:row;
-        /* garante que fique empilhado no mobile */
-        text-align: left;
-    }
 
    
-    .info-left p,
-    .info-right p {
-        font-size: 14px;
-    }      
+    
 
 
 
