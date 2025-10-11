@@ -201,15 +201,6 @@
    
 
     /* ------------------ FOOTER ------------------ */
-    footer {
-        background-color: var(--primary);
-        color: #fff;
-        padding: 0.8rem 1rem;
-        font-size: 14px;
-        text-align: center;
-        margin-top: 20px;
-    }
-
 
     .footer-info div {
         flex: 1;
