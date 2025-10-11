@@ -719,21 +719,11 @@ footer {
 
 
 @media (max-width: 600px) {
-    footer {
-        font-size: 12px;
-        /* menor em telas pequenas */
-    }
-
+   
     footer .footer-info {
         flex-direction: column;
         /* garante que fique empilhado no mobile */
         text-align: center;
     }
-
-    footer .footer-info p {
-        margin: 0.25rem 0;
-        /* menos espaçamento */
-    }
-
 
 }
