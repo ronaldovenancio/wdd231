@@ -41,51 +41,11 @@
         /* centraliza todos os elementos internos */
     }
 
-    
-
-    #nav-icon {
-        color: white;
-        /* Cor desejada */
-        font-size: 28px;
-        /* Opcional: aumenta o tamanho do ícone */
-    }
-
-    /* Se você quiser mudar o fundo do botão também */
-    #nav-button {
-        background-color: transparent;
-        /* Cor de fundo do botão */
-        border: none;
-        /* Remove borda se houver */
-        padding: 8px;
-        border-radius: 5px;
-        /* opcional */
-    }
 
 }
 
 /* Large Display Properties (~ 520px+ wide) */
 @media screen and (min-width: 38rem) {
-
-    #directory-area {
-        width: 100%;
-        max-width: 1200px;
-        /* opcional, mantém layout centralizado */
-        margin: 0 auto;
-        overflow-x: auto;
-        /* permite rolagem horizontal se necessário */
-    }
-
-    #profile {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    #header-links {
-        grid-column: 3/4;
-        grid-row: 1/2;
-        padding: 6px 6px;
-    }
-
 
     main {
         max-width: 1200px;
