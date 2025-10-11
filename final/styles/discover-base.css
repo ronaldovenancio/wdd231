@@ -479,33 +479,6 @@ main {
 
 /* Weather Article ********************************* */
 
-#weather {
-    width: 100%;
-}
-
-#weather h3,
-#five-day h3 {
-    margin: 0;
-    font-size: 1.8rem;
-    padding: 5px 10px;
-    background-color: var(--primary);
-    color: var(--white);
-    text-transform: uppercase;
-    text-transform: capitalize;
-}
-
-#weather p {
-    font-size: 1.2rem;
-    margin: 10px 0 0 0;
-    text-align: center;
-}
-
-#weather figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
 
 .temp-area {
     display: flex;
@@ -522,84 +495,6 @@ main {
 .temp-area figure {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: 0;
-}
-
-#weather-description {
-    font-size: 1em;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-transform: capitalize;
-}
-
-.alt-weather {
-    display: grid;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    gap: 2px;
-    font-size: 0.8rem;
-}
-
-.weather-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    padding: 15px;
-    /* border: 1px solid var(--accent3-color); */
-    font-size: 1.5rem;
-}
-
-.weather-box span {
-    font-weight: 800;
-    font-size: 1.5rem;
-}
-
-#five-day {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#five-day p {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    font-size: 0.8rem;
-}
-
-#forecast .weather-day {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    font-size: 1rem;
-    margin-left: 10px;
-    /* margin: 20px 0; */
-}
-
-#forecast .weather-day:not(:last-child) {
-    border-bottom: 1px solid black;
-    border: none;
-}
-
-.weather-day h5 {
-    /* font-size: 1.2rem; */
-    font-weight: 800;
-    text-transform: capitalize;
-}
-
-.weather-day figcaption {
-    font-size: 0.8rem;
-    text-transform: capitalize;
-}
-
-#forecast figure {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin: 0;
 }
@@ -670,7 +565,6 @@ strong {
 
 .call-to-action,
 .events,
-.weather,
 .join,
 .spotlight {
     border: 1px solid var(--background);
@@ -802,46 +696,6 @@ h4,
 p,
 h5 {
     font-size: 1rem;
-}
-
-.weather .box-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
-}
-
-.weather h4 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    text-align: center;
-}
-
-.weather p {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding: 30px 10px;
-    text-align: center;
-    font-size: 25px;
-}
-
-.weather figure {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 100%;
-    max-width: 132px;
-    margin-left: 2.5rem;
-}
-
-.weather figcaption {
-    text-align: center;
-    background: none;
-    color: var(--black);
-    margin-left: 6rem;
-    margin-top: -1.5rem;
-}
-
-#weather-icon {
-    padding: 10px;
 }
 
 /* Discover Page Content */
