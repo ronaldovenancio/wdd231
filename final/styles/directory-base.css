@@ -49,24 +49,8 @@
     --paragraph: 'DM Sans', tahoma, sans-serif;
 }
 
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-
 .fa-solid, .fa-bars, .fas, .fa-th-large, .fa-list  {
     border: none;
-}
-
-
-h1, h2 {
-    font-weight: 600;
-}
-
-h4 {
-    font-weight: 500;
-    font-size: var(--font-subtitle);
 }
 
 button,
@@ -270,13 +254,6 @@ main {
 
 
 
-
-.info-contact i {
-    color: var(--accent2);
-    padding-right: 8px;
-}
-
-
 #visit-count,
 #visit-since {
     color: var(--white);
@@ -287,23 +264,6 @@ main {
 /* Home Page Content */
 
 
-
-
-
-
-.fade-in {
-    animation: fade 3s;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 
 
