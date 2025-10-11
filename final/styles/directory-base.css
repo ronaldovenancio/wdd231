@@ -164,13 +164,7 @@ header {
     color: var(--white);
 }
 
-/*
-#header-links {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    padding: 6px 0px;
-}
-*/
+
 /* Ícones sociais */
 #header-links {
     display: flex;
@@ -178,11 +172,6 @@ header {
     background-color: transparent;
 }
 
-/*
-#header-links {
-    background-color: transparent;
-}
-*/
 
 #header-links a {
     background-color: transparent;
