@@ -581,12 +581,6 @@ footer {
     color: var(--white);
 }
 
-.info-company,
-.info-contact,
-.info-stats {
-    text-align: center;
-    padding: 10px 10px 30px 10px;
-}
 
 footer a,
 footer a:visited {
@@ -598,21 +592,7 @@ footer a:active {
     color: var(--accent2);
 }
 
-strong {
-    font-weight: 500;
-    letter-spacing: 1px;
-}
 
-.info-contact i {
-    color: var(--accent2);
-    padding-right: 8px;
-}
-
-.info-stats {
-    background-color: var(--secondary);
-    padding-top: 20px;
-    color: var(--accent2);
-}
 
 #visit-count,
 #visit-since {
