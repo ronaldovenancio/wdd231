@@ -495,19 +495,9 @@ footer {
     margin-bottom: 20px;
 }
 
-.btn {
-    padding: 10px 20px;
-    background-color: var(--accent3-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--text-color-secondary);
-    text-decoration: none;
-}
 
-.btn:hover {
-    background-color: #651717;
-}
+
+
 
 
 /* Join Page CSS Effects */
@@ -613,47 +603,18 @@ footer {
         /* menos espaçamento */
     }
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
 
     .info-left p,
     .info-right p {
         font-size: 14px;
     }
 
-    .highlight,
-    #lastModified {
-        display: block;
-        text-align: left;
-        margin-top: 0.2rem;
-    }
+   
 
-    .learn-more-btn {
-        display: inline-block;
-        width: 100%;
-        margin-top: 0.5rem;
-        padding: 0.2rem 0.2rem;
-        text-align: center;
-        background: var(--primary, #a0001e);
-        color: #fff;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background 0.3s ease;
-    }
+  
 
-    .learn-more-btn:hover {
-        background: var(--accent1, #9d6451);
-    }
+   
 
     .learn-btn {
         display: block;

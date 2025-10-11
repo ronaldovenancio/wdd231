@@ -191,18 +191,6 @@
         text-align: left;
     }
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
-
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
 
 
     /* --- Three columns layout (Events | Current Weather | Forecast) --- */
@@ -294,22 +282,7 @@
             cursor: pointer;
         }
 
-        .learn-more-btn {
-            display: inline-block;
-            width: 100%;
-            margin-top: 0.5rem;
-            padding: 0.2rem 0.2rem;
-            text-align: center;
-            background: var(--primary, #a0001e);
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-        }
-
-        .learn-more-btn:hover {
-            background: var(--accent1, #9d6451);
-        }
+       
 
         .learn-btn {
             display: block;

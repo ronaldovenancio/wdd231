@@ -477,19 +477,7 @@
         margin-bottom: 20px;
     }
 
-    .btn {
-        padding: 10px 20px;
-        background-color: var(--accent3-color);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        color: var(--text-color-secondary);
-        text-decoration: none;
-    }
-
-    .btn:hover {
-        background-color: #651717;
-    }
+  
 
 
     /* Join Page CSS Effects */
@@ -534,22 +522,8 @@
 
     /* Directory Page Content */
     
-    .learn-more-btn {
-        display: inline-block;
-        width: 100%;
-        margin-top: 0.5rem;
-        padding: 0.2rem 0.2rem;
-        text-align: center;
-        background: var(--primary, #a0001e);
-        color: #fff;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background 0.3s ease;
-    }
+    
 
-    .learn-more-btn:hover {
-        background: var(--accent1, #9d6451);
-    }
 
     .learn-btn {
         display: block;
