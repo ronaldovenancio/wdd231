@@ -197,17 +197,7 @@
     }
 
 
-    /* Responsividade para colunas pequenas antes era 768px*/
-    @media screen and (max-width: 768px) {
-        .three-columns {
-            grid-template-columns: 1fr;
-        }
-
-        .spotlight-grid {
-            grid-template-columns: 1fr;
-            /* uma coluna em telas pequenas */
-        }
-    }
+   
 
     /* ------------------ FOOTER ------------------ */
     footer {
