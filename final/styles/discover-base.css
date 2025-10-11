@@ -635,30 +635,16 @@ footer {
         /* menos espaçamento */
     }
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
+   
 
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
+   
 
     .info-left p,
     .info-right p {
         font-size: 14px;
     }
 
-    .highlight,
-    #lastModified {
-        display: block;
-        text-align: left;
-        margin-top: 0.2rem;
-    }
+
 
     .learn-more-btn {
         display: inline-block;

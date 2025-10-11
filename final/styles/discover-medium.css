@@ -486,15 +486,6 @@
     /* ------------------ LAST MODIFIED ------------------ */
     
 
-    .highlight {
-        display: inline;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
-
-
 
 
     footer {

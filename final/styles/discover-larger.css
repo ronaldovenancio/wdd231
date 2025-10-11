@@ -169,19 +169,6 @@
         text-align: left;
     }
 
-    .highlight {
-        display: block;
-        /* ou inline-block */
-        white-space: nowrap;
-        /* opcional, evita quebra */
-        text-align: left;
-    }
-
-    #lastModified {
-        display: inline;
-        /* garante que o span não quebre linha */
-    }
-
 
 
    
