@@ -20,7 +20,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-       // console.table(jsonObject);  // temporary checking for valid response and data parsing
         const varObj = jsonObject['olympiads']; // Store the results into an array since that data source is an array.
         varObj.forEach(displayEachObj); // Call the forEach() method which will loop through each record to be processed.
     });
