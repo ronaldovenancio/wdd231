@@ -288,8 +288,9 @@ main {
 .card-address,
 .card-phone,
 .card-url {
-    margin: 6px 0px;
-    padding: 10px;
+    margin: 5px 1px;
+    padding: 1px;
+    font-size: 1.1rem;
 }
 
 
@@ -305,7 +306,7 @@ main {
 .view-cards .card {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
     width: 100%;
     /* ao invés de fixo 350px */
     max-width: 350px;
@@ -331,9 +332,6 @@ main {
     margin-bottom: 0.25rem;
     /* espaço pequeno abaixo do título */
 }
-
-
-
 
 
 .view-list {
