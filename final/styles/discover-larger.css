@@ -38,10 +38,6 @@
         grid-template-rows: 1fr auto;
     }
 
-    
-    .discover-box {
-        gap: var(--space-sm);
-    }
 
     
    
