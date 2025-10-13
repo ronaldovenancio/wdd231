@@ -18,9 +18,7 @@
 }
 
 
-
 @media screen and (min-width: 38rem) {
-
     main {
         max-width: 1200px;
         margin: 0 auto;
@@ -39,10 +37,6 @@
     }
 
 
-    
-   
-
-
     .discover-box {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -50,8 +44,6 @@
         margin-bottom: var(--space-lg);
         gap: var(--space-sm);
     }
-
-
 
 
     footer {
