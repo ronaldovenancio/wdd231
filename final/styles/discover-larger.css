@@ -29,11 +29,6 @@
 
    
 
-    nav li {
-        display: inline-block;
-        width: 100%;
-    }
-
     nav li:first-child {
         display: none;
     }
@@ -43,7 +38,7 @@
         grid-template-rows: 1fr auto;
     }
 
-    footer,
+    
     .discover-box {
         gap: var(--space-sm);
     }
@@ -57,6 +52,7 @@
         grid-template-columns: auto 1fr;
         grid-template-rows: 1fr;
         margin-bottom: var(--space-lg);
+        gap: var(--space-sm);
     }
 
 
@@ -69,6 +65,7 @@
         font-size: 14px;
         text-align: center;
         margin-top: 20px;
+        gap: var(--space-sm);
     }
 
     
