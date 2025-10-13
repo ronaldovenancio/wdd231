@@ -1,12 +1,8 @@
 :root {
     --space-xs: 0.5rem;
-    /* 8px */
     --space-sm: 1rem;
-    /* 16px */
     --space-md: 2rem;
-    /* 32px */
     --space-lg: 3rem;
-    /* 48px */
     --font-title: 32px;
     --font-subtitle: 24px;
     --font-body: 20px;
@@ -14,7 +10,7 @@
     --font-title-list: 24px;
     --font-subtitle-list: 18px;
     --font-body-list: 16px;
-    /* Colors */
+    
     --primary: #a0001e;
     --secondary: #180e0d;
     --accent1: #9d6451;
@@ -90,7 +86,7 @@
     }
 
 
-    /* Footer */
+    
 
 
     .footer-info {
@@ -126,7 +122,6 @@
     #showHere div img {
         width: 300px;
         height: 100%;
-        /* display: block; */
         border-radius: 10px;
         transition: transform 0.3s ease, filter 0.3s ease;
     }
@@ -145,7 +140,6 @@
     #showHere div img {
         width: 300px;
         height: 100%;
-        /* display: block; */
         border-radius: 10px;
         transition: transform 0.3s ease, filter 0.3s ease;
     }
