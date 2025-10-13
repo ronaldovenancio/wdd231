@@ -1,5 +1,5 @@
 :root {
-    /* Colors */
+    
     --primary: #a0001e;
     --secondary: #180e0d;
     --accent1: #9d6451;
@@ -11,27 +11,22 @@
     --shadow: #0303038e;
     --shading: #03030330;
 
-    /* Status Colors */
+    
     --good: #089f3f;
     --poor: #bdb630;
     --bad: #cb2121;
 
     --background: #f7f9fc;
-    /* cor clara de fundo */
     --accent3-color: #ff6600;
-    /* exemplo para CTA e botões */
+    
     --text-color-main: #222222;
     --text-color-secondary: #ffffff;
     --status-red: #ff3333;
 
     --space-xs: 0.5rem;
-    /* 8px */
     --space-sm: 1rem;
-    /* 16px */
     --space-md: 2rem;
-    /* 32px */
     --space-lg: 3rem;
-    /* 48px */
     --font-title: 32px;
     --font-subtitle: 24px;
     --font-body: 20px;
@@ -42,9 +37,9 @@
 
 
     --highlight: #ffae00;
-    /* substitui orange */
+    
 
-    /* Fonts */
+    
     --heading: 'Playfair Display', georgia, serif;
     --paragraph: 'DM Sans', tahoma, sans-serif;
 }
@@ -95,7 +90,7 @@ body {
     background-color: var(--black);
 }
 
-/* Header */
+
 
 
 header {
@@ -113,25 +108,15 @@ header {
 
 .header-title {
     font-size: 2rem;
-    /* aumenta o tamanho da fonte */
     font-weight: 700;
     color: white;
-    /* deixa em negrito */
-    /*color: #004080;
-    /* cor destacada, você pode mudar */
-    /* text-transform: uppercase;
-    /* opcional, deixa em maiúsculas */
     letter-spacing: 1px;
-    /* espaçamento entre letras */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    /* leve sombra */
     display: inline-block;
-    /* facilita ajustes de margin/padding */
     margin-left: 1rem;
-    /* espaço do logo, se necessário */
 }
 
-/* Logo + nome */
+
 .page-content {
     display: flex;
     align-items: center;
@@ -141,21 +126,18 @@ header {
 .header-logo {
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 80px; /* ou o tamanho que desejar */
+    width: 80px; 
     height: auto;
-    padding: 10px; /* mantém proporção */
+    padding: 10px; 
 }
 
 
 
-/* Navigation */
 
-/* Agrupa menu + social */
 nav {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    /* espaço entre lista de navegação e ícones sociais */
 }
 
 
@@ -184,13 +166,9 @@ nav li {
 
 nav .nav-li a {
     display: inline-block;
-    /* permite aplicar largura */
     min-width: 100px;
-    /* ajusta para a largura que quiser */
     text-align: center;
-    /* centraliza o texto dentro do botão */
     padding: 0.5rem 1rem;
-    /* aumenta área clicável */
 }
 
 nav li:first-child {
@@ -200,18 +178,13 @@ nav li:first-child {
 #nav-icon {
     color: white;
     font-size: 28px;
-    /* Cor desejada */
 }
 
 #nav-button {
     background-color: transparent;
-    /* Cor do fundo do botão */
     border: none;
-    /* Remove borda se houver */
     padding: 8px;
-    /* Ajusta o tamanho do botão */
     border-radius: 5px;
-    /* Opcional: borda arredondada */
 }
 
 #nav-button.active {
@@ -243,16 +216,12 @@ nav a:visited {
 
 nav a {
     background-color: transparent;
-    /* remove qualquer fundo */
     color: inherit;
-    /* mantém a cor do texto do link */
     text-decoration: none;
-    /* opcional: remove sublinhado */
 }
 
 nav a:hover {
     background-color: var(--primary);
-    /* background-color: red; */
     color: var(--white);
     box-shadow: 0px 2px 7px 2px var(--shadow);
 }
@@ -277,22 +246,12 @@ img {
 
 
 
-/* Responsive Menu */
-
-
-
-
-
-
-/* Main */
 main {
     background-color: var(--white);
     padding: 12px;
 }
 
 
-
-/* Footer */
 
 #visit-count,
 #visit-since {
@@ -306,9 +265,6 @@ main {
 
 
 
-
-
-/* Discover Page Content */
 
 .discover-grid {
     display: block;
@@ -410,7 +366,6 @@ main {
 
 
 
-/* TEMP ************************* */
 .hero {
     background-size: cover;
     background-position: center;
@@ -465,13 +420,8 @@ main {
 
 
 
-/* Join Page CSS Effects */
 
-/* Thankyou Page Content */
 
-/* Directory Page Content */
-
-/* ------------------ FOOTER ------------------ */
 footer {
     background-color: var(--primary);
     color: #fff;
@@ -514,7 +464,7 @@ footer {
     font-weight: 300;
 }
 
-/* ------------------ SOCIAL ------------------ */
+
 .social {
     display: flex;
     justify-content: center;
@@ -544,25 +494,22 @@ footer {
 }
 
 
-/* ------------------ LAST MODIFIED ------------------ */
+
 
 
 
 @media (max-width: 37.99rem) {
     footer {
         font-size: 14px;
-        /* menor em telas pequenas */
     }
 
     footer .footer-info {
         flex-direction: column;
-        /* garante que fique empilhado no mobile */
         text-align: center;
     }
 
     footer .footer-info p {
         margin: 0.25rem 0;
-        /* menos espaçamento */
     }
 
 

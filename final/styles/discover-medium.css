@@ -1,5 +1,5 @@
 :root {
-    /* Colors */
+  
     --primary: #a0001e;
     --secondary: #180e0d;
     --accent1: #9d6451;
@@ -11,27 +11,21 @@
     --shadow: #0303038e;
     --shading: #03030330;
 
-    /* Status Colors */
+  
     --good: #089f3f;
     --poor: #bdb630;
     --bad: #cb2121;
 
     --background: #f7f9fc;
-    /* cor clara de fundo */
     --accent3-color: #ff6600;
-    /* exemplo para CTA e botões */
     --text-color-main: #222222;
     --text-color-secondary: #ffffff;
     --status-red: #ff3333;
 
     --space-xs: 0.5rem;
-    /* 8px */
     --space-sm: 1rem;
-    /* 16px */
     --space-md: 2rem;
-    /* 32px */
     --space-lg: 3rem;
-    /* 48px */
     --font-title: 32px;
     --font-subtitle: 24px;
     --font-body: 20px;
@@ -42,9 +36,9 @@
 
 
     --highlight: #ffae00;
-    /* substitui orange */
+ 
 
-    /* Fonts */
+
     --heading: 'Playfair Display', georgia, serif;
     --paragraph: 'DM Sans', tahoma, sans-serif;
 }
@@ -89,14 +83,11 @@
         background-color: var(--black);
     }
 
-    /* Header */
 
   
 
   
-  
 
-    /* Logo + nome */
     .page-content {
         display: flex;
         align-items: center;
@@ -107,10 +98,6 @@
 
 
 
-
-    /* Navigation */
-
-    /* Agrupa menu + social */
    
 
     .navigation {
@@ -137,13 +124,9 @@
 
     nav .nav-li a {
         display: inline-block;
-        /* permite aplicar largura */
         min-width: 100px;
-        /* ajusta para a largura que quiser */
         text-align: center;
-        /* centraliza o texto dentro do botão */
         padding: 0.5rem 1rem;
-        /* aumenta área clicável */
     }
 
     nav li:first-child {
@@ -181,16 +164,12 @@
 
     nav a {
         background-color: transparent;
-        /* remove qualquer fundo */
         color: inherit;
-        /* mantém a cor do texto do link */
         text-decoration: none;
-        /* opcional: remove sublinhado */
     }
 
     nav a:hover {
         background-color: var(--primary);
-        /* background-color: red; */
         color: var(--white);
         box-shadow: 0px 2px 7px 2px var(--shadow);
     }
@@ -206,11 +185,6 @@
     }
 
 
-   
-
-    /* Responsive Menu */
-   
-    /* Main */
    
 
     .box-title {
@@ -236,14 +210,7 @@
         box-shadow: 0px 2px 5px 0px var(--shadow);
     }
 
-    /* Weather Article ********************************* */
 
-    
-
-
-
-
-    /* Footer */
 
     footer {
         display:inline;
@@ -268,7 +235,7 @@
     }
    
   
-    /* Home Page Content */
+
 
     
     
@@ -316,7 +283,7 @@
 
 
 
-    /* TEMP ************************* */
+
     .hero {
         background-size: cover;
         background-position: center;
@@ -367,14 +334,6 @@
     }
 
   
-
-
-    /* Join Page CSS Effects */
-    
-    /* Thankyou Page Content */
-
-   
-    /* Directory Page Content */
     
     
 
@@ -412,25 +371,7 @@
         right: 10px;
         padding: .5rem 1rem;
         border: 1px solid rgb(0 0 0 / 10%);
-    }
-
-
-    /* ------------------ FOOTER ------------------ */
-    
-
-    /* ------------------ SOCIAL ------------------ */
-  
-
-
-    /* ------------------ LAST MODIFIED ------------------ */
-
-
-
-    
-
-
-   
-    
+    }    
 
 
 
