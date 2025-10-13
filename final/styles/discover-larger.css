@@ -21,10 +21,8 @@
     --accent2: #e2beab;
 }
 
-/* Small screens (menos de 520px) */
 
 
-/* Large Display Properties (~ 520px+ wide) */
 @media screen and (min-width: 38rem) {
 
     main {
@@ -46,7 +44,6 @@
 
     footer {
         display: grid;
-        /*  grid-template-columns: 10% 1fr 1fr 10%; */
         grid-template-rows: 1fr auto;
     }
 
@@ -58,7 +55,6 @@
     
    
 
-    /* Discover Page Content */
 
     .discover-box {
         display: grid;
@@ -68,10 +64,8 @@
     }
 
 
-    /* Join Page Content */
 
-   
-    /* ------------------ FOOTER ------------------ */
+
     footer {
         background-color: var(--primary);
         color: #fff;
@@ -116,10 +110,7 @@
   
 
 
-    /* --- Three columns layout (Events | Current Weather | Forecast) --- */
-    
-
-    /* Responsividade: em telas pequenas, empilha */
+   
     @media screen and (max-width: 768px) {
         .three-columns {
             grid-template-columns: 1fr;
@@ -168,7 +159,6 @@
     #showHere div img {
         width: 300px;
         height: 100%;
-        /* display: block; */
         border-radius: 10px;
         transition: transform 0.3s ease, filter 0.3s ease;
     }
@@ -177,9 +167,7 @@
             width: 300px;
             height: 100%;
             transform: scale(1.04);
-            /* zoom suave */
             filter: brightness(1.1);
-            /* aumenta o brilho */
             border-radius: 10px;
             cursor: pointer;
         }
