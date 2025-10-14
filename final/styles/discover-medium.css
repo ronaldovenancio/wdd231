@@ -316,7 +316,7 @@
 
     dialog {
         border: 1px solid rgb(0 0 0 / 10%);
-            border-radius: .25rem;
+        border-radius: .25rem;
         padding: 1rem;
         background-color: #fff;
         box-shadow: 0 0 3rem #777;
