@@ -368,6 +368,10 @@ footer {
     color: var(--white);
 }
 
+footer a {
+    color: var(--white);
+}
+
 
 .footer-info {
     display: flex;
