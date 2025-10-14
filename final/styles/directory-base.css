@@ -407,6 +407,10 @@ footer {
     font-size: 12px;
 }
 
+footer a {
+    color: var(--white);
+}
+
 
 .footer-info {
     display: flex;
@@ -433,7 +437,8 @@ footer {
     font-weight: 300;
 }
 
-/*
+
+
 .info-left p,
 .info-right p {
     text-align: left;
@@ -442,7 +447,7 @@ footer {
     line-height: 1.2;
     font-weight: 300;
 }
-*/
+
 
 /* ------------------ SOCIAL ------------------ */
 .social {
