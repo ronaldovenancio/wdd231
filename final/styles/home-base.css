@@ -74,7 +74,6 @@ figcaption {
 h1,
 h2,
 h3 {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 800;
     margin: 0px;
     
@@ -82,7 +81,6 @@ h3 {
 }
 
 h4 {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 500;
     margin: 0px 0px 4px 0px;
 }
@@ -90,13 +88,11 @@ h4 {
 a,
 li,
 span {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 400;
     margin: 0px;
 }
 
 p {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
     font-weight: 400;
     margin: 0px 0px 4px 0px;
 }
