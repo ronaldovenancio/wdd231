@@ -45,8 +45,8 @@
     /* substitui orange */
 
     /* Fonts */
-    --heading: 'Playfair Display', georgia, serif;
-    --paragraph: 'DM Sans', tahoma, sans-serif;
+    --heading: 'Roboto', 'Open Sans', sans-serif;
+    --paragraph: 'Roboto', 'Open Sans', sans-serif;
 }
 
 h1 {
