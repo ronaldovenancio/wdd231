@@ -113,6 +113,13 @@ p {
     border: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', georgia, serif;
+}
+
+p, a, li, span, figcaption {
+  font-family: 'DM Sans', tahoma, sans-serif;
+}
 
 
 body {
