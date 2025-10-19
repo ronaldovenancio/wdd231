@@ -101,7 +101,7 @@ p {
 .location-icon,
 .fas,
 .fa-map-marker-alt {
-    font-family: 'Roboto', 'Open Sans', sans-serif;
+    font-family: var(--heading);
 }
 
 .fa-solid,
@@ -110,11 +110,11 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', georgia, serif;
+  font-family: var(--heading);
 }
 
 p, a, li, span, figcaption {
-  font-family: 'DM Sans', tahoma, sans-serif;
+  font-family: var(--paragraph);
 }
 
 
